@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ----------------------- TEXT and HEADINGS Related ---------------------------*/
+header {
+  background-color: #001233;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+body{
+  background-color: #001845;
+  position:relative;
+  color: white;
+  font-family: 'Quicksand';
+}
+
+img {
+  max-width: 60%;
+}
+
+#content-wrapper {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: -2px;
+}
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px; 
+}
+
+h4 {
+  font-size: 24px;
+}
+
+p, label, li{
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+a {
+  color: #5c677d;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+nav a {
+  font-size: 24px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: white;
+  background-color: #7d8597;
+}
+
+.buttons {
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  background-color: #023E7D;
+  border-radius: 0.7rem;
+  color: #white;
+  cursor: pointer;
+  width: 2rem;
+  padding: 0.2rem;
+  margin-right: 0.2rem;
+}
+
+
+input[type="radio"] {
+    accent-color: #33415C;
+    cursor: pointer;
+}
+
+input[type='submit'] {
+  text-decoration: none;
+}
+
+input[type="text"] {
+  padding: 15px;
+  padding-left: 30px;
+  background-color: #33415C;
+  border-radius: 2rem;
+  border-style: solid;
+  border-color: #002855;
+  color: white;
+}
+
+.navigation {
+  width: 100%;
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.navigation a {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#style-guide-header {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

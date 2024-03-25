@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <title>Portfolio Project - Style Guide </title>
     <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
 
   </head>
 
@@ -14,22 +15,22 @@
    <header>
         <nav class="navigation">
           <div class="navigation-links">
+              <a href="home.html">Home</a>
+              <a href="projects.html">My Projects</a>
               <a href="index.html">Style Guide</a>
           </div>
         </nav>
+</header>
 
-      <div id = "style-guide-header">
+<div id = "content-wrapper">
+  <div id = "style-guide-header">
         <h1>Portfolio Project - Style Guide</h1>
         <nav>        
           <a href="#interactive_elements">Interactive Elements</a>
           <a href="#text_elements">Text Elements</a>
-          <a href="#combined_elements">Combined Elements</a>
           <a href="#citations">Citations</a>
         </nav>
-      </div>
-</header>
-
-
+  </div>
 <!--------------------------BRANDING COMPONENTS SECTION //---------------------------->
     <section class = "style-guide-section" id="visual-definition">
       <h2> Visual Definition </h2>
@@ -38,14 +39,20 @@
       <section class = element>
         <h3>Font</h3>
         <img class = "branding-image" src="resources/font.png" alt="fonts">
-        <p>   Our font pairing consists of Poppins and Single Day. Poppins is known for its versatility and accessibility in various contexts. Its rounder yet highly-structured glyphs align with both the brand aesthetic while providing a great contrast for Single Day, a looser, handwritten font.    </p>
+        <p>   The font used will be Quicksand for its great readibility. Additionally, it gives off this
+        really casual and comforting feeling which better reflects my personality and design
+        philosophy.  </p>
       </section><!-- element (font) -->
 
        <!--Color//---->
       <section class = element>
         <h3>Color</h3>
         <img class = "branding-image" src="resources/color.png" alt="colors">
-        <p>We used bright pink as the main accent, as it creates a sense of youthful vitality associated with the brand. For our darkest colour (in place of black), we used a rich velvet brown to create a subtle association with cocoa. Together, the two colours compliment each other nicely, being analogous on the colour wheel and having a significant difference in contrast. </p>
+        <p> I attempted to go for a "dark mode" color palette, not only to experiment because I've
+        been mainly using white for most of my past projects, I also belive a darker color scheme better
+        represents me. As dark mode emphasizes the importance of user experience, used to prevent eye
+        strains and such. My designs have the same emphasis. I also picked to go for a slight dark blue
+        to reinforce this feeling of calmness. </p>
       </section><!-- element (font) -->
 
     </section><!-- END OF "branding component" section -->
@@ -114,7 +121,7 @@
 
          <h4>Rendered element:</h4>
          <form>
-         <a class = "submit-button"><input type="submit" value="Submit"></a>
+         <a class = "buttons"><input type="submit" value="Submit"></a>
        </form>
       </section><!-- element (submit button) -->
 
@@ -169,7 +176,7 @@
           <h4>Rendered element:</h4>
           <div class = "image-link">
             <a href="index.html">
-             <img src="resources/yellow_macaron.jpg" alt="yellow_macaron">
+             <img src="resources/rabbit.png" alt="rabbit">
             </a>
           </div>
       </section><!-- element (image link) -->
@@ -243,222 +250,14 @@
     <!-- // END OF TEXT ELEMENTS SECTION -->
 
 
-
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <section class = "area" id="combined_elements">
-      <h2>Combined Elements</h2>
-
-
-
-      <!-- Main Navigation-->
-      <section class="element">
-        <h3>Main Navigation</h3>
-        
-        <nav class="navbar">
-          <div class="logo-container">
-            <img src="resources/logo.png" alt="Logo">
-          </div>
-          <div class="nav-links">
-            <a href="#">About</a>
-            <a href="#">Macarons</a>
-            <a href="#">Order Now</a>
-          </div>
-        </nav>
-
-
-        
-      </section><!-- element (main navigation) -->
-
-      <!-- Product Listing-->
-      <section class="element">
-        <h3>Product/Service Listing</h3>
-
-        <div class="product-detail-header">
-            <a href="macarons.html">
-              <img src="resources/BackArrow.png" alt="Icon">
-            </a>
-            <h1>The anatomy of the Lemon Tree</h1>
-          </div>
-          <div class="container">
-            <div class="left-container">
-              <img src="resources/yellow_macaron.jpg" alt="Product Image">
-            </div>
-            <div class="right-container">
-              <div class="subsection">
-                <h3>Hard Part</h3>
-                <p>Description of hard part. Description of hard part.</p>
-              </div>
-              <div class="subsection">
-                <h3>Soft Part</h3>
-                <p>Description of soft part.</p>
-              </div>
-              <div class="subsection">
-                <h3>Ingredients</h3>
-                <p>List of ingredients.</p>
-              </div>
-              <form class="submit-button">
-                <input type="submit" value="Add to Order">
-              </form>
-              <div class="drawing">
-                <img src="resources/arrows.png" alt="Arrows">
-              </div> 
-            </div>
-          </div><!-- product-detail-header -->
-
-
-      </section><!-- element  (product listing) -->
-
-      <!-- Payment Form -->
-      <section class="element">
-        <h3>Payment Form</h3>
-
-        <div class="payment-section">
-          <h1>Payment</h1>
-          <p>All transactions are secure and encrypted.</p>
-      
-          <form action="#" method="post">
-            <div class="form">
-              <div class="form-section">
-                <div class="form-group">
-                  <label><input type="radio" name="payment_method" value="credit_card"> Credit Card</label>
-                </div>
-              </div>
-      
-              <div class="form-section">
-                <div class="input-fields">
-                  <div class="form-group">
-                    <input type="text" class="full-width" placeholder="Card Number" required>
-                  </div>
-      
-                  <div class="form-group half-width">
-                    <input type="text" placeholder="MM/YY" required>
-                    <input type="text" placeholder="Security Code" required>
-                  </div>
-      
-                  <div class="form-group">
-                    <input type="text" class="full-width" placeholder="Name on Card" required>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label><input type="radio" name="billing_address" value="shipping_address"> Use shipping address as billing address</label>
-                </div>
-              </div>
-      
-              <div class="form-section">
-                <div class="form-group">
-                  <label><input type="radio" name="payment_method" value="paypal"> PayPal</label>
-                </div>
-              </div>
-      
-              <div class="form-section">
-                <div class="form-group">
-                  <label><input type="radio" name="payment_method" value="apple_pay"> Apple Pay</label>
-                </div>
-              </div>
-              <a class = "submit-button"><input type="submit" value="Pay Now"></a> 
-            </div>
-         </form>
-        </div>
-      </div>
-        
-      </section> <!-- element(payment form) -->
-
-      <!-- Checkout cart -->
-      <section class="element">
-        <h3>Checkout Cart</h3>
-        <div class = "checkout-cart">
-          <div id = "checkout-decoration">
-            <img src="resources/checkout-decoration.png" alt="decoration">
-          </div>
-          <div class = "cart-description">
-                <h2> YOUR ORDER </h2>
-                <p>Make a collection of 3, 6, 9, or 12 macarons to be packaged and delivered to your door!!!! </p>
-            </div><!------cart description -->
-
-            <div class = "cart-list">
-              <div class = "cart-item">
-                  <div class = "cart-item-left">
-                    <img src="resources/yellow_macaron.jpg" alt="Product Image">
-                  </div>
-
-                  <div class = "cart-item-middle">
-                    <p>MATCHA MATCH</p>
-                    <div class = "cart-add-or-subtract">
-                      <input class = "cart-buttons" type="button" value="+">
-                      <input class = "cart-buttons" type="button" value="--">
-                  </div>
-                  </div>
-
-                  <div class = "cart-item-right">
-                    <p>$3.50</p>
-                    <p class = "cart-item-quantity">2</p>
-                  </div>
-              </div><!-- END OF cart-items -->
-
-              <div class = "cart-item">
-                  <div class = "cart-item-left">
-                    <img src="resources/yellow_macaron.jpg" alt="Product Image">
-                  </div>
-
-                  <div class = "cart-item-middle">
-                    <p>MATCHA MATCH</p>
-                    <div class = "cart-add-or-subtract">
-                      <input class = "cart-buttons" type="button" value="+">
-                      <input class = "cart-buttons" type="button" value="--">
-                  </div>
-                  </div>
-
-                  <div class = "cart-item-right">
-                    <p>$3.50</p>
-                    <p class = "cart-item-quantity">2</p>
-                  </div>
-              </div><!-- END OF cart-items -->
-
-
-              <div class = "cart-list-total">
-                <div>
-                  <p>COUNT</p>
-                  <p>TOTAL COST</p>
-                </div>
-                <div class ="cart-list-total-right">
-                  <p>4</p>
-                  <p>$7.00</p>
-                </div>
-              </div> <!-- END OF cart-list-total -->
-            </div> <!-- END OF cart-list -->
-
-            <input type="submit" value="CHECKOUT">
-            </div> <!-- END OF checkout-cart -->
-       
-    </section> <!-- element(checkout cart) -->
-
-  </section>
-    <!-- // END OF COMBINED ELEMENTS SECTION -->
-
-
     <section class = "area" id="citations">
       <h2>Citations</h2>
       <ul>
-        <li> Poppins font: <a class="link-text" href="https://fonts.google.com/specimen/Poppins?query=popp"> Found here </a></li>
-        <li> Single Day font: <a class="link-text" href="https://fonts.google.com/specimen/Single+Day"> Found here </a></li>
-        <li> Macaron stock images (Anneleven Stock) <a class="link-text" href="https://www.vecteezy.com/photo/25270393-macaron-macaroon-isolated-on-white-background-cream-pastel-chic-cafe-dessert-sweet-food-and-holiday-cake-for-luxury-confectionery-generative-ai"> Found here </a></li>      
-        <li> Landing video created by RDNE Stock project <a class="link-text" href="https://www.pexels.com/video/close-up-of-french-macarons-8964164/"> Found here </a>  </a></li> 
-        <li> Landing video created by ROMAN ODINTSOV <a class="link-text" href="https://www.pexels.com/video/close-up-of-a-person-kneading-a-dough-8190079/"> Found here </a>  </a></li> 
-        <li> Landing video created by Kmeel.com Videos <a class="link-text" href="https://www.pexels.com/video/food-street-girl-sugar-15858676/"> Found here </a>  </a></li> 
-        <li> Landing video created by RDNE Stock project <a class="link-text" href="https://www.pexels.com/video/close-up-footage-of-a-woman-eating-macaron-8963623/"> Found here </a>  </a></li> 
-        <li> Macaron Product Listing stock images (Anneleven Stock) <a class="link-text" href="https://www.vecteezy.com/photo/25270393-macaron-macaroon-isolated-on-white-background-cream-pastel-chic-cafe-dessert-sweet-food-and-holiday-cake-for-luxury-confectionery-generative-ai"> Found here </a></li>    
-        <li> Macaron Product Listing stock images (Zemon) <a class="link-text" href="https://www.vecteezy.com/photo/26511143-macaroon-isolated-on-white-background-ai-generated"> Found here </a></li>       
-        <li> Home Page Classic collection image <a class="link-text" href="https://www.clubdelgourmand.com/product-page/copia-de-caja-macaron-surtida-x-8"> Found here </a></li>       
-        <li> Home Page Gourmet collection image <a class="link-text" href="https://lovefoodfeed.com/holidays-celebration/macarons/"> Found here </a></li>       
-        <li> Home Page News Update Image 1 <a class="link-text" href="https://www.pexels.com/photo/sweet-macaroons-on-plate-near-flower-7474223/"> Found here </a></li>       
-        <li> Home Page News Update Image 2 <a class="link-text" href="https://www.pexels.com/photo/anonymous-female-cook-in-uniform-and-latex-gloves-decorating-cake-with-macaroons-in-light-kitchen-3983660/"> Found here </a></li>       
-        <li> Home Page News Update Image 3 <a class="link-text" href="https://www.pexels.com/photo/process-of-making-macaroons-with-cooking-thermometer-3983569/"> Found here </a></li>  
-        <li> Home Page Floating Macarons Bitten Image <a class="link-text" href="https://www.pngall.com/macaron-png/download/29725"> Found here </a></li>       
-        <li> Home Page Floating Macarons Image  <a class="link-text" href="https://www.freepik.com/free-photos-vectors/macaron-png"> Found here </a></li>       
+        <li> Quicksand font: <a class="link-text" href="https://fonts.google.com/specimen/Quicksand"> Found here </a></li>
     </ul>
     </section>
     <br><br>
-
+  </div>
 
   </body>
 </html>
