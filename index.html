@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Portfolio Project - Style Guide </title>
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+<!--------------------------HEADER //-------------------------------------------------->
+   <header>
+        <nav class="navigation">
+          <div class="navigation-links">
+              <a href="index.html">Style Guide</a>
+          </div>
+        </nav>
+
+      <div id = "style-guide-header">
+        <h1>Portfolio Project - Style Guide</h1>
+        <nav>        
+          <a href="#interactive_elements">Interactive Elements</a>
+          <a href="#text_elements">Text Elements</a>
+          <a href="#combined_elements">Combined Elements</a>
+          <a href="#citations">Citations</a>
+        </nav>
+      </div>
+</header>
+
+
+<!--------------------------BRANDING COMPONENTS SECTION //---------------------------->
+    <section class = "style-guide-section" id="visual-definition">
+      <h2> Visual Definition </h2>
+
+      <!--Fonts//---->
+      <section class = element>
+        <h3>Font</h3>
+        <img class = "branding-image" src="resources/font.png" alt="fonts">
+        <p>   Our font pairing consists of Poppins and Single Day. Poppins is known for its versatility and accessibility in various contexts. Its rounder yet highly-structured glyphs align with both the brand aesthetic while providing a great contrast for Single Day, a looser, handwritten font.    </p>
+      </section><!-- element (font) -->
+
+       <!--Color//---->
+      <section class = element>
+        <h3>Color</h3>
+        <img class = "branding-image" src="resources/color.png" alt="colors">
+        <p>We used bright pink as the main accent, as it creates a sense of youthful vitality associated with the brand. For our darkest colour (in place of black), we used a rich velvet brown to create a subtle association with cocoa. Together, the two colours compliment each other nicely, being analogous on the colour wheel and having a significant difference in contrast. </p>
+      </section><!-- element (font) -->
+
+    </section><!-- END OF "branding component" section -->
+
+<!--------------------------INTERACTIVE ELEMENTS SECTION //---------------------------->
+    <section class = "area" id="interactive_elements">
+      <h2>Interactive Elements</h2>
+
+      <!--In-text link//---->
+      <section class = "element">
+        <h3>In-text link</h3>
+          <h4>CSS selector:</h4>
+          <p>.link-text</p>
+
+          <h4>Sample code:</h4>
+          <code>
+           &lt;p&gt;
+            &lt;a class="link-text" href="index.html"&gt;Click here&lt;/a&gt;
+            to return to this page!
+            &lt;/p&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <p>
+            <a class = "link-text" href="index.html">LOOK INSIDE</a>
+            to return to this page!
+          </p>
+      </section><!-- element (in-text link) -->
+
+
+      <!-- Navigation link (button link) -->
+      <section class = "element">
+
+        <h3>Navigation Link</h3>
+
+          <h4>CSS selector:</h4>
+          <p>.navi-link</p>
+
+          <h4>Sample code:</h4>
+          <code>
+             &lt;nav&gt;
+              &lt;a class="navi-link" href="#"&gt;Navigation Link&lt;/a&gt;
+            &lt;/nav&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <nav>
+            <a class="navi-link" href="#">Navigation Link</a>
+          </nav>
+
+      </section><!-- element (navigation link) -->
+
+
+      <!-- Submit/reset buttons-->
+      <section class = "element">
+        <h3>Submit/Reset Buttons</h3>
+         <h4>CSS selector:</h4>
+         <p>submit</p>
+
+         <h4>Sample code:</h4>
+         <code>
+                &lt;a class="submit-button"&gt;
+            &lt;input type="submit" value="Submit"&gt;
+          &lt;/a&gt;
+        </code>
+
+         <h4>Rendered element:</h4>
+         <form>
+         <a class = "submit-button"><input type="submit" value="Submit"></a>
+       </form>
+      </section><!-- element (submit button) -->
+
+
+       <!-- Text Input Field with Label-->
+      <section class = "element">
+        <h3>Text Input Field with Label</h3>
+          <h4>CSS selector:</h4>
+          <p>.text-input</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;form class = "text-input" action="/action_page.php"&gt; <br>
+              &lt;label for="label"&gt;Text Input Label:&lt;/label&gt;<br>
+              &lt;input type="text" id = "label"&gt;<br>
+           &lt;/form&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <form class = "text-input" action="/action_page.php">
+            <input type="text" id = "label" placeholder="Card Number">
+          </form>
+      </section><!-- element (text input field with label) -->
+
+
+      <!-- Radio Button with Label-->
+      <section class = "element">
+        <h3>Radio Button with Label</h3>
+          <h4>CSS selector:</h4>
+          <p>.text-input</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;input type = "radio" class = "radio"&gt;
+            &lt;label for = "radio">Sample Radio Button&lt;/label&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <input type = "radio" class = "radio">
+          <label for = "radio">Sample Radio Button</label>
+      </section><!-- radio button with label -->
+
+      <!-- Image as a Link-->
+      <section class = "element">
+        <h3>Image as a Link</h3>
+          <h4>CSS selector:</h4>
+          <p>.image-link</p>
+
+          <h4>Sample code:</h4>
+          <code>
+          </code>
+          <h4>Rendered element:</h4>
+          <div class = "image-link">
+            <a href="index.html">
+             <img src="resources/yellow_macaron.jpg" alt="yellow_macaron">
+            </a>
+          </div>
+      </section><!-- element (image link) -->
+
+
+    </section>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TEXT ELEMENTS SECTION // -->
+    <section class = "area" id="text_elements">
+      <h2>Text Elements</h2>
+
+      <section id = "style-guide-headings" class="element">
+        <h3>Headings</h3>
+          <h4>CSS selector:</h4>
+          <p>.heading</p>
+
+          <h4>Sample code:</h4>
+          <code>
+             &lt;h1 class="heading"&gt; h1 heading :)&lt;/h1&gt;
+              &lt;h2 class="heading"&gt; h2 heading :)&lt;/h2&gt;
+              &lt;h3 class="heading"&gt; h3 heading :)&lt;/h3&gt;
+              &lt;h4 class="heading"&gt; h4 heading :)&lt;/h4&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <h1 class = "heading"> h1 heading :) </h1>
+          <h2 class = "heading"> h2 heading :) </h2>
+          <h3 class = "heading"> h3 heading :) </h3>
+          <h4 class = "heading"> h4 heading :) </h4>
+      </section><!-- element (headings) -->
+
+      <section class="element">
+        <h3>Paragraphs</h3>
+          <h4>CSS selector:</h4>
+          <p>p</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;p&gt;paragraph paragraph paragraph paragraph paragraph paragraph paragraph&lt;/p&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+          <p>paragraph paragraph paragraph paragraph paragraph paragraph paragraph</p>
+      </section><!-- element (paragraphs) -->
+
+      <!-- Numbered Lists-->
+      <section class="element">
+        <h3>Numbered Lists</h3>
+          <h4>CSS selector:</h4>
+          <p>.number-list</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;ol type = "1" class = "number-list"&gt; <br>
+              &lt;li&gt; first option &lt;/li&gt; <br>
+              &lt;li&gt; second option &lt;/li&gt; <br>
+            &lt;/ol&gt;
+          </code>
+
+          <h4>Rendered element:</h4>
+         <ol type = "1" class = "number-list">
+            <li> first option </li>
+            <li> second option </li>
+         </ol>
+      </section><!-- element (numbered lists) -->
+
+    </section>
+    <!-- // END OF TEXT ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <section class = "area" id="combined_elements">
+      <h2>Combined Elements</h2>
+
+
+
+      <!-- Main Navigation-->
+      <section class="element">
+        <h3>Main Navigation</h3>
+        
+        <nav class="navbar">
+          <div class="logo-container">
+            <img src="resources/logo.png" alt="Logo">
+          </div>
+          <div class="nav-links">
+            <a href="#">About</a>
+            <a href="#">Macarons</a>
+            <a href="#">Order Now</a>
+          </div>
+        </nav>
+
+
+        
+      </section><!-- element (main navigation) -->
+
+      <!-- Product Listing-->
+      <section class="element">
+        <h3>Product/Service Listing</h3>
+
+        <div class="product-detail-header">
+            <a href="macarons.html">
+              <img src="resources/BackArrow.png" alt="Icon">
+            </a>
+            <h1>The anatomy of the Lemon Tree</h1>
+          </div>
+          <div class="container">
+            <div class="left-container">
+              <img src="resources/yellow_macaron.jpg" alt="Product Image">
+            </div>
+            <div class="right-container">
+              <div class="subsection">
+                <h3>Hard Part</h3>
+                <p>Description of hard part. Description of hard part.</p>
+              </div>
+              <div class="subsection">
+                <h3>Soft Part</h3>
+                <p>Description of soft part.</p>
+              </div>
+              <div class="subsection">
+                <h3>Ingredients</h3>
+                <p>List of ingredients.</p>
+              </div>
+              <form class="submit-button">
+                <input type="submit" value="Add to Order">
+              </form>
+              <div class="drawing">
+                <img src="resources/arrows.png" alt="Arrows">
+              </div> 
+            </div>
+          </div><!-- product-detail-header -->
+
+
+      </section><!-- element  (product listing) -->
+
+      <!-- Payment Form -->
+      <section class="element">
+        <h3>Payment Form</h3>
+
+        <div class="payment-section">
+          <h1>Payment</h1>
+          <p>All transactions are secure and encrypted.</p>
+      
+          <form action="#" method="post">
+            <div class="form">
+              <div class="form-section">
+                <div class="form-group">
+                  <label><input type="radio" name="payment_method" value="credit_card"> Credit Card</label>
+                </div>
+              </div>
+      
+              <div class="form-section">
+                <div class="input-fields">
+                  <div class="form-group">
+                    <input type="text" class="full-width" placeholder="Card Number" required>
+                  </div>
+      
+                  <div class="form-group half-width">
+                    <input type="text" placeholder="MM/YY" required>
+                    <input type="text" placeholder="Security Code" required>
+                  </div>
+      
+                  <div class="form-group">
+                    <input type="text" class="full-width" placeholder="Name on Card" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label><input type="radio" name="billing_address" value="shipping_address"> Use shipping address as billing address</label>
+                </div>
+              </div>
+      
+              <div class="form-section">
+                <div class="form-group">
+                  <label><input type="radio" name="payment_method" value="paypal"> PayPal</label>
+                </div>
+              </div>
+      
+              <div class="form-section">
+                <div class="form-group">
+                  <label><input type="radio" name="payment_method" value="apple_pay"> Apple Pay</label>
+                </div>
+              </div>
+              <a class = "submit-button"><input type="submit" value="Pay Now"></a> 
+            </div>
+         </form>
+        </div>
+      </div>
+        
+      </section> <!-- element(payment form) -->
+
+      <!-- Checkout cart -->
+      <section class="element">
+        <h3>Checkout Cart</h3>
+        <div class = "checkout-cart">
+          <div id = "checkout-decoration">
+            <img src="resources/checkout-decoration.png" alt="decoration">
+          </div>
+          <div class = "cart-description">
+                <h2> YOUR ORDER </h2>
+                <p>Make a collection of 3, 6, 9, or 12 macarons to be packaged and delivered to your door!!!! </p>
+            </div><!------cart description -->
+
+            <div class = "cart-list">
+              <div class = "cart-item">
+                  <div class = "cart-item-left">
+                    <img src="resources/yellow_macaron.jpg" alt="Product Image">
+                  </div>
+
+                  <div class = "cart-item-middle">
+                    <p>MATCHA MATCH</p>
+                    <div class = "cart-add-or-subtract">
+                      <input class = "cart-buttons" type="button" value="+">
+                      <input class = "cart-buttons" type="button" value="--">
+                  </div>
+                  </div>
+
+                  <div class = "cart-item-right">
+                    <p>$3.50</p>
+                    <p class = "cart-item-quantity">2</p>
+                  </div>
+              </div><!-- END OF cart-items -->
+
+              <div class = "cart-item">
+                  <div class = "cart-item-left">
+                    <img src="resources/yellow_macaron.jpg" alt="Product Image">
+                  </div>
+
+                  <div class = "cart-item-middle">
+                    <p>MATCHA MATCH</p>
+                    <div class = "cart-add-or-subtract">
+                      <input class = "cart-buttons" type="button" value="+">
+                      <input class = "cart-buttons" type="button" value="--">
+                  </div>
+                  </div>
+
+                  <div class = "cart-item-right">
+                    <p>$3.50</p>
+                    <p class = "cart-item-quantity">2</p>
+                  </div>
+              </div><!-- END OF cart-items -->
+
+
+              <div class = "cart-list-total">
+                <div>
+                  <p>COUNT</p>
+                  <p>TOTAL COST</p>
+                </div>
+                <div class ="cart-list-total-right">
+                  <p>4</p>
+                  <p>$7.00</p>
+                </div>
+              </div> <!-- END OF cart-list-total -->
+            </div> <!-- END OF cart-list -->
+
+            <input type="submit" value="CHECKOUT">
+            </div> <!-- END OF checkout-cart -->
+       
+    </section> <!-- element(checkout cart) -->
+
+  </section>
+    <!-- // END OF COMBINED ELEMENTS SECTION -->
+
+
+    <section class = "area" id="citations">
+      <h2>Citations</h2>
+      <ul>
+        <li> Poppins font: <a class="link-text" href="https://fonts.google.com/specimen/Poppins?query=popp"> Found here </a></li>
+        <li> Single Day font: <a class="link-text" href="https://fonts.google.com/specimen/Single+Day"> Found here </a></li>
+        <li> Macaron stock images (Anneleven Stock) <a class="link-text" href="https://www.vecteezy.com/photo/25270393-macaron-macaroon-isolated-on-white-background-cream-pastel-chic-cafe-dessert-sweet-food-and-holiday-cake-for-luxury-confectionery-generative-ai"> Found here </a></li>      
+        <li> Landing video created by RDNE Stock project <a class="link-text" href="https://www.pexels.com/video/close-up-of-french-macarons-8964164/"> Found here </a>  </a></li> 
+        <li> Landing video created by ROMAN ODINTSOV <a class="link-text" href="https://www.pexels.com/video/close-up-of-a-person-kneading-a-dough-8190079/"> Found here </a>  </a></li> 
+        <li> Landing video created by Kmeel.com Videos <a class="link-text" href="https://www.pexels.com/video/food-street-girl-sugar-15858676/"> Found here </a>  </a></li> 
+        <li> Landing video created by RDNE Stock project <a class="link-text" href="https://www.pexels.com/video/close-up-footage-of-a-woman-eating-macaron-8963623/"> Found here </a>  </a></li> 
+        <li> Macaron Product Listing stock images (Anneleven Stock) <a class="link-text" href="https://www.vecteezy.com/photo/25270393-macaron-macaroon-isolated-on-white-background-cream-pastel-chic-cafe-dessert-sweet-food-and-holiday-cake-for-luxury-confectionery-generative-ai"> Found here </a></li>    
+        <li> Macaron Product Listing stock images (Zemon) <a class="link-text" href="https://www.vecteezy.com/photo/26511143-macaroon-isolated-on-white-background-ai-generated"> Found here </a></li>       
+        <li> Home Page Classic collection image <a class="link-text" href="https://www.clubdelgourmand.com/product-page/copia-de-caja-macaron-surtida-x-8"> Found here </a></li>       
+        <li> Home Page Gourmet collection image <a class="link-text" href="https://lovefoodfeed.com/holidays-celebration/macarons/"> Found here </a></li>       
+        <li> Home Page News Update Image 1 <a class="link-text" href="https://www.pexels.com/photo/sweet-macaroons-on-plate-near-flower-7474223/"> Found here </a></li>       
+        <li> Home Page News Update Image 2 <a class="link-text" href="https://www.pexels.com/photo/anonymous-female-cook-in-uniform-and-latex-gloves-decorating-cake-with-macaroons-in-light-kitchen-3983660/"> Found here </a></li>       
+        <li> Home Page News Update Image 3 <a class="link-text" href="https://www.pexels.com/photo/process-of-making-macaroons-with-cooking-thermometer-3983569/"> Found here </a></li>  
+        <li> Home Page Floating Macarons Bitten Image <a class="link-text" href="https://www.pngall.com/macaron-png/download/29725"> Found here </a></li>       
+        <li> Home Page Floating Macarons Image  <a class="link-text" href="https://www.freepik.com/free-photos-vectors/macaron-png"> Found here </a></li>       
+    </ul>
+    </section>
+    <br><br>
+
+
+  </body>
+</html>
