@@ -2,42 +2,50 @@
   box-sizing: border-box;
 }
 
-/* ----------------------- TEXT and HEADINGS Related ---------------------------*/
-header {
-  background-color: #001233;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
+/* ----------------------- PAGE and SECTION Related ---------------------------*/
 body{
-  background-color: #001845;
-  position:relative;
+  background-color: #222222;
   color: white;
-  font-family: 'Quicksand';
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
-img {
-  max-width: 60%;
+footer {
+  background-color: #1F1F1F;
+  margin-top: 5rem;
+  padding-top: 1rem;
 }
 
-#content-wrapper {
-  margin-left: 20%;
-  margin-right: 20%;
+#footer-content {
+  margin-left: 14%;
+  margin-right: 14%;
 }
 
-nav {
-  margin-left: auto;
-  margin-right: auto;
+footer h2{
+  border-bottom: 5px solid #C22022;
+  width: 100%;
 }
+
+section {
+  margin-left: 14%;
+  margin-right: 14%;
+  margin-top: 5rem;
+}
+
+/* ----------------------- BASIC ELEMENT Related ---------------------------*/
 
 h1 {
   font-size: 48px;
-  font-weight: bold;
   color: white;
-  letter-spacing: -2px;
+  margin-top: 2rem;
+  border-image: 
+    linear-gradient(0deg,
+      #C22022 5px,
+    #0000 0) fill 0//0 0 0 100vw;
+  width: fit-content;
 }
 h2 {
-  font-size: 40px;
+  font-size: 36px;
+  margin-top: 0;
 }
 
 h3 {
@@ -45,50 +53,50 @@ h3 {
 }
 
 h4 {
-  font-size: 24px;
+  font-size: 20px;
+}
+
+ul {
+  margin-top: 0;
 }
 
 p, label, li{
-  font-size: 16px;
-  letter-spacing: 1px;
+  font-size: 18px;
+  font-family: 'Quicksand';
 }
 
 a {
-  color: #5c677d;
   text-decoration: none;
+  color: #C22022;
 }
 
-a:hover {
+a:hover{
   color: white;
 }
 
-nav a {
-  font-size: 24px;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
+em {
+  color: #C22022;
+  font-style: normal;
+}
+
+.button {
+  background-color: #C22022;
+  border: none;
   border-radius: 0.5rem;
-  text-decoration: none;
-}
-
-nav a:hover {
   color: white;
-  background-color: #7d8597;
-}
-
-.buttons {
-  font-family: 'Quicksand', sans-serif;
+  padding: 0.5rem 4rem;
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+  text-align: center;
   text-decoration: none;
-  background-color: #023E7D;
-  border-radius: 0.7rem;
-  color: #white;
-  cursor: pointer;
-  width: 2rem;
-  padding: 0.2rem;
-  margin-right: 0.2rem;
+  font-size: 20px;
 }
 
+.button:hover, .button:focus{
+  background-color: white;
+  color: #C22022;
+  cursor: pointer;
+}
 
 input[type="radio"] {
     accent-color: #33415C;
@@ -109,18 +117,160 @@ input[type="text"] {
   color: white;
 }
 
-.navigation {
-  width: 100%;
-  text-align: center;
-  padding-top: 3%;
-  padding-bottom: 3%;
+/* ----------------------- CUSTOM BASIC ELEMENT Related ---------------------------*/
+
+.buttons { 
+  font-family: 'Quicksand', sans-serif;
+  text-decoration: none;
+  background-color: #023E7D;
+  border-radius: 0.7rem;
+  color: #white;
+  cursor: pointer;
+  width: 2rem;
+  padding: 0.2rem;
+  margin-right: 0.2rem;
 }
 
-.navigation a {
+.navigation {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-areas:
+  "logo . . links";
   margin-left: 10%;
   margin-right: 10%;
+  margin-top: 2rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .navigation {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+  "logo"
+  "links";
+  }
+}
+
+#logo {
+  grid-area: logo;
+}
+
+.navigation-items {
+  grid-area: links;
+  justify-self: end;
+}
+
+.navigation-items a{
+  font-size: 28px; 
+  font-family: 'Roboto Condensed', sans-serif;
+  text-decoration: none;
+  color: white;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.navigation-items a:hover, .navigation-items a:focus {
+  color: #C22022;
+  cursor: pointer;
+}
+
+/* ----------------------- INTRODUCTION SECTION SPECIFIC ---------------------------*/
+#introduction {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+@media only screen and (max-width: 768px) {
+  #introduction {
+    grid-template-columns: 1fr;
+  }
+}
+
+#introduction-left {
+  margin-right: 5rem;
+}
+
+#introduction-right {
+   justify-self: end;
+}
+
+/* ----------------------- PROJECT SECTION SPECIFIC ---------------------------*/
+.project {
+  background-color: #3B414D;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-right {
+  margin-left: 1rem;
+}
+
+.project h2{
+  margin-bottom: 0;
+}
+.project img{
+  width: 100%;
+}
+
+.project-title {
+  display: flex;
+  border-bottom: 3px solid #C22022;
+  width: 100%;
+}
+
+.project-title p{
+  margin-left: auto;
+}
+
+/* ----------------------- Project page specific ---------------------------*/
+#project-page-brief {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 768px) {
+  #project-page-brief {
+    grid-template-columns: 1fr;
+  }
+}
+
+#project-page-brief h3, #project-page-brief h4 {
+   border-bottom: 3px solid #C22022;
+}
+
+#project-brief-left {
+  margin-right: 3rem;
+}
+
+#project-brief-right {
+  margin-left: 3rem;
+}
+
+.multi-column-list {
+  display: flex;
+}
+
+#project-content p{
+  margin-top: 2rem;
+}
+
+#project-content img{
+  width: 100%;
+}
+
+/* ----------------------- IMAGES ---------------------------*/
+#profile-picture {
+ 
+}
+/* ----------------------- STYLE GUIDE Related ---------------------------*/
 #style-guide-header {
   margin-left: auto;
   margin-right: auto;

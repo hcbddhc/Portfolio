@@ -13,19 +13,20 @@
   <body>
 <!--------------------------HEADER //-------------------------------------------------->
    <header>
-        <nav class="navigation">
-          <div class="navigation-links">
-              <a href="home.html">Home</a>
-              <a href="projects.html">My Projects</a>
-              <a href="index.html">Style Guide</a>
-          </div>
-        </nav>
-</header>
+     <nav class="navigation">
+       <h2 id = "logo"><em>Howard</em> Chang</h2>
+       <div class="navigation-items">
+         <a href="home.html#introduction">Home</a>
+         <a href="home.html#projects">Projects</a>
+         <a href="home.html#footer-content">Contact</a>
+       </div>
+     </nav>
+   </header>
 
 <div id = "content-wrapper">
   <div id = "style-guide-header">
         <h1>Portfolio Project - Style Guide</h1>
-        <nav>        
+        <nav class = "navigation-items">        
           <a href="#interactive_elements">Interactive Elements</a>
           <a href="#text_elements">Text Elements</a>
           <a href="#citations">Citations</a>
@@ -86,10 +87,10 @@
       <!-- Navigation link (button link) -->
       <section class = "element">
 
-        <h3>Navigation Link</h3>
+        <h3>Button</h3>
 
           <h4>CSS selector:</h4>
-          <p>.navi-link</p>
+          <p>.button</p>
 
           <h4>Sample code:</h4>
           <code>
@@ -100,30 +101,10 @@
 
           <h4>Rendered element:</h4>
           <nav>
-            <a class="navi-link" href="#">Navigation Link</a>
+            <button class="button" href="#">Navigation Link</button>
           </nav>
 
       </section><!-- element (navigation link) -->
-
-
-      <!-- Submit/reset buttons-->
-      <section class = "element">
-        <h3>Submit/Reset Buttons</h3>
-         <h4>CSS selector:</h4>
-         <p>submit</p>
-
-         <h4>Sample code:</h4>
-         <code>
-                &lt;a class="submit-button"&gt;
-            &lt;input type="submit" value="Submit"&gt;
-          &lt;/a&gt;
-        </code>
-
-         <h4>Rendered element:</h4>
-         <form>
-         <a class = "buttons"><input type="submit" value="Submit"></a>
-       </form>
-      </section><!-- element (submit button) -->
 
 
        <!-- Text Input Field with Label-->
@@ -254,6 +235,7 @@
       <h2>Citations</h2>
       <ul>
         <li> Quicksand font: <a class="link-text" href="https://fonts.google.com/specimen/Quicksand"> Found here </a></li>
+        <li> Roboto Condensed font: <a class="link-text" href="https://fonts.google.com/specimen/Roboto+Condensed" </a></li>
     </ul>
     </section>
     <br><br>
