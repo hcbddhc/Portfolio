@@ -6,79 +6,110 @@
     <meta charset="utf-8">
     <title>Home || Howard Chang </title>
     <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
   </head>
 
   <body>
-    <script src="script.js"></script>
+
 <!--------------------------HEADER //-------------------------------------------------->
-   <header>
-     <nav class="navigation">
-       <h2 id = "logo"><em>Howard</em> Chang</h2>
-       <div class="navigation-items">
-         <a href="home.html#introduction">Home</a>
-         <a href="home.html#projects">Projects</a>
-         <a href="home.html#footer-content">Contact</a>
-       </div>
-     </nav>
-   </header>
-   
-   <section id = "introduction">
-     <div id = "introduction-left">
-        <h1>I’m Howard, aspiring <em>UX/UI designer</em> and <em>web developer</em></h1>
-       <p>
-         Studying in the SIAT program at Simon Fraser University. The act of “creating” itself has been my long-time passion, many of my achievements originating from this idea of creating something new. 
-         <br><br>
-         With my past background in programming and backend development, and my current pursuit for graphic design and user experience design, I aim to deliver not just aesthetic pleasing and functional artifacts, but also an experience that is satisfying and accessible for users.
-         <br><br>
-         Based in <em>Vancouver, BC</em>.
-       </p>
-     </div>
-     <div id = "introduction-right">
-      <img id = "profile-picture" src="resources/picture.png" alt="howard's picture"></img>
-     </div>
-   </section>
-
-   <section id = "projects">
-    <h1>Featured Projects </h1>
-    <div id = "project-list">
-      <div class = "project" id = "rabbitat">
-        <img id = "rabbitat-picture" src="resources/rabbitat.png" alt="rabbitat poster picture"></img>
-        <div class = "project-right">
-          <div class = "project-title">
-            <h2>Rabbitats Website Redesign</h2>
-            <p>/2023</p>
+    <header>
+      <div id = "navigation-wrapper">
+        <nav id="navigation">
+          <h2 id = "logo"><em>Howard</em> Chang</h2>
+          <div class="navigation-items">
+            <a href="home.html">Home</a>
+            <a href="home.html#projects">Projects</a>
+            <a href="home.html#footer-content">Contact</a>
           </div>
-          <p>Strategy to improve the organization website for the rabbit rescue society Rabbitats. This project demonstrates proper problem framing given constraints, and proper brainstormed solutions based on user and client research. As well as slide deck design.</p>
-           <button class = "button" onclick="toRabbitat()"> Explore </button>
-        </div>
-      </div> <!-- rabbitat -->
+        </nav>
+      </div>
+    </header>
 
-      <div class = "project" id = "macaron">
-        <img id = "macaron-picture" src="resources/macaron.png" alt="screenshot of the macaron website"></img>
-        <div class = "project-right">
-          <div class = "project-title">
-            <h2>Macaron</h2>
-            <p>/2024</p>
-          </div>
-          <p>A brand and website created from scratch. The website aim to provide a seamingless and satisfying macaron purchase experience, while preserving its visual identity. Lastest standout project where I've put my programming skills into use</p>
-           <button class = "button" onclick="toMacaron()"> Explore </button>
-        </div>
-      </div> <!-- rabbitat -->
-
-    </div> <!-- Project list -->
-  </section> <!-- Project SECTION -->
-
-  <footer>
-    <div id = "footer-content">
-      <h2> Let's Get in Touch, and Create Something Together </h2>
-      <h4> howardchang822@hotmail.com <em>|</em> 778-822-6068 </h4>
-      <p>Designed by Howard Chang</p>
-      <a href="index.html">Style Guide</a>
+<!--------------------------SIDE BAR //-------------------------------------------------->
+    <div id = "side-bar">
+      <div class = "side-bar-line"></div>
+      <div id = "side-bar-logo-list">
+        <a class = "social-logo" id="linkedin-logo-side" href="https://www.linkedin.com/in/howard-chang-b6b677167/"></a>
+        <a class = "social-logo" id="instagram-logo-side" href="https://www.instagram.com/mr.bubblehoneytea/"></a> 
+        <a class = "social-logo" id="facebook-logo-side" href="https://www.facebook.com/corynigiri?mibextid=ZbWKwL"></a> 
+      </div>
+      <div class = "side-bar-line"></div>
     </div>
-  </footer>
+
+    <div id = "content">
+<!--------------------------INTRODUCTION //-------------------------------------------------->
+      <section id = "introduction">
+        <div id = "introduction-left">
+          <h1>I’m Howard, aspiring <em>UX/UI designer</em> and <em>web developer</em></h1>
+          <p>
+            Studying in the SIAT program at Simon Fraser University. The act of “creating” itself has been my long-time passion, many of my achievements originating from this idea of creating something new. 
+            <br><br>
+            With my past background in programming and backend development, and my current pursuit for graphic design and user experience design, I aim to deliver not just aesthetic pleasing and functional artifacts, but also an experience that is satisfying and accessible for users.
+            <br><br>
+            Based in <em>Vancouver, BC</em>.
+          </p>
+        </div>
+        <div id = "introduction-right">
+          <img id = "profile-picture" src="resources/picture.png" alt="howard's picture"></img>
+        </div>
+      </section>
+
+<!--------------------------PROJECTS //-------------------------------------------------->
+      <section id = "projects">
+        <h1>Featured Projects </h1>
+        <div id = "project-list">
+          <div class = "project" id = "rabbitat">
+            <img id = "rabbitat-picture" src="resources/rabbitat.png" alt="rabbitat poster picture"></img>
+            <div class = "project-right">
+              <div class = "project-title">
+                <h2>Rabbitats Website Redesign</h2>
+                <p>/2023</p>
+              </div>
+              <p>Strategy to improve the organization website for the rabbit rescue society Rabbitats. This project demonstrates proper problem framing given constraints, and proper brainstormed solutions based on user and client research. As well as slide deck design.</p>
+              <button class = "button" onclick="toRabbitat()"> Explore </button>
+            </div>
+          </div> <!-- rabbitat -->
+
+          <div class = "project" id = "macaron">
+            <img id = "macaron-picture" src="resources/macaron.png" alt="screenshot of the macaron website"></img>
+            <div class = "project-right">
+              <div class = "project-title">
+                <h2>Macaron</h2>
+                <p>/2024</p>
+              </div>
+              <p>A brand and website created from scratch. The website aim to provide a seamingless and satisfying macaron purchase experience, while preserving its visual identity. Lastest standout project where I've put my programming skills into use</p>
+              <button class = "button" onclick="toMacaron()"> Explore </button>
+            </div>
+          </div> <!-- rabbitat -->
+
+        </div> <!-- Project list -->
+      </section> <!-- Project SECTION -->
+    </div>
+<!--------------------------FOOTER //-------------------------------------------------->
+    <footer>
+
+      <div id = "footer-content">
+        <h2> Let's Get in Touch, and Create Something Together </h2>
+        <h4> howardchang822@hotmail.com <em>|</em> 778-822-6068 </h4>
+
+        <div id = "footer-divider">
+          <div id = "footer-divider-left">
+            <a class = "social-logo" id="linkedin-logo" href="https://www.linkedin.com/in/howard-chang-b6b677167/"></a>
+            <a class = "social-logo" id="instagram-logo" href="https://www.instagram.com/mr.bubblehoneytea/"></a> 
+            <a class = "social-logo" id="facebook-logo" href="https://www.facebook.com/corynigiri?mibextid=ZbWKwL"></a> 
+          </div>
+          <div id = "footer-divider-right">
+            <p>Designed by Howard Chang</p>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <script src="script.js"></script>
 
   </body>
 </html>

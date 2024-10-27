@@ -1,3 +1,4 @@
+//button links
 function toRabbitat() { 
             window.location.href = "rabbitats.html";
         } 
@@ -12,3 +13,12 @@ function toRabbitatProject() {
 function toMacaronProject() { 
             window.location.href = "https://github.com/siimka113/PO2";
         } 
+
+// Add background to navigation when the user scrolls down (remove background when scroll to the top)
+        window.onscroll = function() {
+            if(window.scrollY!=0){
+                document.getElementById("navigation-wrapper").style.backgroundColor = "#1e1e1e";
+            }else if(window.scrollY==0){
+                document.getElementById("navigation-wrapper").style.backgroundColor = "#222222";
+            }
+        };
