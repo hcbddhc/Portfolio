@@ -1,5 +1,5 @@
 /*fonts
-1. h1 + h2: Dosis
+1. h1 + h2 + h3 + h4: Dosis
 2. body text: Quicksand
 3. buttons + nav: Roboto condensed
 */
@@ -15,6 +15,10 @@ body{
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+#content{
+  margin-top: 8rem;
 }
 
 #project-content{ /*a wrapper with all the page content in it */
@@ -35,6 +39,23 @@ footer {
 section {
   margin-left: 14%;
   margin-right: 14%;
+  margin-bottom: 6rem;
+}
+
+.sub-section { /*for every sub section within section, used for spacing and alignment purposes 
+                DON'T USE FOR THE LAST SUB-SECTION FOR THE SECTION TO AVOID EXTRA MARGIN (we want only 6rem)*/
+  margin-bottom: 3rem;
+}
+
+.highlight-area { /*area where the background is light grey and covers the entire width */
+  margin-top: 3rem;
+  margin-left: -19.5%;
+  margin-right: -19.5%;
+  padding-left: 19.5%;
+  padding-right: 19.5%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #2C2C2C;
 }
 
 /* ----------------------- BASIC ELEMENT Related ---------------------------*/
@@ -44,6 +65,8 @@ h1 {
   justify-self: left;
 	position: relative;
   font-size: 48px;
+  letter-spacing: -0.98px; /*calculated via chatgpt */
+  line-height: 1.08;
   color: white;
   margin-top: 2rem;
   width: fit-content;
@@ -62,15 +85,25 @@ h1:after {
 h2 {
   font-family: 'Dosis', serif;
   font-size: 36px;
+  letter-spacing: -0.4px;
+  line-height: 1.1;
   margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 
 h3 {
+  font-family: 'Dosis', serif;
   font-size: 32px; 
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 h4 {
-  font-size: 20px;
+  width: 70%;
+  font-family: 'Dosis', serif;
+  font-size: 24px;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 ul {
@@ -78,7 +111,26 @@ ul {
 }
 
 p, label, li{
+  width: 97%;
   font-size: 18px;
+  letter-spacing: -0.2px;
+  line-height: 1.3;
+  font-family: 'Quicksand';
+}
+
+strong{
+  font-family: 'Quicksand';
+  font-weight: bold;
+  color: #C22022;
+}
+
+figcaption{
+  width: 97%;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  letter-spacing: -0.2px;
+  line-height: 1.3;
   font-family: 'Quicksand';
 }
 
@@ -107,6 +159,7 @@ em {
   text-align: center;
   text-decoration: none;
   font-size: 20px;
+  transition: border-color 0.3s ease;
 }
 
 .button:hover, .button:focus{
@@ -148,6 +201,14 @@ input[type="text"] {
   margin-right: 0.2rem;
 }
 
+.number-title {
+  font-family: 'Dosis', serif;
+  font-size: 38px;
+  letter-spacing: -0.4px;
+  line-height: 1.1;
+  color:#C22022;
+  margin-right: 0.5rem;
+}
 
 /* ----------------------- NAVIGATION BAR Related ---------------------------*/
 
@@ -166,12 +227,11 @@ input[type="text"] {
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 #logo {
   grid-area: logo;
-  margin-bottom: 0;
 }
 
 .navigation-items {
@@ -243,11 +303,10 @@ input[type="text"] {
 }
 
 
-/* ----------------------- INTRODUCTION SECTION SPECIFIC ---------------------------*/
+/* ----------------------- HOME PAGE - INTRODUCTION SECTION SPECIFIC ---------------------------*/
 #introduction {
   display: grid;
   grid-template-columns: 60% 40%;
-  margin-top: 5rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -264,7 +323,7 @@ input[type="text"] {
    justify-self: end;
 }
 
-/* ----------------------- PROJECT SECTION SPECIFIC ---------------------------*/
+/* ----------------------- HOME PAGE - PROJECT SECTION SPECIFIC ---------------------------*/
 .project {
   background-color: #2C2C2C;
   border-radius: 1rem;
@@ -272,6 +331,12 @@ input[type="text"] {
   grid-template-columns: 40% 60%;
   padding: 1rem;
   margin-bottom: 2rem;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.project:hover{
+  border-color: #C22022;
 }
 
 @media only screen and (max-width: 768px) {
@@ -299,7 +364,7 @@ input[type="text"] {
   margin-bottom: auto;
 }
 
-.project-title {
+.project-title { /*for home screen project section h2 */
   display: flex;
   border-bottom: 3px solid #C22022;
   width: 100%;
@@ -308,13 +373,24 @@ input[type="text"] {
 .project-title p{
   margin-left: auto;
   margin-bottom: 0;
+  width: 10%;
 }
 
 /* ----------------------- FOOTER SECTION SPECIFIC ---------------------------*/
 #footer-divider {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 2rem;
 }
+
+#footer-divider-right {
+  text-align: right;
+}
+#footer-divider p {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
 
 #footer-content {
   position: relative;
@@ -336,10 +412,36 @@ input[type="text"] {
   z-index: -1;
 }
 
-/* ----------------------- Project page specific ---------------------------*/
+/* ----------------------- Project page specific (general elements for all the project pages) ---------------------------*/
+#project-landing {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 3rem;
+}
+
 #project-page-brief {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+#project-page-brief h4{
+  width: 100%;
+}
+
+#project-members ul{
+  list-style-type: none;
+  padding: 0 0 0 0.5rem;
+  width: 100%;
+}
+
+#project-members li{
+  margin-bottom: 0.5rem;
+}
+
+.highlight-area-title {
+  border-bottom: 3px solid #C22022;
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -352,27 +454,96 @@ input[type="text"] {
    border-bottom: 3px solid #C22022;
 }
 
-#project-brief-left {
-  margin-right: 3rem;
-}
-
-#project-brief-right {
-  margin-left: 3rem;
-}
-
-.multi-column-list {
+.flex-area{ /* for the list of items within the project brief for each project page */
   display: flex;
+  justify-content: space-between;
 }
 
-#project-content p{
-  margin-top: 2rem;
+/* ----------------------- PROJECT PAGE - RABBITATS SPECIFIC ---------------------------*/
+#rabbitats-web-preview {
+  align-items: flex-end;
 }
 
-#project-content img{
+#rabbitats-mobile-preview div{
+  justify-content: center; 
+  gap: 3rem;
+}
+
+#rabbitats-first-issue-top{
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  gap: 1rem; 
+  align-items: start; 
+}
+
+#rabbitats-first-issue-bottom{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: flex-end;
+  gap: 3rem;
+}
+
+#rabbitats-second-issue{
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 3rem; 
+  align-items: center;
+}
+
+#rabbitats-second-issue-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+
+#rabbitats-design-iterations-images { /*center all the images for the design iterations section */
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  text-align: center;
+}
+
+/* ----------------------- MEDIA (IMAGE + VIDEO) ---------------------------*/
+
+/* ----------- GENERAL -----------*/
+img {
   width: 100%;
 }
 
-/* ----------------------- IMAGES ---------------------------*/
+.image-with-frame { /*add lighter grey area around image for content */
+  padding: 0.8rem;
+  background-color: #2C2C2C;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.image-with-caption { /*add lighter grey area around image for content */
+  padding: 0.8rem;
+  background-color: #2C2C2C;
+  border-radius: 0.5rem;
+  display: inline-block; 
+  text-align: center; 
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Drop shadow */
+}
+
+.image-with-caption figcaption {
+  margin-top: 0.5rem;
+}
+
+.image-with-caption-horizontal { /* in cases where the caption is on the right or left side of the image */
+  padding: 0.8rem;
+  background-color: #2C2C2C;
+  border-radius: 0.5rem;
+  display: flex; 
+  align-items: center; /* make text vertically aligned */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+.image-with-caption-horizontal figcaption {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+
 .social-logo {
   margin-right: 2rem;
   width: 2rem;
@@ -443,6 +614,66 @@ input[type="text"] {
 #facebook-logo-side:hover {
   background-image: url('resources/facebook_logo_side_hovered.png');
 }
+
+/* ----------- HOME PAGE -----------*/
+#profile-picture {
+  width: 100%;
+}
+
+/* ----------- PROJECT GENERAL -----------*/
+#project-landing-picture {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* ----------- RABBITATS -----------*/
+#rabbitats-logo {
+  width: 40%;
+  margin-left: 5rem;
+}
+
+.rabbitats-web-preview-element {
+  width: 90%;
+}
+.rabbitats-mobile-preview-element {
+  width: 25%;
+}
+
+#rabbitats-research-notes {
+  width: 100%;
+}
+
+#rabbitats-design-sketches, #rabbitats-wireframe, #rabbitats-prototype-iterations{
+  width: 100%;
+}
+
+#rabbitats-design-cketches-container, #rabbitats-prototype-iterations-container{
+  width: 90%;
+}
+
+#rabbitats-issue-A2 {
+  width: 40%;
+}
+
+#rabbitats-wireframe-container{
+  width: 50%;
+}
+
+
+#rabbitats-improvement-A{
+  width: 100%;
+}
+
+#rabbitats-improvement-B{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.rabbitats-improvement-B-video {
+  width: 100%;
+}
+
 
 /* ----------------------- STYLE GUIDE Related ---------------------------*/
 .area img{

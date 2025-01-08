@@ -7,26 +7,27 @@
     <title>Rabbitats Website Redesign || Howard Chang </title>
     <link href="style.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
   </head>
 
   <body>
     <script src="script.js"></script>
+
 <!--------------------------HEADER //-------------------------------------------------->
-<header>
-  <div id = "navigation-wrapper">
-    <nav id="navigation">
-      <h2 id = "logo"><em>Howard</em> Chang</h2>
-      <div class="navigation-items">
-        <a href="home.html">Home</a>
-        <a href="home.html#projects">Projects</a>
-        <a href="home.html#footer-content">Contact</a>
+    <header>
+      <div id = "navigation-wrapper">
+        <nav id="navigation">
+          <h2 id = "logo"><em>Howard</em> Chang</h2>
+          <div class="navigation-items">
+            <a href="home.html">My Works</a>
+            <a href="home.html">About</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Resume</a>
+          </div>
+        </nav>
       </div>
-    </nav>
-  </div>
-</header>
+    </header>
 
    <!--------------------------SIDE BAR //-------------------------------------------------->
    <div id = "side-bar">
@@ -37,75 +38,307 @@
     <div class = "side-bar-line"></div>
   </div>
 
-     <!--------------------------CONTENT //-------------------------------------------------->
    <div id = "project-content">
+
+  <!-------------------------------------CONTENT //-------------------------------------------------->
+  <section id = "project-landing">
+    <img id = "project-landing-picture" src="resources/rabbitats/rabbitats-landing-image.png" alt="Rabbitats Website Redeisgn"></img>
+  </section>
+
+  <!--------------------------PROJECT INTRODUCTION //-------------------------------------------------->
     <section id = "project-intro">
-      <h1>Rabbitats Website Redesign</h1>
     
-    <div id = "project-page-brief">
-      <div id = "project-brief-left">
+      <div id = "project-page-brief">
+        <div id = "project-brief-left"><!-- left side -->
+          <h3>Project Goal</h3>
+          <p>To propose a specific problem with an existing website of a socially good organization (Our client), and develop a
+             proper strategy to resolve that problem, backed up with strong evidence and rationale. 
+          </p>
 
-        <h3>Project Goal</h3>
-        <p>To propose a specific problem with an existing website of a socially good organization (Our client), and develop a proper strategy to resolve that problem, backed up with strong evidence and rationale.</p>
-
-        <h4>Project Duration</h4>
-        <ul>
-          <li>4 Weeks</li>
-        </ul>
-
-      </div> <!-- left side -->
-
-      <div id = "project-brief-right">
-
-        <h4>Tool Used </h4>
-        <ul>
-          <li>Figma</li>
-        </ul>
-
-        <h4>Project Type</h4>
-        <ul>
-          <li>Group Project</li>
-        </ul>
-
-        <h4>My Role</h4>
-        <div class = "multi-column-list">
+          <h4>Project Duration</h4>
           <ul>
-            <li>UI/UX Design</li>
-            <li>User Research</li>
+            <li>4 Weeks</li>
           </ul>
+
+          <h4>Project Type</h4>
           <ul>
-            <li>Client Research</li>
-            <li>Slide Deck Design</li>
+            <li>Group Project</li>
           </ul>
+        </div> <!-- left side -->
+
+        <div id = "project-brief-right"><!-- right side -->
+          <h4>Tool Used </h4>
+          <ul>
+            <li>Figma</li>
+          </ul>
+
+          <h4>My Role</h4>
+          <div class = "flex-area">
+            <ul>
+              <li>UI/UX Design</li>
+              <li>User Research</li>
+            </ul>
+            <ul>
+              <li>Client Research</li>
+              <li>Slide Deck Design</li>
+            </ul>
+          </div>
+
+          <h4>Project Members</h4>
+          <div id= "project-members" class = "flex-area">
+            <ul>
+              <li>Brian Luk</li>
+              <li>Andrea So</li>
+            </ul>
+            <ul>
+              <li>Stephy Wong</li>
+              <li>Rawiphoom Kiatthitinan</li>
+            </ul>
+          </div>
+        </div><!-- right side -->
+      </div><!-- end of brief -->
+
+      <div class = "highlight-area flex-area">
+        <div>
+          <h2 class = "highlight-area-title">The Client</h2>
+          <p><strong>Rabbitats</strong> is a Richmond based rabbit rescue organization that was created in response to the feral rabbit epidemic in the area. </p>
         </div>
+        <img id = "rabbitats-logo" src="resources/rabbitats/rabbitats-logo.png" alt="Rabbitats Logo"></img>
+      </div>
 
-      </div><!-- right side -->
+    </section>
+
+    <!--------------------------FINAL PROTOTYPE OVERVIEW //-------------------------------------------------->
+    <section id = "final-prototype-overview">
+      <h1>Final Prototype Overview </h1>
+      <div id = "rabbitats-web-preview" class = "flex-area sub-section">
+        <div>
+          <img class = "image-with-frame rabbitats-web-preview-element" src="resources/rabbitats/rabbitats-web-preview-A.png" alt="web preview"></img>
+        </div>
+        <div>
+          <h3>
+            <span class="number-title">01</span> <span>Web Version Preview</span>
+          </h3>
+          <img class = "image-with-frame rabbitats-web-preview-element" src="resources/rabbitats/rabbitats-web-preview-B.png" alt="web preview"></img>
+        </div>
+      </div>
+
+      <div id = "rabbitats-mobile-preview">
+        <h3>
+          <span class="number-title">02</span> <span>Mobile Version Preview</span>
+        </h3>
+        <div  class = "flex-area">
+          <img class = "image-with-frame rabbitats-mobile-preview-element" src="resources/rabbitats/rabbitats-mobile-preview-A.png" alt="mobile preview"></img>
+          <img class = "image-with-frame rabbitats-mobile-preview-element" src="resources/rabbitats/rabbitats-mobile-preview-B.png" alt="mobile preview"></img>
+          <img class = "image-with-frame rabbitats-mobile-preview-element" src="resources/rabbitats/rabbitats-mobile-preview-C.png" alt="mobile preview"></img>
+        </div>
       </div>
     </section>
 
-    <section id = "project-content">
-      <img id = "rabbitat-picture" src="resources/rabbitat.png" alt="rabbitat poster picture"></img>
-      <p>A vital key to this project’s success is to determine exactly what client is within the scope of the project given the constraint in place, as well as what topic that was chosen that is to be tackled. As I took part in researching the correct client and problems that can be tackled, I place significant emphasis on realistic scoping. A client cannot be too big so that the user/client research process becomes too complex with the given time limit, and the problem needs to be specific enough so that the team can realistically determine a perfect strategy. My approach proved to be effective as I’m the one who had recommended the organization Rabbitats and its respective problem, which is perfect for the project.</p>
+    <!--------------------------DESIGN STRATEGY AND RESEARCH //-------------------------------------------------->
+    <section id = "design-strategy-and-research">
+      <h1>Design Strategy and Research </h1>
+      <p>Taking the 4 weeks project duration constraint into account, I was one of the parities arguing against tackling every single 
+        aspect of the website during the initial brainstorming process, as it is to my firm belief that it is more ideal to <strong>target 
+        specific pain points and weaknesses</strong> and make appropriate, realistic solutions that would <strong>best fit the organization’s unique goals.</strong>
+      </p>
 
-      <p>Rabbitats is a Richmond based rabbit rescue organization that was created in response to the feral rabbit epidemic in the area. Upon further investigation of the organization’s mission, its website and users, I determined that Rabbitat’s website had failed to proper represent a key aspect of the organization’s mission, which is to educate potential or current rabbit pet owners, as pet abandonment is the primary source of the feral rabbit population. Two specific problems I’ve identified are first the relatively hidden education section within the webpage that discourages users from interacting with it, and the poorly organized education section itself. This proved to be a realistically scoped problem for the group to resolve.</p>
+      <div class = "flex-area">
+        <div>
+          <p>As the leading researcher during beginning steps, I’ve done extensive research on not just the <strong>organization itself to 
+            understand its missions and activities</strong>, but the greater context as well, being the continuous population growth of local 
+            rabbit colonies.  Being the only member that’s located in Richmond at the time also provided me additional reference point 
+            to draw from.</p>
+          <p>After sufficient research, I proposed <strong>education as the prospective design focus</strong>, and the direction of improving the education 
+            experience for prospective and current rabbit adopters navigating the current website. As my evaluation had concluded that 
+            Rabbitat’s website is far behind in this area compare to other aspects such as donations and adoptions.</p>
+        </div>
 
-      <p>After much discussion, I proposed the idea to modify certain elements of the webpage to make the education section more standout for its users in order to encourage them to explore this section, as well as a plan to overhaul the education page itself so that it’s much more user friendly. During the ideation process, I’ve also helped with prototyping of the solution.</p>
+        <div class = "image-with-caption">
+          <img id = "rabbitats-research-notes" src="resources/rabbitats/rabbitats-research-note.png" alt="research note about rabbitats"></img>
+          <figcaption>Part of my research notes on Rabbitats</figcaption>
+        </div>
+      </div>
+    </section>
 
-      <img id = "rabbitat-picture" src="resources/rabbitat-figure1.jpg" alt="screenshot of the prototype"></img>
+    <!--------------------------IDENTIFIED ISSUES WITH CURRENT DESIGN//-------------------------------------------------->
+    <section id = "identified-issues">
+      <h1>Identified Issues With Current Design </h1>
 
-      <p>Finally, I organized the order in which our strategy is to be presented through our slick deck. The main purpose being able to properly digest and communicate the problem, solution, and our iterative design process  to our audience. In which I’ve suggested the group to first explain the rationale, then a precise problem statement explain our scope of framing, then finally to present the prototype we have completed.</p>
+      <!-- brief intro-->
+      <div class = "highlight-area sub-section">
+       <p>
+        Upon extensive research on the organization, the context, and the website itself, I’ve proposed <strong>two main problems</strong> of the current 
+        website in which we can effectively and realistically resolve given the various constraints.
+       </p>
+      </div>
 
-      <button class = "button" onclick="toRabbitatProject()"> Check out the project here!</button>
+      <!-- first issue-->
+      <div id = "rabbitats-first-issue" class= "sub-section">
+        <!-- top half -->
+        <div id = "rabbitats-first-issue-top">
+          <span class="number-title">01</span>
+          <div class="rabbitats-first-issue-content">
+            <h4>Education not given prominence and is given a lower hierarchy</h4>
+            <p>Looking more into the wild rabbit epidemic in the greater Metro Vancouver area, one main source for this can be traced back 
+              to pet abandonment caused by a lack of knowledge when it comes to rabbit keeping. This, on top of Rabbitats goals, means that
+                education should be a key aspect of the webpage..</p>
+            <p>Yet despite education having its own page, this entire aspect of the page is barely showcased and promoted on the home page, 
+              in which heavily reduces engagement. Instead, the focus is placed on the other 3 areas, recruiting volunteers, donations, and 
+              adoptions.</p>
+          </div>
+          <div class = "image-with-caption">
+            <img id = "rabbitats-issue-A" src="resources/rabbitats/rabbitats-issue-A.png" alt="screenshot of the rabbitat website for issue one"></img>
+            <figcaption>Content located right below the hero section on the home page, only pages to volunteer opportunities, adoptions, and fostering are 
+              highlighted.</figcaption>
+          </div>
+        </div>
+        <!-- bottom half -->
+        <div id = "rabbitats-first-issue-bottom"> <!-- for the two images on the bottom-->
+          <div class = "image-with-caption">
+            <img id = "rabbitats-issue-A1" src="resources/rabbitats/rabbitats-issue-A1.png" alt="screenshot of the rabbitat website for issue one"></img>
+            <figcaption>Content located right below the hero section on the home page, only pages to volunteer opportunities, adoptions, and fostering are 
+              highlighted.</figcaption>
+          </div>
+          <div class = "image-with-caption-horizontal">
+            <img id = "rabbitats-issue-A2" src="resources/rabbitats/rabbitats-issue-A2.png" alt="screenshot of the rabbitat website for issue one"></img>
+            <figcaption>The same highlights are included in the side panel</figcaption>
+          </div>
+        </div>
 
+      </div>
+
+      <!-- second issue-->
+      <div id = "rabbitats-second-issue">
+        <div class = "image-with-caption">
+          <img id = "rabbitats-issue-B" src="resources/rabbitats/rabbitats-issue-B.png" alt="screenshot of the rabbitat website for issue one"></img>
+          <figcaption>Content located right below the hero section on the home page, only pages to volunteer opportunities, adoptions, and fostering are 
+            highlighted.</figcaption>
+        </div>
+        <div id="rabbitats-second-issue-content">
+          <span class="number-title">02</span>
+          <div> <!-- for the text-->
+            <h4>User-unfriendly education page</h4>
+            <p>On Rabbitat’s education page, the educational content comes in a pdf file format, requiring users to exit the website and read 
+              through 50 pages of hard to digest content. The page also includes a singular video from Rabbitat’s YouTube channel and two 
+              downloadable pdf files.</p>
+            <p>The form in which the content comes in is incredibly insufficient and not user friendly, and does not promote ease of access 
+              for prospective readers. The information being external to the website harms the site’s overall cohesiveness and increases the 
+              barrier for information retrieval. This design has also make it extremely difficult for prospective users to access or search for specific content.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------DESIGN ITERATIONS //-------------------------------------------------->
+    <section id = "rabbitats-design-iterations">
+      <h1>Design Iterations </h1>
+      <div class = "highlight-area sub-section">
+        <p>
+          Throughout the iterative process, I <strong>pioneered and guided the group’s design direction</strong> through my research and leadership skills. 
+          My input through iterations was grounded from my research and understanding of Rabbitats, its target audience, and its context. 
+          I also facilitated group discussions and encouraged collaboration.
+        </p>
+       </div>
+      <div id = "rabbitats-design-iterations-images">
+        <div id = "rabbitats-design-sketches-container" class = "image-with-caption sub-section">
+          <img id = "rabbitats-design-sketches" src="resources/rabbitats/rabbitats-design-sketches.png" alt="design sketches"></img>
+          <figcaption>Initial design sketches by me during initial discussions</figcaption>
+        </div>
+        <div id = "rabbitats-wireframe-container" class = "image-with-caption sub-section">
+          <img id = "rabbitats-wireframe" src="resources/rabbitats/rabbitats-wireframe.png" alt="design wireframes"></img>
+          <figcaption>Finalized site revamp framework</figcaption>
+        </div>
+        <div id = "rabbitats-prototype-iterations-container" class = "image-with-caption">
+          <img id = "rabbitats-prototype-iterations" src="resources/rabbitats/rabbitats-prototype-iterations.png" alt="prototype iterations"></img>
+          <figcaption>Various Design Prototype Iterations</figcaption>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------FINALIZED IMPROVEMENTS //-------------------------------------------------->
+    <section id = "finalized-improvements">
+      <h1>Finalized Improvements </h1>
+      <!-- first improvement-->
+      <div id = "rabbitats-first-improvement" class="sub-section">
+        <h4>
+          <span class="number-title">01</span> 
+          <span>Modifying certain elements of the webpage and reinvent the hierarchy to make the education section more standout for its 
+            users in order to encourage further exploration.</span>
+        </h4>
+        <img id = "rabbitats-improvement-A" src="resources/rabbitats/rabbitats-finalized-improvements-A.png" alt="first improrvement"></img>
+      </div>
+
+      <!-- second improvement-->
+      <div id = "rabbitats-second-improvement">
+        <h4>
+          <span class="number-title">02</span> 
+          <span>Organizing all the education material on the education page in a way so that information is easily retrievable in an 
+            organized manner.</span>
+        </h4>
+
+        <div id="rabbitats-improvement-B">
+          <!-- left -->
+          <div>
+            <video class = "rabbitats-improvement-B-video" controls autoplay>
+              <source src="resources/rabbitats/rabbitats - home page focus.mov" type="video/mp4">
+            </video>
+            <p>Education has been elevated in terms of hierarchy alongside other vital sections such as donations and adoption. This change promotes
+              the education aspect of Rabbitat's mission, as well as improving visibliity, which increases engagement.
+            </p>
+          </div>
+
+          <!-- right -->
+          <div>
+            <video class = "rabbitats-improvement-B-video" controls autoplay>
+              <source src="resources/rabbitats/rabbitats - education categorization.mov" type="video/mp4">
+            </video>
+            <p>
+              The educational content has also been organized into well laided out segments for users to navigate through. This design allows
+              the user to find the precise information they are looking for.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--------------------------KEY REFLECTIONS //-------------------------------------------------->
+    <section id = "key-reflections">
+      <h1>Key Reflections</h1>
+      <p>
+        This month long project is one of my first cracks into a time based collaborative design project, as well as the experience of 
+        playing more of a leadership role. 
+      </p>
+      <p>
+        One key aspect of this redesign is the need for a <strong>realistic yet still effective scoping</strong> for the prototype. Given the time limit, 
+        I’ve determined that it is key to target specific weak points on the website (after researching the client and its goals) instead 
+        of redesigning the entire website. As too large of a scope will result in the team being too spread out, leading to a less 
+        effective redesign.
+      </p>
+      <p>
+        Another key is the <strong>importance of proper research</strong>, and the need to <strong>personalize the design strategy for each client</strong>. The main problems
+         and associated solutions are all rooted back to our extensive research on the organization itself and the environmental concerns 
+         surrounding it. Without that knowledge and the organization’s needs in mind, the solution would not had been as appropriate. 
+      </p>
     </section>
   </div>
-  
+
+  <!--------------------------FOOTER //-------------------------------------------------->
   <footer>
     <div id = "footer-content">
       <h2> Let's Get in Touch, and Create Something Together </h2>
       <h4> howardchang822@hotmail.com <em>|</em> 778-822-6068 </h4>
-      <p>Designed by Howard Chang</p>
-      <a href="index.html">Style Guide</a>
+
+      <div id = "footer-divider">
+        <div id = "footer-divider-left">
+          <a class = "social-logo" id="linkedin-logo" href="https://www.linkedin.com/in/howard-chang-b6b677167/"></a>
+          <a class = "social-logo" id="instagram-logo" href="https://www.instagram.com/mr.bubblehoneytea/"></a> 
+          <a class = "social-logo" id="facebook-logo" href="https://www.facebook.com/corynigiri?mibextid=ZbWKwL"></a> 
+        </div>
+        <div id = "footer-divider-right">
+          <p>Designed by Howard Chang</p>
+        </div>
+      </div>
     </div>
   </footer>
 
