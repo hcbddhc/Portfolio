@@ -4,242 +4,112 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Portfolio Project - Style Guide </title>
+    <title>Home || Howard Chang </title>
     <link href="style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 
   </head>
 
   <body>
+
 <!--------------------------HEADER //-------------------------------------------------->
-   <header>
-     <nav class="navigation">
-       <h2 id = "logo"><em>Howard</em> Chang</h2>
-       <div class="navigation-items">
-         <a href="home.html#introduction">Home</a>
-         <a href="home.html#projects">Projects</a>
-         <a href="home.html#footer-content">Contact</a>
-       </div>
-     </nav>
-   </header>
-
-<div id = "content-wrapper">
-  <section id = "style-guide-header">
-        <h1>Portfolio Project - Style Guide</h1>
-        <nav class = "navigation-items">        
-          <a href="#interactive_elements">Interactive Elements</a>
-          <a href="#text_elements">Text Elements</a>
-          <a href="#citations">Citations</a>
-        </nav>
-  </section>
-<!--------------------------BRANDING COMPONENTS SECTION //---------------------------->
-    <section class = "style-guide-section" id="visual-definition">
-      <h2> Visual Definition </h2>
-
-      <!--Fonts//---->
-      <section class = element>
-        <h3>Font</h3>
-        <img class = "branding-image" src="resources/font.png" alt="fonts">
-        <p>   The font used will be Quicksand for its great readibility. Additionally, it gives off this
-        really casual and comforting feeling which better reflects my personality and design
-        philosophy.  </p>
-      </section><!-- element (font) -->
-
-       <!--Color//---->
-      <section class = element>
-        <h3>Color</h3>
-        <img class = "branding-image" src="resources/color.png" alt="colors">
-        <p> I attempted to go for a "dark mode" color palette, not only to experiment because I've
-        been mainly using white for most of my past projects, I also belive a darker color scheme better
-        represents me. As dark mode emphasizes the importance of user experience, used to prevent eye
-        strains and such. My designs have the same emphasis. I also picked to go for a slight dark blue
-        to reinforce this feeling of calmness. </p>
-      </section><!-- element (font) -->
-
-    </section><!-- END OF "branding component" section -->
-
-<!--------------------------INTERACTIVE ELEMENTS SECTION //---------------------------->
-    <section class = "area" id="interactive_elements">
-      <h2>Interactive Elements</h2>
-
-      <!--In-text link//---->
-      <section class = "element">
-        <h3>In-text link</h3>
-          <h4>CSS selector:</h4>
-          <p>.link-text</p>
-
-          <h4>Sample code:</h4>
-          <code>
-           &lt;p&gt;
-            &lt;a class="link-text" href="index.html"&gt;Click here&lt;/a&gt;
-            to return to this page!
-            &lt;/p&gt;
-          </code>
-
-          <h4>Rendered element:</h4>
-          <p>
-            <a class = "link-text" href="index.html">LOOK INSIDE</a>
-            to return to this page!
-          </p>
-      </section><!-- element (in-text link) -->
-
-
-      <!-- Navigation link (button link) -->
-      <section class = "element">
-
-        <h3>Button</h3>
-
-          <h4>CSS selector:</h4>
-          <p>.button</p>
-
-          <h4>Sample code:</h4>
-          <code>
-             &lt;nav&gt;
-              &lt;a class="navi-link" href="#"&gt;Navigation Link&lt;/a&gt;
-            &lt;/nav&gt;
-          </code>
-
-          <h4>Rendered element:</h4>
-          <nav>
-            <button class="button" href="#">Navigation Link</button>
-          </nav>
-
-      </section><!-- element (navigation link) -->
-
-
-       <!-- Text Input Field with Label-->
-      <section class = "element">
-        <h3>Text Input Field with Label</h3>
-          <h4>CSS selector:</h4>
-          <p>.text-input</p>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;form class = "text-input" action="/action_page.php"&gt; <br>
-              &lt;label for="label"&gt;Text Input Label:&lt;/label&gt;<br>
-              &lt;input type="text" id = "label"&gt;<br>
-           &lt;/form&gt;
-          </code>
-
-          <h4>Rendered element:</h4>
-          <form class = "text-input" action="/action_page.php">
-            <input type="text" id = "label" placeholder="Card Number">
-          </form>
-      </section><!-- element (text input field with label) -->
-
-
-      <!-- Radio Button with Label-->
-      <section class = "element">
-        <h3>Radio Button with Label</h3>
-          <h4>CSS selector:</h4>
-          <p>.text-input</p>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;input type = "radio" class = "radio"&gt;
-            &lt;label for = "radio">Sample Radio Button&lt;/label&gt;
-          </code>
-
-          <h4>Rendered element:</h4>
-          <input type = "radio" class = "radio">
-          <label for = "radio">Sample Radio Button</label>
-      </section><!-- radio button with label -->
-
-      <!-- Image as a Link-->
-      <section class = "element">
-        <h3>Image as a Link</h3>
-          <h4>CSS selector:</h4>
-          <p>.image-link</p>
-
-          <h4>Sample code:</h4>
-          <code>
-          </code>
-          <h4>Rendered element:</h4>
-          <div class = "image-link">
-            <a href="index.html">
-             <img src="resources/rabbit.png" alt="rabbit">
-            </a>
+    <header>
+      <div id = "navigation-wrapper">
+        <nav id="navigation">
+          <h2 id = "logo"><em>Howard</em> Chang</h2>
+          <div class="navigation-items">
+            <a href="index.html">My Works</a>
+            <a href="index.html">About</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Resume</a>
           </div>
-      </section><!-- element (image link) -->
+        </nav>
+      </div>
+    </header>
 
+<!--------------------------SIDE BAR //-------------------------------------------------->
+    <div id = "side-bar">
+      <div class = "side-bar-line"></div>
+      <div id = "side-bar-logo-list">
+        <a class = "social-logo" id="linkedin-logo-side" href="https://www.linkedin.com/in/howard-chang-b6b677167/"></a>
+        <a class = "social-logo" id="instagram-logo-side" href="https://www.instagram.com/mr.bubblehoneytea/"></a> 
+        <a class = "social-logo" id="facebook-logo-side" href="https://www.facebook.com/corynigiri?mibextid=ZbWKwL"></a> 
+      </div>
+      <div class = "side-bar-line"></div>
+    </div>
 
-    </section>
-    <!-- // INTERACTIVE ELEMENTS SECTION -->
+    <div id = "content">
+<!--------------------------INTRODUCTION //-------------------------------------------------->
+      <section id = "introduction">
+        <div id = "introduction-left">
+          <h1>I’m Howard, aspiring <em>UX/UI designer</em> and <em>web developer</em></h1>
+          <p>
+            Studying in the SIAT program at Simon Fraser University. The act of “creating” itself has been my long-time passion, many of my achievements originating from this idea of creating something new. 
+            <br><br>
+            With my past background in programming and backend development, and my current pursuit for graphic design and user experience design, I aim to deliver not just aesthetic pleasing and functional artifacts, but also an experience that is satisfying and accessible for users.
+            <br><br>
+            Based in <em>Vancouver, BC</em>.
+          </p>
+        </div>
+        <div id = "introduction-right">
+          <img id = "profile-picture" class = "image-with-frame" src="resources/picture.png" alt="howard's picture"></img>
+        </div>
+      </section>
 
+<!--------------------------PROJECTS //-------------------------------------------------->
+      <section id = "projects">
+        <h1>Featured Projects </h1>
+        <div id = "project-list">
+          <div class = "project" id = "rabbitat">
+            <img id = "rabbitat-picture" src="resources/rabbitat.png" alt="rabbitat poster picture"></img>
+            <div class = "project-right">
+              <div class = "project-title">
+                <h2>Rabbitats Website Redesign</h2>
+                <p>/2023</p>
+              </div>
+              <p>Strategy to improve the organization website for the rabbit rescue society Rabbitats. This project demonstrates proper problem framing given constraints, and proper brainstormed solutions based on user and client research. As well as slide deck design.</p>
+              <button class = "button" onclick="toRabbitat()"> Explore </button>
+            </div>
+          </div> <!-- rabbitat -->
 
+          <div class = "project" id = "macaron">
+            <img id = "macaron-picture" src="resources/macaron.png" alt="screenshot of the macaron website"></img>
+            <div class = "project-right">
+              <div class = "project-title">
+                <h2>Macaron</h2>
+                <p>/2024</p>
+              </div>
+              <p>A brand and website created from scratch. The website aim to provide a seamingless and satisfying macaron purchase experience, while preserving its visual identity. Lastest standout project where I've put my programming skills into use</p>
+              <button class = "button" onclick="toMacaron()"> Explore </button>
+            </div>
+          </div> <!-- rabbitat -->
 
-    <!-- TEXT ELEMENTS SECTION // -->
-    <section class = "area" id="text_elements">
-      <h2>Text Elements</h2>
+        </div> <!-- Project list -->
+      </section> <!-- Project SECTION -->
+    </div>
+<!--------------------------FOOTER //-------------------------------------------------->
+    <footer>
 
-      <section id = "style-guide-headings" class="element">
-        <h3>Headings</h3>
-          <h4>CSS selector:</h4>
-          <p>.heading</p>
+      <div id = "footer-content">
+        <h2> Let's Get in Touch, and Create Something Together </h2>
+        <h4> howardchang822@hotmail.com <em>|</em> 778-822-6068 </h4>
 
-          <h4>Sample code:</h4>
-          <code>
-             &lt;h1 class="heading"&gt; h1 heading :)&lt;/h1&gt;
-              &lt;h2 class="heading"&gt; h2 heading :)&lt;/h2&gt;
-              &lt;h3 class="heading"&gt; h3 heading :)&lt;/h3&gt;
-              &lt;h4 class="heading"&gt; h4 heading :)&lt;/h4&gt;
-          </code>
+        <div id = "footer-divider">
+          <div id = "footer-divider-left">
+            <a class = "social-logo" id="linkedin-logo" href="https://www.linkedin.com/in/howard-chang-b6b677167/"></a>
+            <a class = "social-logo" id="instagram-logo" href="https://www.instagram.com/mr.bubblehoneytea/"></a> 
+            <a class = "social-logo" id="facebook-logo" href="https://www.facebook.com/corynigiri?mibextid=ZbWKwL"></a> 
+          </div>
+          <div id = "footer-divider-right">
+            <p>Designed by Howard Chang</p>
+          </div>
+        </div>
+      </div>
 
-          <h4>Rendered element:</h4>
-          <h1 class = "heading"> h1 heading :) </h1>
-          <h2 class = "heading"> h2 heading :) </h2>
-          <h3 class = "heading"> h3 heading :) </h3>
-          <h4 class = "heading"> h4 heading :) </h4>
-      </section><!-- element (headings) -->
+    </footer>
 
-      <section class="element">
-        <h3>Paragraphs</h3>
-          <h4>CSS selector:</h4>
-          <p>p</p>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;p&gt;paragraph paragraph paragraph paragraph paragraph paragraph paragraph&lt;/p&gt;
-          </code>
-
-          <h4>Rendered element:</h4>
-          <p>paragraph paragraph paragraph paragraph paragraph paragraph paragraph</p>
-      </section><!-- element (paragraphs) -->
-
-      <!-- Numbered Lists-->
-      <section class="element">
-        <h3>Numbered Lists</h3>
-          <h4>CSS selector:</h4>
-          <p>.number-list</p>
-
-          <h4>Sample code:</h4>
-          <code>
-            &lt;ol type = "1" class = "number-list"&gt; <br>
-              &lt;li&gt; first option &lt;/li&gt; <br>
-              &lt;li&gt; second option &lt;/li&gt; <br>
-            &lt;/ol&gt;
-          </code>
-
-          <h4>Rendered element:</h4>
-         <ol type = "1" class = "number-list">
-            <li> first option </li>
-            <li> second option </li>
-         </ol>
-      </section><!-- element (numbered lists) -->
-
-    </section>
-    <!-- // END OF TEXT ELEMENTS SECTION -->
-
-
-    <section class = "area" id="citations">
-      <h2>Citations</h2>
-      <ul>
-        <li> Quicksand font: <a class="link-text" href="https://fonts.google.com/specimen/Quicksand"> Found here </a></li>
-        <li> Roboto Condensed font: <a class="link-text" href="https://fonts.google.com/specimen/Roboto+Condensed" </a></li>
-    </ul>
-    </section>
-    <br><br>
-  </div>
+    <script src="script.js"></script>
 
   </body>
 </html>
