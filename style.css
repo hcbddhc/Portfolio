@@ -235,12 +235,13 @@ input[type="text"] {
 }
 
 .navigation-items {
+  margin-top: 0.5rem;
   grid-area: links;
   justify-self: end;
 }
 
 .navigation-items a{
-  font-size: 28px; 
+  font-size: 24px; 
   font-family: 'Roboto Condensed', sans-serif;
   text-decoration: none;
   color: white;
