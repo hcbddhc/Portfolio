@@ -155,7 +155,6 @@ em {
   color: white;
   padding: 0.5rem 4rem;
   margin-top: 1.5rem;
-  margin-right: 2rem;
   text-align: center;
   text-decoration: none;
   font-size: 20px;
@@ -470,6 +469,14 @@ input[type="text"] {
   gap: 3rem;
 }
 
+#rabbitats-share-prototype{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+}
+
 #rabbitats-first-issue-top{
   display: grid;
   grid-template-columns: auto 1fr 1fr;
@@ -482,11 +489,12 @@ input[type="text"] {
   grid-template-columns: 2fr 1fr;
   align-items: flex-end;
   gap: 3rem;
+  margin-top: -1.5rem;
 }
 
 #rabbitats-second-issue{
   display: grid;
-  grid-template-columns: 1fr 1.8fr;
+  grid-template-columns: 1fr 1.3fr;
   gap: 3rem; 
   align-items: center;
 }
@@ -640,10 +648,6 @@ img {
   width: 25%;
 }
 
-#rabbitats-research-notes {
-  width: 100%;
-}
-
 #rabbitats-design-sketches, #rabbitats-wireframe, #rabbitats-prototype-iterations{
   width: 100%;
 }
@@ -652,8 +656,16 @@ img {
   width: 90%;
 }
 
+#rabbitats-news-article-container{
+  margin-right: 2rem;
+}
+
 #rabbitats-issue-A2 {
   width: 40%;
+}
+
+#rabbitats-issue-B-video{
+  width: 100%;
 }
 
 #rabbitats-wireframe-container{

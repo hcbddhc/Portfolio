@@ -135,30 +135,51 @@
           <img class = "image-with-frame rabbitats-mobile-preview-element" src="resources/rabbitats/rabbitats-mobile-preview-C.png" alt="mobile preview"></img>
         </div>
       </div>
+
+      <div id = "rabbitats-share-prototype" class = "highlight-area ">
+        <div class = "rabbitats-share-prototype-option">
+          <h3>Full Web Prototype</h3>
+          <button class = "button" onclick="toRabbitatWebPrototype()"> Figma Prototype </button>
+        </div>
+        <div>
+          <h3>Full Mobile Prototype</h3>
+          <button class = "button" onclick="toRabbitatMobilePrototype()"> Figma Prototype </button>
+        </div>
+      </div>
     </section>
 
     <!--------------------------DESIGN STRATEGY AND RESEARCH //-------------------------------------------------->
     <section id = "design-strategy-and-research">
       <h1>Design Strategy and Research </h1>
-      <p>Taking the 4 weeks project duration constraint into account, I was one of the parities arguing against tackling every single 
-        aspect of the website during the initial brainstorming process, as it is to my firm belief that it is more ideal to <strong>target 
-        specific pain points and weaknesses</strong> and make appropriate, realistic solutions that would <strong>best fit the organization’s unique goals.</strong>
-      </p>
-
       <div class = "flex-area">
         <div>
+          <p>Taking the 4 weeks project duration constraint into account, I was one of the parities arguing against tackling every single 
+            aspect of the website during the initial brainstorming process, as it is to my firm belief that it is more ideal to <strong>target 
+            specific pain points and weaknesses</strong> and make appropriate, realistic solutions that would <strong>best fit the organization’s unique goals.</strong>
+          </p>
+    
           <p>As the leading researcher during beginning steps, I’ve done extensive research on not just the <strong>organization itself to 
             understand its missions and activities</strong>, but the greater context as well, being the continuous population growth of local 
             rabbit colonies.  Being the only member that’s located in Richmond at the time also provided me additional reference point 
             to draw from.</p>
-          <p>After sufficient research, I proposed <strong>education as the prospective design focus</strong>, and the direction of improving the education 
-            experience for prospective and current rabbit adopters navigating the current website. As my evaluation had concluded that 
-            Rabbitat’s website is far behind in this area compare to other aspects such as donations and adoptions.</p>
         </div>
-
-        <div class = "image-with-caption">
+        <div class = "image-with-caption sub-section">
           <img id = "rabbitats-research-notes" src="resources/rabbitats/rabbitats-research-note.png" alt="research note about rabbitats"></img>
           <figcaption>Part of my research notes on Rabbitats</figcaption>
+        </div>
+      </div>
+
+      <div class = "flex-area">
+        <div id= "rabbitats-news-article-container" class = "image-with-caption">
+          <img id = "rabbitats-news-article" src="resources/rabbitats/rabbitats-news-article.png" alt="article about the rabbit crisis in vancouver"></img>
+          <figcaption>One news article about the pet abandonment crisis</figcaption>
+        </div>
+
+        <div>
+          <p>From not just my personal experiences, but as well as local news report and social forum insights, one common theme in relation to pet rabbit abandonments, is the <strong>lack of education among current and prospective rabbit keepers.</strong></p>
+          <p>With this in mind, on top of a thorough evalution of Rabbitat's website, I proposed <strong>education as the prospective design focus</strong>, and the direction of improving the education 
+            experience for prospective and current rabbit adopters navigating the current website. As my evaluation had concluded that 
+            Rabbitat’s website is far behind in this area compare to other aspects such as donations and adoptions.</p>
         </div>
       </div>
     </section>
@@ -184,8 +205,8 @@
             <h4>Education not given prominence and is given a lower hierarchy</h4>
             <p>Looking more into the wild rabbit epidemic in the greater Metro Vancouver area, one main source for this can be traced back 
               to pet abandonment caused by a lack of knowledge when it comes to rabbit keeping. This, on top of Rabbitats goals, means that
-                education should be a key aspect of the webpage..</p>
-            <p>Yet despite education having its own page, this entire aspect of the page is barely showcased and promoted on the home page, 
+                education should be a key aspect of the webpage.</p>
+            <p>Yet despite education having its own page, this <strong>entire aspect of the page is barely showcased and promoted on the home page</strong>, 
               in which heavily reduces engagement. Instead, the focus is placed on the other 3 areas, recruiting volunteers, donations, and 
               adoptions.</p>
           </div>
@@ -213,9 +234,10 @@
       <!-- second issue-->
       <div id = "rabbitats-second-issue">
         <div class = "image-with-caption">
-          <img id = "rabbitats-issue-B" src="resources/rabbitats/rabbitats-issue-B.png" alt="screenshot of the rabbitat website for issue one"></img>
-          <figcaption>Content located right below the hero section on the home page, only pages to volunteer opportunities, adoptions, and fostering are 
-            highlighted.</figcaption>
+          <video id = "rabbitats-issue-B-video" controls autoplay>
+            <source src="resources/rabbitats/rabbitats - old education page.mov" type="video/mp4">
+          </video>
+          <figcaption>Nearly all educational content are packed into a sigular PDF file, making pinpointing specific informaiton difficult.</figcaption>
         </div>
         <div id="rabbitats-second-issue-content">
           <span class="number-title">02</span>
@@ -224,9 +246,9 @@
             <p>On Rabbitat’s education page, the educational content comes in a pdf file format, requiring users to exit the website and read 
               through 50 pages of hard to digest content. The page also includes a singular video from Rabbitat’s YouTube channel and two 
               downloadable pdf files.</p>
-            <p>The form in which the content comes in is incredibly insufficient and not user friendly, and does not promote ease of access 
-              for prospective readers. The information being external to the website harms the site’s overall cohesiveness and increases the 
-              barrier for information retrieval. This design has also make it extremely difficult for prospective users to access or search for specific content.</p>
+            <p>The <strong>form in which the content comes in is insufficient and not user friendly</strong>, and does not promote ease of access 
+              for prospective readers. The information being external to the website <strong>harms the site’s overall cohesiveness and increases the 
+              barrier for information retrieval</strong>. This design has also make it extremely difficult for prospective users to access or search for specific content.</p>
           </div>
         </div>
       </div>
@@ -245,7 +267,9 @@
       <div id = "rabbitats-design-iterations-images">
         <div id = "rabbitats-design-sketches-container" class = "image-with-caption sub-section">
           <img id = "rabbitats-design-sketches" src="resources/rabbitats/rabbitats-design-sketches.png" alt="design sketches"></img>
-          <figcaption>Initial design sketches by me during initial discussions</figcaption>
+          <figcaption> Initial design sketches by me during initial discussions, illustrating my proposed solution of elevating Education
+            in the home page (top), as well as categoring educational materials via a Q&A page format (bottom).
+          </figcaption>
         </div>
         <div id = "rabbitats-wireframe-container" class = "image-with-caption sub-section">
           <img id = "rabbitats-wireframe" src="resources/rabbitats/rabbitats-wireframe.png" alt="design wireframes"></img>
@@ -253,7 +277,7 @@
         </div>
         <div id = "rabbitats-prototype-iterations-container" class = "image-with-caption">
           <img id = "rabbitats-prototype-iterations" src="resources/rabbitats/rabbitats-prototype-iterations.png" alt="prototype iterations"></img>
-          <figcaption>Various Design Prototype Iterations</figcaption>
+          <figcaption>Various Design Prototype Iterations. Much of the variations are related to home page appearance, as well as the initial education page.</figcaption>
         </div>
       </div>
     </section>
@@ -265,8 +289,7 @@
       <div id = "rabbitats-first-improvement" class="sub-section">
         <h4>
           <span class="number-title">01</span> 
-          <span>Modifying certain elements of the webpage and reinvent the hierarchy to make the education section more standout for its 
-            users in order to encourage further exploration.</span>
+          <span>Modifying certain elements of the webpage and reinventing the hierarchy to make the education section stand out more for users, encouraging further exploration.</span>
         </h4>
         <img id = "rabbitats-improvement-A" src="resources/rabbitats/rabbitats-finalized-improvements-A.png" alt="first improrvement"></img>
       </div>
@@ -275,8 +298,7 @@
       <div id = "rabbitats-second-improvement">
         <h4>
           <span class="number-title">02</span> 
-          <span>Organizing all the education material on the education page in a way so that information is easily retrievable in an 
-            organized manner.</span>
+          <span>Organizing the education materials on the page to make information easily accessible and well-structured.</span>
         </h4>
 
         <div id="rabbitats-improvement-B">
