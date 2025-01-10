@@ -154,7 +154,7 @@ em {
   border-radius: 0.5rem;
   color: white;
   padding: 0.5rem 4rem;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
   text-align: center;
   text-decoration: none;
   font-size: 20px;
@@ -184,6 +184,27 @@ input[type="text"] {
   border-style: solid;
   border-color: #002855;
   color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 27px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  p, label, li{
+    font-size: 13px;
+  }
+  figcaption {
+    font-size: 12px;
+  }
 }
 
 /* ----------------------- CUSTOM BASIC ELEMENT Related ---------------------------*/
@@ -269,12 +290,18 @@ input[type="text"] {
   #logo{ /* centre the logo when the screen width is small */
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .navigation-items{
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .navigation-items a {
+    font-size: 18px;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -282,11 +309,24 @@ input[type="text"] {
 #side-bar {
   height: 100%; /* Full-height: remove this if you want "auto" height */
   width: 3%; /* Set the width of the sidebar */
+  min-width: 50px;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   top: 12%; /* Stay at the top */
   right: 1rem;
   overflow-x: hidden; /* Disable horizontal scroll */
   margin-right: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  #side-bar {
+    margin-right: 0.1rem; 
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #side-bar {
+    display: none;
+  }
 }
 
 .side-bar-line{
@@ -459,6 +499,12 @@ input[type="text"] {
   justify-content: space-between;
 }
 
+@media only screen and (max-width: 768px)  { 
+  .flex-area {
+    display: block; 
+  }
+}
+
 /* ----------------------- PROJECT PAGE - RABBITATS SPECIFIC ---------------------------*/
 #rabbitats-web-preview {
   align-items: flex-end;
@@ -477,6 +523,15 @@ input[type="text"] {
   text-align: center;
 }
 
+@media only screen and (max-width: 768px)  { 
+  #rabbitats-share-prototype{
+    grid-template-columns: 1fr;
+  }
+  .rabbitats-share-prototype-option{
+    margin-bottom: 2rem;
+  }
+}
+
 #rabbitats-first-issue-top{
   display: grid;
   grid-template-columns: auto 1fr 1fr;
@@ -492,6 +547,7 @@ input[type="text"] {
   margin-top: -1.5rem;
 }
 
+
 #rabbitats-second-issue{
   display: grid;
   grid-template-columns: 1fr 1.3fr;
@@ -503,6 +559,13 @@ input[type="text"] {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 1rem;
+}
+
+@media only screen and (max-width: 768px)  { 
+  #rabbitats-first-issue-top, #rabbitats-first-issue-bottom, #rabbitats-second-issue, #rabbitats-second-issue-content  {
+    grid-template-columns: 1fr;
+  }
+  
 }
 
 #rabbitats-design-iterations-images { /*center all the images for the design iterations section */
@@ -635,6 +698,12 @@ img {
   margin-top: 2rem;
 }
 
+@media only screen and (max-width: 768px)  { 
+  #project-landing-picture {
+    margin-top: 15%;
+  }
+}
+
 /* ----------- RABBITATS -----------*/
 #rabbitats-logo {
   width: 40%;
@@ -681,6 +750,13 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+}
+
+@media only screen and (max-width: 768px)  { 
+  #rabbitats-improvement-B {
+    grid-template-columns: 1fr;
+  }
+  
 }
 
 .rabbitats-improvement-B-video {
