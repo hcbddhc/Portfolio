@@ -58,6 +58,12 @@ section {
   background-color: #2C2C2C;
 }
 
+.numbered-title-section{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+
 /* ----------------------- BASIC ELEMENT Related ---------------------------*/
 
 h1 {
@@ -116,6 +122,10 @@ p, label, li{
   letter-spacing: -0.2px;
   line-height: 1.3;
   font-family: 'Quicksand';
+}
+
+li{
+  margin-bottom: 0.5rem;
 }
 
 strong{
@@ -575,6 +585,43 @@ input[type="text"] {
   text-align: center;
 }
 
+/* ----------------------- PROJECT PAGE - MACARON SPECIFIC ---------------------------*/
+
+#macaron-first-role{
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 3rem; 
+  align-items: center;
+}
+
+#macaron-first-role-content, #macaron-second-role, #macaron-third-role-content {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem; 
+  align-items: start; 
+}
+
+#macaron-second-role-bottom{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  align-items: top;
+}
+
+#macaron-third-role{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 3rem;
+  align-items: top;
+}
+
+.macaron-features{
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: top;
+  margin-bottom: 1.5rem;
+}
+
 /* ----------------------- MEDIA (IMAGE + VIDEO) ---------------------------*/
 
 /* ----------- GENERAL -----------*/
@@ -763,6 +810,36 @@ img {
   width: 100%;
 }
 
+/* ----------- MACARON -----------*/
+#macaron-final-website-highlight-image-container {
+  background-image: url("resources/macaron/macaron-website-hightlight.png");
+  background-size: cover; /* Ensures the image covers the entire div */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  
+  width: 100vw; /* Makes the div full width */
+  margin-left: calc(-50vw + 50%); /* Adjusts for section margins */
+  height: 100vh; /* Adjust based on your design */
+
+  /* Responsive height adjustments */
+  min-height: 1173px; /* Prevents it from getting too small on mobile */
+  max-height: 2346px; /* Ensures it doesn't become too large on desktops */
+}
+
+#macaron-mascot {
+  width: 30%;
+  margin-left: 5rem;
+}
+
+#macaron-first-feature-video{
+  width: 100%
+}
+
+#macaron-first-feature-video video {
+  width: 100%;  /* Makes the video stretch to fit the div */
+  height: auto;  /* Maintains aspect ratio */
+  display: block; /* Removes any extra spacing */
+}
 
 /* ----------------------- STYLE GUIDE Related ---------------------------*/
 .area img{
