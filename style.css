@@ -587,6 +587,22 @@ input[type="text"] {
 
 /* ----------------------- PROJECT PAGE - MACARON SPECIFIC ---------------------------*/
 
+#macaron-share-prototype{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+}
+
+#macaron-brand-description{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  justify-content: center; 
+  align-items: center;
+  gap: 3rem;  
+}
+
 #macaron-first-role{
   display: grid;
   grid-template-columns: 1.3fr 1fr;
@@ -794,9 +810,7 @@ img {
 }
 
 #rabbitats-improvement-B{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+ width: 100%;
 }
 
 @media only screen and (max-width: 768px)  { 
@@ -826,9 +840,11 @@ img {
   max-height: 2346px; /* Ensures it doesn't become too large on desktops */
 }
 
-#macaron-mascot {
-  width: 30%;
-  margin-left: 5rem;
+#macaron-mascot-container{ /*add lighter grey area around image for content */
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  display: inline-block; 
+  text-align: center; 
 }
 
 #macaron-first-feature-video{
@@ -839,6 +855,13 @@ img {
   width: 100%;  /* Makes the video stretch to fit the div */
   height: auto;  /* Maintains aspect ratio */
   display: block; /* Removes any extra spacing */
+}
+
+/* ----------- CLOSETSHARE -----------*/
+#closetshare-youtube-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ----------------------- STYLE GUIDE Related ---------------------------*/

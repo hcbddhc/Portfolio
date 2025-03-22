@@ -1,4 +1,7 @@
 //button links
+function toClosetShare() { 
+    window.location.href = "closetshare.html";
+} 
 function toRabbitat() { 
             window.location.href = "rabbitats.html";
         } 
