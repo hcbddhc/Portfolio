@@ -42,6 +42,13 @@ section {
   margin-bottom: 6rem;
 }
 
+@media (min-width: 1600px) {  /*for a larger screen */
+  section {
+      margin-left: 18%;
+      margin-right: 18%;
+  }
+}
+
 .sub-section { /*for every sub section within section, used for spacing and alignment purposes 
                 DON'T USE FOR THE LAST SUB-SECTION FOR THE SECTION TO AVOID EXTRA MARGIN (we want only 6rem)*/
   margin-bottom: 3rem;
@@ -847,11 +854,11 @@ img {
   text-align: center; 
 }
 
-#macaron-first-feature-video{
+#macaron-first-feature-video, #macaron-second-feature-video, #macaron-second-feature-video{
   width: 100%
 }
 
-#macaron-first-feature-video video {
+#macaron-first-feature-video video, #macaron-second-feature-video video, #macaron-third-feature-video video {
   width: 100%;  /* Makes the video stretch to fit the div */
   height: auto;  /* Maintains aspect ratio */
   display: block; /* Removes any extra spacing */
