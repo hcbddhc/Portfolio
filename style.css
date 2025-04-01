@@ -42,13 +42,6 @@ section {
   margin-bottom: 6rem;
 }
 
-@media (min-width: 1600px) {  /*for a larger screen */
-  section {
-      margin-left: 18%;
-      margin-right: 18%;
-  }
-}
-
 .sub-section { /*for every sub section within section, used for spacing and alignment purposes 
                 DON'T USE FOR THE LAST SUB-SECTION FOR THE SECTION TO AVOID EXTRA MARGIN (we want only 6rem)*/
   margin-bottom: 3rem;
@@ -69,6 +62,24 @@ section {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 1rem;
+}
+
+@media (min-width: 1600px) {  /*for a larger screen */
+  section {
+      margin-left: 20%;
+      margin-right: 20%;
+  }
+  #footer-content {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .highlight-area { /*area where the background is light grey and covers the entire width */
+    margin-left: -33.5%;
+    margin-right: -33.5%;
+    padding-left: 33.5%;
+    padding-right: 33.5%;
+  }
+
 }
 
 /* ----------------------- BASIC ELEMENT Related ---------------------------*/
