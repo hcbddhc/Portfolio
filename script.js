@@ -2,6 +2,9 @@
 function toClosetShare() { 
     window.location.href = "closetshare.html";
 } 
+function toCraftConnect() { 
+    window.location.href = "craftconnect.html";
+} 
 function toRabbitat() { 
             window.location.href = "rabbitats.html";
         } 
