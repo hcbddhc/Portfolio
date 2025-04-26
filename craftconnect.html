@@ -19,7 +19,7 @@
     <header>
       <div id = "navigation-wrapper">
         <nav id="navigation">
-          <h2 id = "logo"><em>Howard</em> Chang</h2>
+          <h2 id="logo"><a href="index.html"><em>Howard</em> Chang</a></h2>
           <div class="navigation-items">
             <a href="index.html">My Works</a>
             <a href="index.html">About</a>
@@ -50,57 +50,56 @@
   <!--------------------------PROJECT INTRODUCTION //-------------------------------------------------->
     <section id = "project-intro">
     
-      <div id = "project-page-brief">
+      <div id = "project-page-brief" class = "grid-area">
         <div id = "project-brief-left"><!-- left side -->
-          <h3>Project Goal</h3>
-          <p>To propose a specific problem with an existing website of a socially good organization (Our client), and develop a
-             proper strategy to resolve that problem, backed up with strong evidence and rationale. 
-          </p>
+          <div class = "project-brief-element">
+            <h3><span>Project Goal</span></h3>
+            <p>To propose a specific problem with an existing website of a socially good organization (Our client), and develop a
+              proper strategy to resolve that problem, backed up with strong evidence and rationale. 
+            </p>
+          </div>
 
-          <h4>Project Duration</h4>
-          <ul>
-            <li>4 months</li>
-          </ul>
+          <div class = "project-brief-element">
+            <h3>Project Duration</h3>
+            <p>4 months</p>
+          </div>
 
-          <h4>Project Type</h4>
-          <ul>
-            <li>Group Project</li>
-          </ul>
+          <div class = "project-brief-element">
+            <h3>Project Type</h3>
+            <p>Group Project</p>
+          </div>
         </div> <!-- left side -->
 
         <div id = "project-brief-right"><!-- right side -->
-          <h4>Tool Used </h4>
-          <div class = "list flex-area">
-            <ul>
-              <li>Figma</li>
-            </ul>
+          <div class="project-brief-element">
+            <h3>Tools Used</h3>
+            <div class="project-brief-element-list grid-area">
+              <p>Figma</p>
+            </div>
           </div>
 
-          <h4>My Role</h4>
-          <div class = "list flex-area">
-            <ul>
-              <li>UI/UX Design</li>
-              <li>User Research</li>
-            </ul>
-            <ul>
-              <li>Prototyping</li>
-            </ul>
+          <div class = "project-brief-element">
+            <h3>My Role</h3>
+            <div class = "project-brief-element-list grid-area">    
+                <p>UI/UX Design</p>
+                <p>User Research</p>
+                <p>Prototyping</p>
+            </div>
           </div>
 
-          <h4>Project Members</h4>
-          <div class = "list flex-area">
-            <ul>
-              <li>Frentzen Taslim</li>
-              <li>Hao Nguyen</li>
-            </ul>
-            <ul>
-              <li>Jalene Pang</li>
-            </ul>
+          <div class="project-brief-element">
+            <h3>Project Members</h3>
+            <div class="project-brief-element-list grid-area">
+              <p>Frentzen Taslim</p>
+              <p>Hao Nguyen</p>
+              <p>Jalene Pang</p>
+            </div>
           </div>
+
         </div><!-- right side -->
       </div><!-- end of brief -->
 
-      <div class = "highlight-area flex-area">
+      <div id = "craftconnect-topic-context" class = "highlight-area grid-area">
         <div>
           <h2 class = "highlight-area-title">Topic Context</h2>
           <p>Our target stakeholders are small independent artisans based in Metro Vancouver selling small handmade artisan crafts. </p>
@@ -147,7 +146,7 @@
     <section id = "problem-framing-and-field-research">
       <h1>Problem Framing and Field Research </h1>
       <div id = "craftconnect-initial-problem-framing" class = "sub-section highlight-area">
-        <h2>Initial Problem Framing</h2>
+        <h2 class = "center-heading-with-line">Initial Problem Framing</h2>
         <p>
           How might we learn the methods by which artisans in the craft business build up their presence for local in-person avenues (local shops, events),
           and whether these methods are effective or not?
@@ -185,7 +184,7 @@
     <!--------------------------CONCEPT ITERATIONS //-------------------------------------------------->
     <section id = "concept-iterations">
       <h1>Concept Iterations </h1>
-      <div id = "craftconnect-initial-ideas" class = "sub-section">
+      <div id = "craftconnect-initial-ideas" class = "sub-section grid-area">
         <!--left side -->
         <div>
           <p>
@@ -221,13 +220,13 @@
      <!--feature list-->
 
      <!--first-->
-     <div class = "sub-section craftconnect-feature">
+     <div class = "sub-section grid-area craftconnect-feature">
       <!--left-->
       <div>
-        <h4>
+        <h2>
           <span class="number-title">01</span> 
           <span>Map Navigation and Filters</span>
-        </h4>
+        </h2>
         <p>
           The Home page consists of the map view of all the artisans and avenues close to the user’s location, the information is split into 4 categories. (Markets, Shops, Artisans, and the user’s Subscriptions) 
         </p>
@@ -242,17 +241,17 @@
      </div>
 
      <!--second-->
-     <div class = "sub-section craftconnect-feature">
+     <div class = "sub-section grid-area craftconnect-feature">
       <!--left-->
       <div class = "craftconnect-feature-video image-with-frame">
         <video loop autoplay playsinline muted><source src="resources/craftconnect/search function.mp4"></video>
       </div>
       <!--right-->
       <div>
-        <h4>
+        <h2>
           <span class="number-title">02</span> 
           <span>Search Function</span>
-        </h4>
+        </h2>
         <p>
           I’ve also integrated a search feature in the map view that opens up a full list of artisans and avenues, allowing users to browse through the information in a list format and search using keywords.
         </p>
@@ -260,13 +259,13 @@
      </div>
 
       <!--third-->
-      <div class = "sub-section craftconnect-feature">
+      <div class = "sub-section grid-area craftconnect-feature">
         <!--left-->
         <div>
-          <h4>
+          <h2>
             <span class="number-title">03</span> 
             <span>Notifications and Calender</span>
-          </h4>
+          </h2>
           <p>
             Notifications can be found on the upper right side through the bell icon. Users can retrieve the most up to date information about the artisans they are following. 
           </p>
@@ -281,17 +280,17 @@
        </div>
   
        <!--fourth-->
-       <div class = "sub-section craftconnect-feature">
+       <div class = "sub-section grid-area craftconnect-feature">
         <!--left-->
         <div class = "craftconnect-feature-video image-with-frame">
           <video loop autoplay playsinline muted><source src="resources/craftconnect/booth interaction.mp4"></video>
         </div>
         <!--right-->
         <div>
-          <h4>
+          <h2>
             <span class="number-title">04</span> 
             <span>Booth Interactions</span>
-          </h4>
+          </h2>
           <p>
             Upon clicking on the individual artisan icons, users will be directed to a booth page for that artisan. Here users can participate in a variety of interactions that is designed to facilitate connection between artisans and their costumers. 
           </p>

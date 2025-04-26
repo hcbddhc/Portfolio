@@ -19,7 +19,7 @@
     <header>
       <div id = "navigation-wrapper">
         <nav id="navigation">
-          <h2 id = "logo"><em>Howard</em> Chang</h2>
+          <h2 id="logo"><a href="index.html"><em>Howard</em> Chang</a></h2>
           <div class="navigation-items">
             <a href="index.html">My Works</a>
             <a href="index.html">About</a>
@@ -50,70 +50,92 @@
   <!--------------------------PROJECT INTRODUCTION //-------------------------------------------------->
     <section id = "project-intro">
     
-      <div id = "project-page-brief">
-        <div id = "project-brief-left"><!-- left side -->
-          <h3>Project Goal</h3>
-          <p>To design, develop, and deploy a fully functional cross-platform mobile application using React Native.
-          </p>
-
-          <h4>Project Duration</h4>
-          <ul>
-            <li>8 Weeks</li>
-          </ul>
-
-          <h4>Project Type</h4>
-          <ul>
-            <li>Group Project</li>
-          </ul>
+      <div id="project-page-brief" class="grid-area">
+        <div id="project-brief-left"><!-- left side -->
+          <div class="project-brief-element">
+            <h3>Project Goal</h3>
+            <p>To design, develop, and deploy a fully functional cross-platform mobile application using React Native.</p>
+          </div>
+      
+          <div class="project-brief-element">
+            <h3>Project Duration</h3>
+            <p>8 Weeks</p>
+          </div>
+      
+          <div class="project-brief-element">
+            <h3>Project Type</h3>
+            <p>Group Project</p>
+          </div>
         </div> <!-- left side -->
-
-        <div id = "project-brief-right" ><!-- right side -->
-          <h4>Tool Used </h4>
-          <div class = "list flex-area">
-            <ul>
-              <li>Figma</li>
-              <li>React Native</li>
-              <li>Firebase</li>
-            </ul>
-            <ul>
-              <li>Google Maps API</li>
-              <li>Imgur API</li>
-            </ul>
+      
+        <div id="project-brief-right"><!-- right side -->
+          <div class="project-brief-element">
+            <h3>Tools Used</h3>
+            <div class="project-brief-element-list grid-area">
+              <p>Figma</p>
+              <p>React Native</p>
+              <p>Firebase</p>
+              <p>Google Maps API</p>
+              <p>Imgur API</p>
+            </div>
           </div>
-          <h4>My Role</h4>
-          <div class = "list flex-area">
-            <ul>
-              <li>UI/UX Design</li>
-              <li>React Native Development</li>
-            </ul>
-            <ul>
-              <li>Target User Research</li>
-            </ul>
+      
+          <div class="project-brief-element">
+            <h3>My Role</h3>
+            <div class="project-brief-element-list grid-area">
+              <p>UI/UX Design</p>
+              <p>React Native Development</p>
+              <p>Target User Research</p>
+            </div>
           </div>
-
-          <h4>Project Members</h4>
-          <div class = "list flex-area">
-            <ul>
-              <li>Dennis Deng</li>
-            </ul>
+      
+          <div class="project-brief-element">
+            <h3>Project Members</h3>
+            <div class="project-brief-element-list grid-area">
+              <p>Dennis Deng</p>
+            </div>
           </div>
         </div><!-- right side -->
       </div><!-- end of brief -->
     </section>
 
     <!--------------------------FINAL PROTOTYPE OVERVIEW //-------------------------------------------------->
-    <section id = "final-prototype-overview">
-      <h1>App  Overview </h1>
-      <div id = "closetshare-youtube-video" class = "highlight-area">
-        <iframe 
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/W7CIGAfj-Vo" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
+    <section id = "app-overview">
+      <h1>App Overview And Video Showcase </h1>
+      <div id = "closetshare-overview" class = "grid-area sub-section">
+        <div id = "closetshare-overview-text">
+          <p>
+            <strong>ClosetShare</strong> is an app that aims to inspire individuals to <strong>enhance their fashion sense and discover their unique 
+            style.</strong> It provides a platform for fashion enthusiasts to <strong>connect, share, and engage with local and global fashion communities.</strong>
+          </p>
+          <p>
+            Users can <strong>showcase their outfits</strong> by uploading photos and sharing detailed information about each piece, including where they were 
+            purchased, making it easier for others to find and buy similar items. Also, the app allows users to <strong>explore a wide range of outfit 
+            inspirations</strong>, fostering creativity and collaboration. 
+          </p>
+          <p>
+            ClosetShare’s goal is to bridge the gap between personal style and community-driven fashion, encouraging self-expression and shared inspiration.
+          </p>
+        </div>
+        <div id = "closetshare-overview-image" class = "image-with-caption">
+          <img src="resources/closetshare/closetshare intro screens.png" alt="ClosetShare Intro Screens"></img>
+          <figcaption> The app's onboarding screens for introduction, created by my partner Dennis Deng</figcaption>
+        </div>
+      </div>
+
+      <div id = "closetshare-showcase-video" class = "highlight-area">
+        <h2 class = "center-heading-with-line">Showcase Video</h2>
+        <div id = "closetshare-youtube-video">
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/W7CIGAfj-Vo" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
     </section>
 

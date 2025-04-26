@@ -19,7 +19,7 @@
     <header>
       <div id = "navigation-wrapper">
         <nav id="navigation">
-          <h2 id = "logo"><em>Howard</em> Chang</h2>
+          <h2 id="logo"><a href="index.html"><em>Howard</em> Chang</a></h2>
           <div class="navigation-items">
             <a href="index.html">My Works</a>
             <a href="index.html">About</a>
@@ -50,54 +50,52 @@
   <!--------------------------PROJECT INTRODUCTION //-------------------------------------------------->
     <section id = "project-intro">
     
-      <div id = "project-page-brief">
-        <div id = "project-brief-left"><!-- left side -->
-          <h3>Project Goal</h3>
-          <p>To propose a specific problem with an existing website of a socially good organization (Our client), and develop a
-             proper strategy to resolve that problem, backed up with strong evidence and rationale. 
-          </p>
-
-          <h4>Project Duration</h4>
-          <ul>
-            <li>4 Weeks</li>
-          </ul>
-
-          <h4>Project Type</h4>
-          <ul>
-            <li>Group Project</li>
-          </ul>
+      <div id="project-page-brief" class="grid-area">
+        <div id="project-brief-left"><!-- left side -->
+          <div class="project-brief-element">
+            <h3>Project Goal</h3>
+            <p>To propose a specific problem with an existing website of a socially good organization (Our client), and develop a
+              proper strategy to resolve that problem, backed up with strong evidence and rationale. 
+            </p>
+          </div>
+      
+          <div class="project-brief-element">
+            <h3>Project Duration</h3>
+            <p>4 Weeks</p>
+          </div>
+      
+          <div class="project-brief-element">
+            <h3>Project Type</h3>
+            <p>Group Project</p>
+          </div>
         </div> <!-- left side -->
-
-        <div id = "project-brief-right"><!-- right side -->
-          <h4>Tool Used </h4>
-          <div class = "list flex-area">
-            <ul>
-              <li>Figma</li>
-            </ul>
+      
+        <div id="project-brief-right"><!-- right side -->
+          <div class="project-brief-element">
+            <h3>Tools Used</h3>
+            <div class="project-brief-element-list grid-area">
+              <p>Figma</p>
+            </div>
           </div>
-
-          <h4>My Role</h4>
-          <div class = "list flex-area">
-            <ul>
-              <li>UI/UX Design</li>
-              <li>User Research</li>
-            </ul>
-            <ul>
-              <li>Client Research</li>
-              <li>Slide Deck Design</li>
-            </ul>
+      
+          <div class="project-brief-element">
+            <h3>My Role</h3>
+            <div class="project-brief-element-list grid-area">
+              <p>UI/UX Design</p>
+              <p>User Research</p>
+              <p>Client Research</p>
+              <p>Slide Deck Design</p>
+            </div>
           </div>
-
-          <h4>Project Members</h4>
-          <div class = "list flex-area">
-            <ul>
-              <li>Brian Luk</li>
-              <li>Andrea So</li>
-            </ul>
-            <ul>
-              <li>Stephy Wong</li>
-              <li>Rawiphoom Kiatthitinan</li>
-            </ul>
+      
+          <div class="project-brief-element">
+            <h3>Project Members</h3>
+            <div class="project-brief-element-list grid-area">
+              <p>Brian Luk</p>
+              <p>Andrea So</p>
+              <p>Stephy Wong</p>
+              <p>Rawiphoom Kiatthitinan</p>
+            </div>
           </div>
         </div><!-- right side -->
       </div><!-- end of brief -->
@@ -120,17 +118,17 @@
           <img class = "image-with-frame rabbitats-web-preview-element" src="resources/rabbitats/rabbitats-web-preview-A.png" alt="web preview"></img>
         </div>
         <div>
-          <h3>
+          <h2>
             <span class="number-title">01</span> <span>Web Version Preview</span>
-          </h3>
+          </h2>
           <img class = "image-with-frame rabbitats-web-preview-element" src="resources/rabbitats/rabbitats-web-preview-B.png" alt="web preview"></img>
         </div>
       </div>
 
       <div id = "rabbitats-mobile-preview">
-        <h3>
+        <h2>
           <span class="number-title">02</span> <span>Mobile Version Preview</span>
-        </h3>
+        </h2>
         <div  class = "flex-area">
           <img class = "image-with-frame rabbitats-mobile-preview-element" src="resources/rabbitats/rabbitats-mobile-preview-A.png" alt="mobile preview"></img>
           <img class = "image-with-frame rabbitats-mobile-preview-element" src="resources/rabbitats/rabbitats-mobile-preview-B.png" alt="mobile preview"></img>
@@ -138,13 +136,13 @@
         </div>
       </div>
 
-      <div id = "rabbitats-share-prototype" class = "highlight-area ">
+      <div id = "rabbitats-share-prototype" class = "highlight-area grid-area">
         <div class = "rabbitats-share-prototype-option">
-          <h3>Full Web Prototype</h3>
+          <h2>Full Web Prototype</h2>
           <button class = "button" onclick="toRabbitatWebPrototype()"> Figma Prototype </button>
         </div>
         <div>
-          <h3>Full Mobile Prototype</h3>
+          <h2>Full Mobile Prototype</h2>
           <button class = "button" onclick="toRabbitatMobilePrototype()"> Figma Prototype </button>
         </div>
       </div>
@@ -153,7 +151,7 @@
     <!--------------------------DESIGN STRATEGY AND RESEARCH //-------------------------------------------------->
     <section id = "design-strategy-and-research">
       <h1>Design Strategy and Research </h1>
-      <div class = "flex-area">
+      <div id = "rabbitats-design-strategy" class = "sub-section grid-area">
         <div>
           <p>Taking the 4 weeks project duration constraint into account, I was one of the parities arguing against tackling every single 
             aspect of the website during the initial brainstorming process, as it is to my firm belief that it is more ideal to <strong>target 
@@ -201,16 +199,20 @@
       <!-- first issue-->
       <div id = "rabbitats-first-issue" class= "sub-section">
         <!-- top half -->
-        <div id = "rabbitats-first-issue-top">
-          <span class="number-title">01</span>
+        <div id = "rabbitats-first-issue-top" class = "grid-area sub-section">
           <div class="rabbitats-first-issue-content">
-            <h4>Education not given prominence and is given a lower hierarchy</h4>
-            <p>Looking more into the wild rabbit epidemic in the greater Metro Vancouver area, one main source for this can be traced back 
-              to pet abandonment caused by a lack of knowledge when it comes to rabbit keeping. This, on top of Rabbitats goals, means that
-                education should be a key aspect of the webpage.</p>
-            <p>Yet despite education having its own page, this <strong>entire aspect of the page is barely showcased and promoted on the home page</strong>, 
-              in which heavily reduces engagement. Instead, the focus is placed on the other 3 areas, recruiting volunteers, donations, and 
-              adoptions.</p>
+            <div class = "numbered-title-section">
+              <span class="number-title">01</span>
+              <div>
+                <h2>Education not given prominence and is given a lower hierarchy</h2>
+                <p>Looking more into the wild rabbit epidemic in the greater Metro Vancouver area, one main source for this can be traced back 
+                  to pet abandonment caused by a lack of knowledge when it comes to rabbit keeping. This, on top of Rabbitats goals, means that
+                    education should be a key aspect of the webpage.</p>
+                <p>Yet despite education having its own page, this <strong>entire aspect of the page is barely showcased and promoted on the home page</strong>, 
+                  in which heavily reduces engagement. Instead, the focus is placed on the other 3 areas, recruiting volunteers, donations, and 
+                  adoptions.</p>
+              </div>
+            </div>
           </div>
           <div class = "image-with-caption">
             <img id = "rabbitats-issue-A" src="resources/rabbitats/rabbitats-issue-A.png" alt="screenshot of the rabbitat website for issue one"></img>
@@ -219,7 +221,7 @@
           </div>
         </div>
         <!-- bottom half -->
-        <div id = "rabbitats-first-issue-bottom"> <!-- for the two images on the bottom-->
+        <div id = "rabbitats-first-issue-bottom" class = "grid-area"> <!-- for the two images on the bottom-->
           <div class = "image-with-caption">
             <img id = "rabbitats-issue-A1" src="resources/rabbitats/rabbitats-issue-A1.png" alt="screenshot of the rabbitat website for issue one"></img>
             <figcaption>Content located right below the hero section on the home page, only pages to volunteer opportunities, adoptions, and fostering are 
@@ -234,17 +236,17 @@
       </div>
 
       <!-- second issue-->
-      <div id = "rabbitats-second-issue">
+      <div id = "rabbitats-second-issue" class = "grid-area">
         <div class = "image-with-caption">
           <video id = "rabbitats-issue-B-video" controls autoplay>
             <source src="resources/rabbitats/rabbitats - old education page.mov" type="video/mp4">
           </video>
           <figcaption>Nearly all educational content are packed into a sigular PDF file, making pinpointing specific informaiton difficult.</figcaption>
         </div>
-        <div id="rabbitats-second-issue-content">
+        <div id="rabbitats-second-issue-content" class = "grid-area">
           <span class="number-title">02</span>
           <div> <!-- for the text-->
-            <h4>User-unfriendly education page</h4>
+            <h2>User-unfriendly education page</h2>
             <p>On Rabbitat’s education page, the educational content comes in a pdf file format, requiring users to exit the website and read 
               through 50 pages of hard to digest content. The page also includes a singular video from Rabbitat’s YouTube channel and two 
               downloadable pdf files.</p>
@@ -289,19 +291,19 @@
       <h1>Finalized Improvements </h1>
       <!-- first improvement-->
       <div id = "rabbitats-first-improvement" class="sub-section">
-        <h4>
-          <span class="number-title">01</span> 
-          <span>Modifying certain elements of the webpage and reinventing the hierarchy to make the education section stand out more for users, encouraging further exploration.</span>
-        </h4>
+        <div class = "numbered-title-section">
+          <span class="number-title">01</span>
+          <h2>Modifying certain elements of the webpage and reinventing the hierarchy to make the education section stand out more for users, encouraging further exploration.</h2>
+        </div>
         <img id = "rabbitats-improvement-A" src="resources/rabbitats/rabbitats-finalized-improvements-A.png" alt="first improrvement"></img>
       </div>
 
       <!-- second improvement-->
       <div id = "rabbitats-second-improvement">
-        <h4>
-          <span class="number-title">02</span> 
-          <span>Organizing the education materials on the page to make information easily accessible and well-structured.</span>
-        </h4>
+        <div class = "numbered-title-section">
+          <span class="number-title">02</span>
+          <h2>Organizing the education materials on the page to make information easily accessible and well-structured.</h2>
+        </div>
 
         <div id="rabbitats-improvement-B">
           <div>
