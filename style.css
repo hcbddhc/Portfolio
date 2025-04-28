@@ -11,7 +11,7 @@
 /* ----------------------- PAGE and SECTION Related ---------------------------*/
 body{
   background-color: #222222;
-  color: white;
+  color: #CECECE;
   font-family: 'Roboto Condensed', sans-serif;
   margin: 0;
   padding: 0;
@@ -49,7 +49,7 @@ section {
 }
 
 .highlight-area { /*area where the background is light grey and covers the entire width */
-  margin-top: 3rem;
+  margin-top: 2rem;
   margin-left: -19.5%;
   margin-right: -19.5%;
   padding-left: 19.5%;
@@ -63,7 +63,6 @@ section {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 1rem;
-  margin-bottom: 1rem;
 }
 
 .flex-area{ /* for the list of items within the project brief for each project page */
@@ -78,10 +77,16 @@ section {
 }
 
 @media only screen and (max-width: 768px) { /* for a smaller screen */
+  
+  .sub-section {
+    margin-bottom: 1.5rem;
+  }
+  .section {
+    margin-bottom: 3rem;
+  }
   .flex-area {
     display: block; 
   }
-  
   .grid-area{
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -111,21 +116,21 @@ h1 {
   font-family: 'Dosis', serif;
   justify-self: left;
 	position: relative;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.36px;; /*calculated via chatgpt */
   line-height: 1.08;
-  color: white;
+  color: #F5F5F5;
   margin-top: 2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   width: fit-content;
 }
 
 h1:after {
 	position: absolute;
 	content: "";
-	height: 3px;
+	height: 2px;
 	width: 100vw;
   bottom: -0.1rem; /* move the line lower */
 	right: 0;
@@ -134,12 +139,13 @@ h1:after {
 
 h2 {
   font-family: 'Dosis', serif;
+  color: #f5f5f5;
   font-size: 28px;
   font-weight: 400;
   letter-spacing: -0.52px;
   line-height: 1.2;
   margin-top: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 h3 {
@@ -163,7 +169,6 @@ ul {
 }
 
 p, label, li{
-  width: 97%;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: -0.2px;
@@ -182,9 +187,13 @@ li + li {
   margin-top: 0.25rem;
 }
 
+p + div, div + p{
+  margin-top: 1rem;
+}
+
 strong{
   font-family: 'Quicksand';
-  font-weight: bold;
+  font-weight: 500;
   color: #C22022;
 }
 
@@ -252,26 +261,21 @@ input[type="text"] {
 }
 
 @media only screen and (max-width: 768px) {
-  /*
   h1 {
-    font-size: 36px;
-  }
-  h2 {
-    font-size: 27px;
-  }
-  h3 {
     font-size: 24px;
   }
-  h4 {
+  h2 {
     font-size: 18px;
   }
-  p, label, li{
-    font-size: 13px;
+  h3 {
+    font-size: 11px;
   }
-  figcaption {
+  p, label, li{
     font-size: 12px;
   }
-    */
+  figcaption {
+    font-size: 10px;
+  }
 }
 
 /* ----------------------- CUSTOM BASIC ELEMENT Related ---------------------------*/
@@ -301,17 +305,26 @@ input[type="text"] {
   position: relative;
   display: inline-block;
   text-align: center;
+  padding-bottom: 0.6rem;
 }
 
 .center-heading-with-line::after {
   content: '';
   position: absolute;
-  bottom: -0.3em;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   width: 25%; /* 1/5 of the heading width */
   border-bottom: 2px solid #c22022;
 }
+
+@media only screen and (max-width: 768px) {
+  .number-title {
+    font-size: 26px;
+    margin-right: 0rem;
+  }
+}
+
 /* ----------------------- NAVIGATION BAR Related ---------------------------*/
 
 #navigation-wrapper {
@@ -328,8 +341,7 @@ input[type="text"] {
   "logo . . links";
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 2rem;
-  padding-bottom: 1rem;
+  margin-top: 1.5rem;
 }
 
 #logo {
@@ -401,14 +413,14 @@ input[type="text"] {
   top: 12%; /* Stay at the top */
   right: 1rem;
   overflow-x: hidden; /* Disable horizontal scroll */
-  margin-top: 2rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
-  margin-right: 3rem;
+  margin-right: 2rem;
 }
 
 #side-bar-logo-list {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (max-width: 1024px) {
@@ -424,9 +436,9 @@ input[type="text"] {
 }
 
 .side-bar-line{
-  border-left: 3px solid #C22022;
-  margin-left: 1.1rem;
-  height: 23%;
+  border-left: 2px solid #C22022;
+  margin-left: 1.15rem;
+  height: 20%;
 }
 
 #side-bar a{
@@ -666,12 +678,13 @@ input[type="text"] {
   align-items: center;
 }
 
+/*
 #macaron-first-role-content, #macaron-second-role, #macaron-third-role-content {
   grid-template-columns: auto 1fr;
   gap: 1rem; 
   align-items: start; 
 }
-
+*/
 #macaron-second-role-bottom{
   grid-template-columns: 1fr 1.5fr;
   align-items: top;
@@ -725,6 +738,87 @@ input[type="text"] {
   text-align: center;
 }
 
+#closetshare-target-audience {
+  text-align: center;
+}
+
+#closetshare-my-contribution {
+  text-align: center;
+}
+
+#closetshare-concept-ideation {
+  grid-template-columns: 1.4fr 1fr;
+}
+
+#closetshare-sketches-content{
+  margin-bottom: 1rem;
+}
+
+#closetshare-sketches-images {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#closetshare-sketches-images figcaption{
+  text-align: left;
+}
+
+#closetshare-mockup-images{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#closetshare-mockup-B {
+  width: 50%;
+}
+
+#closetshare-mockup-images figcaption{
+  text-align: left;
+}
+
+#closetshare-architecture-list {
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  height: 100%;
+}
+
+#closetshare-architecture-list div{
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  text-align: center;
+  margin-top: 0;
+  padding: 2rem 0.5rem;
+}
+
+#closetshare-architecture-list img {
+  margin-bottom: 1rem;
+}
+
+#closetshare-reflection-B-content{
+  grid-template-columns: 3fr 1.5fr 1fr;
+}
+
+#closetshare-breakdown-list{
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+#closetshare-breakdown-list .closetshare-breakdown-element:nth-child(2) {
+  margin-top: 10rem; 
+}
+
+#closetshare-breakdown-list .closetshare-breakdown-element:nth-child(3){
+  margin-top: -9rem;
+}
+
+#closetshare-breakdown-list .closetshare-breakdown-element:nth-child(5){
+  margin-top: -14rem;
+}
+
 /* mobiles */
 @media only screen and (max-width: 768px) {
   /* --- RABBITATS --- */
@@ -745,9 +839,22 @@ input[type="text"] {
   .macaron-features,
 
   /* --- CRAFTCONNECT --- */
-  #craftconnect-topic-context {
+  #craftconnect-topic-context,
+
+  /* --- CLOSETSHARE   --- */
+  #closetshare-concept-ideation,
+  #closetshare-architecture-list,
+  #closetshare-reflection-B-content,
+  #closetshare-breakdown-list{
     display: grid;
     grid-template-columns: 1fr !important;
+    gap: 2rem;
+  }
+
+  #closetshare-breakdown-list .closetshare-breakdown-element:nth-child(2),
+  #closetshare-breakdown-list .closetshare-breakdown-element:nth-child(3),
+  #closetshare-breakdown-list .closetshare-breakdown-element:nth-child(5) {
+    margin-top: 0 !important;
   }
 }
 
@@ -760,28 +867,30 @@ img {
 
 .image-with-frame { /*add lighter grey area around image for content */
   align-self: flex-start;
-  padding: 0.8rem;
+  padding: 0.5rem;
   background-color: #2C2C2C;
   border-radius: 0.5rem;
-  margin-top: 1rem;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
 }
 
 .image-with-caption { /*add lighter grey area around image for content */
   align-self: flex-start;
-  padding: 0.8rem;
+  padding: 0.5rem;
   background-color: #2C2C2C;
   border-radius: 0.5rem;
   display: inline-block; 
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Drop shadow */
 }
 
-p + .image-with-caption, p + .image-with-frame {
+image-with-frame + .image-with-caption,
+.image-with-caption + .image-with-frame,
+.image-with-caption + .image-with-caption,
+.image-with-frame + .image-with-frame {
   margin-top: 1rem;
 }
 
 .image-with-caption figcaption {
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
 }
 
 .image-with-caption-horizontal { /* in cases where the caption is on the right or left side of the image */
@@ -980,6 +1089,24 @@ p + .image-with-caption, p + .image-with-frame {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#closetshare-architecture-A img{
+  width: 50%;
+}
+#closetshare-architecture-B img{
+  width: 75%;
+}
+#closetshare-architecture-C img{
+  width: 30%;
+}
+#closetshare-breakdown-list .closetshare-breakdown-element .image-with-frame {
+  width: 80%;
+}
+
+#closetshare-breakdown-list .closetshare-breakdown-element .image-with-frame video{
+  width: 100%;
+  border-radius: 3.6rem;
 }
 
 /*----------- CRAFTCONNECT -----------*/
