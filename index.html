@@ -19,7 +19,7 @@
         <nav id="navigation">
           <h2 id="logo"><a href="index.html"><em>Howard</em> Chang</a></h2>
           <div class="navigation-items">
-            <a href="index.html">My Works</a>
+            <a href="index.html#projects">My Works</a>
             <a href="index.html">About</a>
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Resume</a>
           </div>
@@ -40,73 +40,69 @@
 
     <div id = "content">
 <!--------------------------INTRODUCTION //-------------------------------------------------->
-      <section id = "introduction">
-        <div id = "introduction-left">
-          <h1>I’m Howard, aspiring <em>UX/UI designer</em> and <em>web developer</em></h1>
-          <p>
-            Studying in the SIAT program at Simon Fraser University. The act of “creating” itself has been my long-time passion, many of my achievements originating from this idea of creating something new. 
-            <br><br>
-            With my past background in programming and backend development, and my current pursuit for graphic design and user experience design, I aim to deliver not just aesthetic pleasing and functional artifacts, but also an experience that is satisfying and accessible for users.
-            <br><br>
-            Based in <em>Vancouver, BC</em>.
-          </p>
-        </div>
-        <div id = "introduction-right">
-          <img id = "profile-picture" class = "image-with-frame" src="resources/picture.png" alt="howard's picture"></img>
-        </div>
+      <section id = "introduction" class = "grid-area">
+          <div id = "introduction-left">
+            <h1>I’m Howard, aspiring <em>UX/UI designer</em> and <em>web developer</em></h1>
+            <p>
+              Studying in the SIAT program at Simon Fraser University. The act of “creating” itself has been my long-time passion, many of my achievements originating from this idea of creating something new. 
+              <br><br>
+              With my past background in programming and backend development, and my current pursuit for graphic design and user experience design, I aim to deliver not just aesthetic pleasing and functional artifacts, but also an experience that is satisfying and accessible for users.
+              <br><br>
+              Based in <em>Vancouver, BC</em>.
+            </p>
+          </div>
+          <div id = "introduction-right">
+            <img id = "profile-picture" class = "image-with-frame" src="resources/picture.png" alt="howard's picture"></img>
+          </div>
       </section>
 
 <!--------------------------PROJECTS //-------------------------------------------------->
       <section id = "projects">
         <h1>Featured Projects </h1>
         <div id = "project-list">
-          <div class = "project" id = "closetshare">
-            <img id = "closet-picture" src="resources/closetshare.png" alt="closetshare title slide"></img>
-            <div class = "project-right">
-              <div class = "project-title">
+          <a href="javascript:void(0);" class="project" id="closetshare" onclick="toClosetShare()">
+            <img id="closet-picture" src="resources/closetshare.png" alt="closetshare title slide">
+            <div class="project-right">
+              <div class="project-title">
                 <h2>ClosetShare</h2>
                 <p>/2024</p>
               </div>
-              <p>A cross-platform social app developed using React Native that helps and encougages users to improve their own fashion sense, find their own unique style, and form fashion communities.</p>
-              <button class = "button" onclick="toClosetShare()"> Explore </button>
+              <p>A cross-platform social app developed using React Native that helps and encourages users to improve their own fashion sense, find their own unique style, and form fashion communities.</p>
             </div>
-          </div> <!-- closetshare -->
+          </a> <!--closetshare-->
 
-          <div class = "project" id = "craftconnect">
-            <img id = "craft-picture" src="resources/craftconnect.png" alt="craftconnect title slide"></img>
-            <div class = "project-right">
-              <div class = "project-title">
+          <a href="javascript:void(0);" class="project" id="craftconnect" onclick="toCraftConnect()">
+            <img id="craft-picture" src="resources/craftconnect.png" alt="craftconnect title slide">
+            <div class="project-right">
+              <div class="project-title">
                 <h2>CraftConnect</h2>
                 <p>/2024</p>
               </div>
               <p>Design aim to help artisans find and retain their unique customer base, a web platform concept that allows handcraft consumers to discover and connect with local artisans they like.</p>
-              <button class = "button" onclick="toCraftConnect()"> Explore </button>
             </div>
-          </div> <!-- closetshare -->
-
-          <div class = "project" id = "rabbitat">
-            <img id = "rabbitat-picture" src="resources/rabbitat.png" alt="rabbitat poster picture"></img>
-            <div class = "project-right">
-              <div class = "project-title">
+          </a> <!-- craftconnect -->
+          
+          <a href="javascript:void(0);" class="project" id="rabbitat" onclick="toRabbitat()">
+            <img id="rabbitat-picture" src="resources/rabbitat.png" alt="rabbitat poster picture">
+            <div class="project-right">
+              <div class="project-title">
                 <h2>Rabbitats Website Redesign</h2>
                 <p>/2023</p>
               </div>
               <p>Strategy to improve the organization website for the rabbit rescue society Rabbitats. This project demonstrates proper problem framing given constraints, and proper brainstormed solutions based on user and client research. As well as slide deck design.</p>
-              <button class = "button" onclick="toRabbitat()"> Explore </button>
             </div>
-          </div> <!-- rabbitat -->
-
-          <div class = "project" id = "macaron">
-            <img id = "macaron-picture" src="resources/macaron.png" alt="screenshot of the macaron website"></img>
-            <div class = "project-right">
-              <div class = "project-title">
+          </a> <!-- rabbitat -->
+          
+          <a href="javascript:void(0);" class="project" id="macaron" onclick="toMacaron()">
+            <img id="macaron-picture" src="resources/macaron.png" alt="screenshot of the macaron website">
+            <div class="project-right">
+              <div class="project-title">
                 <h2>Macaron</h2>
                 <p>/2024</p>
               </div>
-              <p>A brand and website created from scratch. The website aim to provide a seamingless and satisfying macaron purchase experience, while preserving its visual identity. Lastest standout project where I've put my programming skills into use</p>
-              <button class = "button" onclick="toMacaron()"> Explore </button>
+              <p>A brand and website created from scratch. The website aim to provide a seamingless and satisfying macaron purchase experience, while preserving its visual identity. Latest standout project where I've put my programming skills into use.</p>
             </div>
-          </div> <!-- macaron -->
+          </a> <!-- macaron -->
 
         </div> <!-- Project list -->
       </section> <!-- Project SECTION -->

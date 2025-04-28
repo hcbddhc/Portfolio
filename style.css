@@ -40,12 +40,12 @@ footer {
 section {
   margin-left: 14%;
   margin-right: 14%;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
 }
 
 .sub-section { /*for every sub section within section, used for spacing and alignment purposes 
                 DON'T USE FOR THE LAST SUB-SECTION FOR THE SECTION TO AVOID EXTRA MARGIN (we want only 6rem)*/
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .highlight-area { /*area where the background is light grey and covers the entire width */
@@ -79,10 +79,10 @@ section {
 @media only screen and (max-width: 768px) { /* for a smaller screen */
   
   .sub-section {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
   .section {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
   }
   .flex-area {
     display: block; 
@@ -210,7 +210,7 @@ figcaption{
 
 a {
   text-decoration: none;
-  color: #C22022;
+  color: #CECECE;
 }
 
 a:hover{
@@ -231,7 +231,7 @@ em {
   margin-top: 0.5rem;
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
   transition: border-color 0.3s ease;
 }
 
@@ -381,6 +381,7 @@ input[type="text"] {
 
 @media only screen and (max-width: 768px) {
   #navigation {
+    margin-bottom: 1rem;
     grid-template-columns: 1fr;
     grid-template-areas:
   "logo"
@@ -449,53 +450,43 @@ input[type="text"] {
 
 /* ----------------------- HOME PAGE - INTRODUCTION SECTION SPECIFIC ---------------------------*/
 #introduction {
-  display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 5rem;
 }
 
 @media only screen and (max-width: 768px) {
   #introduction {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
-
-#introduction-left {
-  margin-right: 5rem;
-}
-
-#introduction-right {
-   justify-self: end;
-}
-
 /* ----------------------- HOME PAGE - PROJECT SECTION SPECIFIC ---------------------------*/
 .project {
   background-color: #2C2C2C;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   display: grid;
   grid-template-columns: 40% 60%;
+  gap: 1rem;
   padding: 1rem;
   margin-bottom: 2rem;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
 }
 
+
 .project:hover{
   border-color: #C22022;
 }
 
-@media only screen and (max-width: 768px) {
-  .project {
-    grid-template-columns: 1fr;
-  }
-}
-
 .project-right {
-  margin-left: 1rem;
+  position: relative;
+  padding-right: 1rem;
 }
 
 .project-right button {
-  margin-right: 0rem;
-  float: right;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
 }
 
 .project h2 {
@@ -504,20 +495,33 @@ input[type="text"] {
 
 .project img{
   width: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .project-title { /*for home screen project section h2 */
   display: flex;
   border-bottom: 3px solid #C22022;
-  width: 100%;
+  align-items: end;
 }
 
 .project-title p{
   margin-left: auto;
   margin-bottom: 0;
   width: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+
+
+  .project img {
+    margin-bottom: 0;
+  }
+
+  .project-right {
+    padding-right: 0;
+  }
 }
 
 /* ----------------------- FOOTER SECTION SPECIFIC ---------------------------*/
@@ -633,8 +637,7 @@ input[type="text"] {
 
 #rabbitats-first-issue-bottom{
   grid-template-columns: 2fr 1fr;
-  align-items: flex-end;
-  margin-top: -1.5rem;
+  align-items: end;
 }
 
 
@@ -831,11 +834,8 @@ input[type="text"] {
   /* --- MACARON --- */
   #macaron-brand-description,
   #macaron-first-role,
-  #macaron-first-role-content,
-  #macaron-second-role,
   #macaron-second-role-bottom,
   #macaron-third-role,
-  #macaron-third-role-content,
   .macaron-features,
 
   /* --- CRAFTCONNECT --- */
