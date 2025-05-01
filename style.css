@@ -234,7 +234,7 @@ em {
   text-align: center;
   text-decoration: none;
   font-size: 18px;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.2s ease;
 }
 
 .button:hover, .button:focus{
@@ -472,7 +472,7 @@ input[type="text"] {
   padding: 1rem;
   margin-bottom: 2rem;
   border: 2px solid transparent;
-  transition: border-color 0.3s ease;
+  transition: border-color 0.2s ease;
 }
 
 
@@ -501,7 +501,7 @@ input[type="text"] {
 
 .project-title { /*for home screen project section h2 */
   display: flex;
-  border-bottom: 3px solid #C22022;
+  border-bottom: 2px solid #C22022;
   align-items: end;
 }
 
@@ -913,6 +913,30 @@ image-with-frame + .image-with-caption,
   margin-right: 2rem;
   width: 2rem;
   height: 2rem;
+  display: inline-block;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-logo::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.social-logo:hover::after {
+  opacity: 1;
 }
 
 #side-bar-logo-list .social-logo {
@@ -921,62 +945,45 @@ image-with-frame + .image-with-caption,
 }
 
 #linkedin-logo {
-  display: inline-block; /* make sure there's room for the element for pic to show up */
   background-image: url('resources/linkedin.png');
-  background-size: cover;
 }
 
-#linkedin-logo:hover{
+#linkedin-logo::after {
   background-image: url('resources/linkedin_hovered.png');
 }
 
 #linkedin-logo-side {
-  display: inline-block; /* make sure there's room for the element for pic to show up */
   background-image: url('resources/linkedin_logo_side.png');
-  background-size: cover;
 }
-
-#linkedin-logo-side:hover {
+#linkedin-logo-side::after {
   background-image: url('resources/linkedin_logo_side_hovered.png');
 }
 
 #instagram-logo {
-  display: inline-block; /* make sure there's room for the element for pic to show up */
   background-image: url('resources/instagram.png');
-  background-size: cover;
 }
-
-#instagram-logo:hover{
+#instagram-logo::after {
   background-image: url('resources/instagram_hovered.png');
 }
 
 #instagram-logo-side {
-  display: inline-block; /* make sure there's room for the element for pic to show up */
   background-image: url('resources/instagram_logo_side.png');
-  background-size: cover;
 }
-
-#instagram-logo-side:hover {
+#instagram-logo-side::after {
   background-image: url('resources/instagram_logo_side_hovered.png');
 }
 
 #facebook-logo {
-  display: inline-block; /* make sure there's room for the element for pic to show up */
   background-image: url('resources/facebook.png');
-  background-size: cover;
 }
-
-#facebook-logo:hover {
+#facebook-logo::after {
   background-image: url('resources/facebook_hovered.png');
 }
 
 #facebook-logo-side {
-  display: inline-block; /* make sure there's room for the element for pic to show up */
   background-image: url('resources/facebook_logo_side.png');
-  background-size: cover;
 }
-
-#facebook-logo-side:hover {
+#facebook-logo-side::after {
   background-image: url('resources/facebook_logo_side_hovered.png');
 }
 
