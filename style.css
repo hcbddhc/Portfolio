@@ -891,7 +891,15 @@ input[type="text"] {
   #closetshare-concept-ideation,
   #closetshare-architecture-list,
   #closetshare-reflection-B-content,
-  #closetshare-breakdown-list{
+  #closetshare-breakdown-list
+  
+  /* --- WEALTHSIMPLE  --- */
+  #wealthsimple-design-overview,
+  #wealthsimple-problem-space,
+  #wealthsimple-design-platform,
+  #wealthsimple-research div,
+  #wealthsimple-second-solution-images, 
+  #wealthsimple-third-solution-images {
     display: grid;
     grid-template-columns: 1fr !important;
     gap: 2rem;
