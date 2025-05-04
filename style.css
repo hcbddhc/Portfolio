@@ -42,6 +42,15 @@ section {
   margin-left: 14%;
   margin-right: 14%;
   margin-bottom: 4rem;
+  opacity: 0;
+  transform: translateY(25px);
+  transition: transform 0.6s ease-out, opacity 0.3s ease-out;
+}
+
+/* for animation, javascript will read this */
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .sub-section { /*for every sub section within section, used for spacing and alignment purposes 
@@ -80,7 +89,7 @@ section {
 @media only screen and (max-width: 768px) { /* for a smaller screen */
   
   .sub-section {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
   .section {
     margin-bottom: 3rem;
@@ -98,8 +107,8 @@ section {
 
 @media (min-width: 1600px) {  /*for a larger screen */
   section {
-      margin-left: 20%;
-      margin-right: 20%;
+      margin-left: 22%;
+      margin-right: 22%;
   }
   #footer-content {
     margin-left: 20%;
@@ -119,10 +128,10 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   justify-self: left;
 	position: relative;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: 500;
   text-transform: uppercase;
-  letter-spacing: 0.36px;; /*calculated via chatgpt */
+  letter-spacing: 0.4px;; /*calculated via chatgpt */
   line-height: 1.08;
   color: #F5F5F5;
   margin-top: 2rem;
@@ -143,7 +152,7 @@ h1:after {
 h2 {
   font-family: 'Dosis', serif;
   color: #f5f5f5;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
   letter-spacing: 0.3px;
   line-height: 1.2;
@@ -265,10 +274,10 @@ input[type="text"] {
 
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: 24px;
+    font-size: 22px;
   }
   h2 {
-    font-size: 18px;
+    font-size: 16px;
   }
   h3 {
     font-size: 11px;
@@ -629,7 +638,7 @@ input[type="text"] {
 
 @media only screen and (max-width: 768px)  { 
   .rabbitats-share-prototype-option{
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -709,7 +718,7 @@ input[type="text"] {
 /* ----------------------- PROJECT PAGE - CRAFTCONNECT SPECIFIC ---------------------------*/
 #craftconnect-topic-context {
   grid-template-columns: 2fr 1fr;
-  align-items: center;
+  text-align: center;
 }
 
 #craftconnect-overview-screens {
@@ -719,6 +728,18 @@ input[type="text"] {
 
 #craftconnect-initial-problem-framing{
   text-align: center;
+}
+
+#craftconnect-journey-maps {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#craftconnect-journey-map-market {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #craftconnect-initial-ideas{
@@ -778,6 +799,7 @@ input[type="text"] {
 
 #closetshare-mockup-B {
   width: 50%;
+  margin-top: 1rem;
 }
 
 #closetshare-mockup-images figcaption{
@@ -804,7 +826,8 @@ input[type="text"] {
 }
 
 #closetshare-reflection-B-content{
-  grid-template-columns: 3fr 1.5fr 1fr;
+  grid-template-columns: 3fr 1fr 0.2fr;
+  gap: 5rem;
 }
 
 #closetshare-breakdown-list{
@@ -887,7 +910,7 @@ input[type="text"] {
   margin-right: auto;
 }
 
-/* mobiles */
+/* mobile */
 @media only screen and (max-width: 768px) {
   /* --- RABBITATS --- */
   #rabbitats-share-prototype,
@@ -920,7 +943,11 @@ input[type="text"] {
   #wealthsimple-third-solution-images {
     display: grid;
     grid-template-columns: 1fr !important;
-    gap: 2rem;
+    gap: 1.5rem;
+  }
+
+  #macaron-second-role-top {
+    margin-bottom: 1rem;
   }
 
   #closetshare-breakdown-list .closetshare-breakdown-element:nth-child(2),
@@ -929,7 +956,46 @@ input[type="text"] {
     margin-top: 0 !important;
   }
 
+  #closetshare-architecture-list div {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   /* For these sections, ensure image alwasy come after title and text */
+  #rabbitats-second-issue {
+    display: flex;
+    flex-direction: column;
+  }
+  #rabbitats-second-issue .numbered-title-section {
+    order: 1;
+  }
+  #rabbitats-second-issue .image-with-caption {
+    order: 2;
+  }
+
+  #macaron-first-role{
+    display: flex;
+    flex-direction: column;
+  }
+  #macaron-first-role #macaron-first-role-content {
+    order: 1;
+  }
+  #macaron-first-role .image-with-caption {
+    order: 2;
+  }
+
+  #macaron-third-role{
+    display: flex;
+    flex-direction: column;
+  }
+  #macaron-third-role #macaron-third-role-content {
+    order: 1;
+  }
+  #macaron-third-role .image-with-caption {
+    order: 2;
+  }
+
   .craftconnect-feature {
     display: flex;
     flex-direction: column;
@@ -946,13 +1012,14 @@ input[type="text"] {
     flex-direction: column;
   }
   #wealthsimple-research > div:nth-child(odd), #wealthsimple-research > div:nth-child(even) {
-    gap: 1rem;
+    gap: 1.5rem;
   }
-  .wealthsimple-research-element .image-with-caption {
+
+  .wealthsimple-research-element .image-with-frame, .wealthsimple-research-element .image-with-caption {
     order: 2; /* Always comes after content on mobile */
-  }
-  .wealthsimple-research-element .image-with-frame {
-    order: 2; /* Always comes after content on mobile */
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .wealthsimple-research-element .numbered-title-section {
     order: 1;
@@ -1080,6 +1147,13 @@ img {
   background-image: url('resources/facebook_logo_side_hovered.png');
 }
 
+@media only screen and (max-width: 768px)  { 
+  .image-with-caption figcaption {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+}
+
 /* ----------- HOME PAGE -----------*/
 #profile-picture {
   width: 100%;
@@ -1148,7 +1222,7 @@ img {
 
 
 #rabbitats-improvement-A{
-  width: 100%;
+  padding: 2%;
 }
 
 #rabbitats-improvement-B{
@@ -1173,17 +1247,16 @@ img {
 /* ----------- MACARON -----------*/
 #macaron-final-website-highlight-image-container {
   background-image: url("resources/macaron/macaron-website-hightlight.png");
-  background-size: cover; /* Ensures the image covers the entire div */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents tiling */
-  
-  width: 100vw; /* Makes the div full width */
-  margin-left: calc(-50vw + 50%); /* Adjusts for section margins */
-  height: 100vh; /* Adjust based on your design */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 
-  /* Responsive height adjustments */
-  min-height: 1173px; /* Prevents it from getting too small on mobile */
-  max-height: 2346px; /* Ensures it doesn't become too large on desktops */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  
+  /* Use aspect-ratio to automatically set height */
+  aspect-ratio: 1440 / 1173; /* replace with your image's actual width/height */
+
 }
 
 #macaron-mascot-container{ /*add lighter grey area around image for content */
@@ -1220,12 +1293,13 @@ img {
   width: 30%;
 }
 #closetshare-breakdown-list .closetshare-breakdown-element .image-with-frame {
-  width: 80%;
+  width: 55%;
 }
 
 #closetshare-breakdown-list .closetshare-breakdown-element .image-with-frame video{
   width: 100%;
-  border-radius: 3.6rem;
+  border-radius: 17%;
+
 }
 
 /*----------- CRAFTCONNECT -----------*/
@@ -1238,12 +1312,4 @@ img {
   width: 100%;
   height: auto;
   display: block;
-}
-
-/* ----------------------- STYLE GUIDE Related ---------------------------*/
-.area img{
-  width: 80%;
-}
-#style-guide-header {
-  text-align: center;
 }

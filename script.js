@@ -27,11 +27,26 @@ function toMacaronProject() {
             window.location.href = "https://github.com/siimka113/PO2";
         } 
 
-// Add background to navigation when the user scrolls down (remove background when scroll to the top)
-        window.onscroll = function() {
-            if(window.scrollY!=0){
-                document.getElementById("navigation-wrapper").style.backgroundColor = "#1e1e1e";
-            }else if(window.scrollY==0){
-                document.getElementById("navigation-wrapper").style.backgroundColor = "#222222";
-            }
-        };
+//for navigation bar scroll color change
+window.onscroll = function() {
+    if(window.scrollY!=0){
+        document.getElementById("navigation-wrapper").style.backgroundColor = "#1e1e1e";
+    }else if(window.scrollY==0){
+        document.getElementById("navigation-wrapper").style.backgroundColor = "#222222";
+    }
+};
+
+//for section slide up animation
+function revealSections() {
+    const sections = document.querySelectorAll("section");
+
+    sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight - 100) {
+        section.classList.add("visible");
+        }
+    });
+    }
+
+    window.addEventListener("scroll", revealSections);
+    window.addEventListener("load", revealSections);
