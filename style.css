@@ -482,6 +482,8 @@ input[type="text"] {
 }
 
 .project-right {
+  display: flex;
+  flex-direction: column;
   position: relative;
   padding-right: 1rem;
 }
@@ -494,10 +496,6 @@ input[type="text"] {
 
 .project h2 {
   margin-bottom: 0;
-}
-
-.project img{
-  width: 100%;
 }
 
 .project-title { /*for home screen project section h2 */
@@ -1085,6 +1083,24 @@ img {
 /* ----------- HOME PAGE -----------*/
 #profile-picture {
   width: 100%;
+}
+
+.project-image {
+  width: 100%;
+}
+
+.project-select-icon {
+  margin-left: auto;
+  margin-top: auto;
+  width: 3rem;
+  height: 3rem;
+  background-image: url('resources/project unselected.png');
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease-in-out;
+}
+.project:hover .project-select-icon {
+  background-image: url('resources/project\ selected.png');
 }
 
 /* ----------- PROJECT GENERAL -----------*/
