@@ -1,7 +1,8 @@
 /*fonts
-1. h1 + h2 + h3 + h4: Dosis
-2. body text: Quicksand
-3. buttons + nav: Roboto condensed
+1. h1: Montserrat
+2. h2 + h3: Dosis
+3. body text: Quicksand
+4. buttons + nav: Roboto condensed
 */
 
 * {
@@ -59,12 +60,6 @@ section {
   background-color: #2C2C2C;
 }
 
-.numbered-title-section{
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1rem;
-}
-
 .flex-area{ /* for the list of items within the project brief for each project page */
   display: flex;
   justify-content: space-between;
@@ -76,13 +71,19 @@ section {
   gap: 3rem;
 }
 
+.numbered-title-section{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+
 @media only screen and (max-width: 768px) { /* for a smaller screen */
   
   .sub-section {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .section {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     margin-left: 7%;
     margin-right: 7%;
   }
@@ -115,11 +116,11 @@ section {
 /* ----------------------- BASIC ELEMENT Related ---------------------------*/
 
 h1 {
-  font-family: 'Dosis', serif;
+  font-family: 'Montserrat', sans-serif;
   justify-self: left;
 	position: relative;
   font-size: 32px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.36px;; /*calculated via chatgpt */
   line-height: 1.08;
@@ -144,7 +145,7 @@ h2 {
   color: #f5f5f5;
   font-size: 28px;
   font-weight: 400;
-  letter-spacing: -0.52px;
+  letter-spacing: 0.3px;
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -827,7 +828,10 @@ input[type="text"] {
 
 /* ----------------------- PROJECT PAGE - WEALTHSIMPLE SPECIFIC ---------------------------*/
 #wealthsimple-design-overview {
+  margin-left: auto;
+  margin-right: auto;
   grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
   gap: 2rem;
 }
 #wealthsimple-design-overview .image-with-frame{
@@ -853,19 +857,36 @@ input[type="text"] {
 
 #wealthsimple-research > div:nth-child(odd) {
   grid-template-columns: 2fr 1fr;
+  gap: 5rem;
 }
 
 #wealthsimple-research > div:nth-child(even) {
   grid-template-columns: 1fr 2fr;
+  gap: 5rem;
 }
 
 .wealthsimple-solution-content {
   margin-bottom: 2rem;
 }
 
+#wealthsimple-first-solution-images {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #wealthsimple-second-solution-images, #wealthsimple-third-solution-images {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1rem;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#wealthsimple-fourth-solution-images {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* mobiles */
@@ -891,13 +912,12 @@ input[type="text"] {
   #closetshare-concept-ideation,
   #closetshare-architecture-list,
   #closetshare-reflection-B-content,
-  #closetshare-breakdown-list
+  #closetshare-breakdown-list,
   
   /* --- WEALTHSIMPLE  --- */
   #wealthsimple-design-overview,
   #wealthsimple-problem-space,
   #wealthsimple-design-platform,
-  #wealthsimple-research div,
   #wealthsimple-second-solution-images, 
   #wealthsimple-third-solution-images {
     display: grid;
@@ -909,6 +929,35 @@ input[type="text"] {
   #closetshare-breakdown-list .closetshare-breakdown-element:nth-child(3),
   #closetshare-breakdown-list .closetshare-breakdown-element:nth-child(5) {
     margin-top: 0 !important;
+  }
+
+  /* For these sections, ensure image alwasy come after title and text */
+  .craftconnect-feature {
+    display: flex;
+    flex-direction: column;
+  }
+  .craftconnect-feature .numbered-title-section {
+    order: 1;
+  }
+  .craftconnect-feature .craftconnect-feature-video {
+    order: 2;
+  }
+
+  .wealthsimple-research-element {
+    display: flex;
+    flex-direction: column;
+  }
+  #wealthsimple-research > div:nth-child(odd), #wealthsimple-research > div:nth-child(even) {
+    gap: 1rem;
+  }
+  .wealthsimple-research-element .image-with-caption {
+    order: 2; /* Always comes after content on mobile */
+  }
+  .wealthsimple-research-element .image-with-frame {
+    order: 2; /* Always comes after content on mobile */
+  }
+  .wealthsimple-research-element .numbered-title-section {
+    order: 1;
   }
 }
 
@@ -1041,12 +1090,11 @@ img {
 /* ----------- PROJECT GENERAL -----------*/
 #project-landing-picture {
   width: 100%;
-  margin-top: 2rem;
 }
 
 @media only screen and (max-width: 768px)  { 
   #project-landing-picture {
-    margin-top: 15%;
+    margin-top: 8%;
   }
 }
 
