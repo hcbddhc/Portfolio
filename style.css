@@ -571,7 +571,7 @@ em {
   #footer-divider-left {
     display: flex;             
     justify-content: space-between;
-    width: 40%;    
+    width: 60%;    
     order: 2;
   }
 }
@@ -722,9 +722,8 @@ em {
   align-items: flex-end;
 }
 
-#rabbitats-mobile-preview div{
-  justify-content: center; 
-  gap: 3rem;
+#rabbitats-mobile-preview-images {
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 #rabbitats-share-prototype{
@@ -734,6 +733,12 @@ em {
 }
 
 @media only screen and (max-width: 768px)  { 
+  #rabbitats-mobile-preview-images {
+    display: flex;
+    flex-direction: column;
+
+  }
+
   .rabbitats-share-prototype-option{
     margin-bottom: 1.5rem;
   }
@@ -1311,9 +1316,6 @@ img {
 
 .rabbitats-web-preview-element {
   width: 90%;
-}
-.rabbitats-mobile-preview-element {
-  width: 25%;
 }
 
 
