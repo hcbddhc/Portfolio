@@ -772,13 +772,13 @@ em {
 
 /* ----------------------- PROJECT PAGE - MACARON SPECIFIC ---------------------------*/
 
-#macaron-share-prototype{
+#macaron-share-prototype, #craftconnect-share-prototype{
   justify-content: center; 
   align-items: center;
   text-align: center;
 }
 
-#macaron-share-prototype h2{
+#macaron-share-prototype h2, #craftconnect-share-prototype h2{
   margin-bottom: 0;
 }
 
@@ -1068,7 +1068,7 @@ em {
     order: 2;
   }
 
-  #macaron-share-prototype{
+  #macaron-share-prototype, #craftconnect-share-prototype{
     gap: 1rem;
   }
   #macaron-first-role{
@@ -1283,6 +1283,13 @@ img {
 }
 .project:hover .project-select-icon {
   background-image: url('resources/project\ selected.png');
+}
+
+@media only screen and (max-width: 768px)  { 
+  .project-select-icon {
+    width: 2rem;
+    height: 2rem;
+  }
 }
 
 /* ----------- PROJECT GENERAL -----------*/
