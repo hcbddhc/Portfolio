@@ -2,7 +2,7 @@
 1. h1: Montserrat
 2. h2 + h3: Dosis
 3. body text: Quicksand
-4. buttons + nav: Roboto condensed
+4. buttons + nav: dosis
 */
 
 * {
@@ -246,7 +246,7 @@ em {
   text-decoration: none;
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
-  transition: border-color background-color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .button:hover, .button:focus{
@@ -1241,18 +1241,18 @@ img {
   background-image: url('resources/instagram_logo_side_hovered.png');
 }
 
-#facebook-logo {
-  background-image: url('resources/facebook.png');
+#github-logo {
+  background-image: url('resources/github.png');
 }
-#facebook-logo::after {
-  background-image: url('resources/facebook_hovered.png');
+#github-logo::after {
+  background-image: url('resources/github-hovered.png');
 }
 
-#facebook-logo-side {
-  background-image: url('resources/facebook_logo_side.png');
+#github-logo-side {
+  background-image: url('resources/github-side.png');
 }
-#facebook-logo-side::after {
-  background-image: url('resources/facebook_logo_side_hovered.png');
+#github-logo-side::after {
+  background-image: url('resources/github-side-hovered.png');
 }
 
 @media only screen and (max-width: 768px)  { 
