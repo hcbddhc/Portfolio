@@ -360,6 +360,7 @@ em {
   color: white;
   margin-left: 2rem;
   margin-right: 2rem;
+  transition: color 0.3s ease;
 }
 
 .navigation-items a:hover, .navigation-items a:focus {
@@ -465,7 +466,7 @@ em {
   padding: 1rem;
   margin-bottom: 2rem;
   border: 2px solid transparent;
-  transition: border-color 0.2s ease;
+  transition: border-color 0.3s ease;
 }
 
 
@@ -571,7 +572,7 @@ em {
   #footer-divider-left {
     display: flex;             
     justify-content: space-between;
-    width: 60%;    
+    width: 50%;    
     order: 2;
   }
 }
@@ -814,6 +815,10 @@ em {
   margin-bottom: 1.5rem;
 }
 
+.macaron-features p{
+  margin-top: 0;
+}
+
 /* ----------------------- PROJECT PAGE - CRAFTCONNECT SPECIFIC ---------------------------*/
 #craftconnect-topic-context {
   grid-template-columns: 2fr 1fr;
@@ -987,6 +992,10 @@ em {
 
 .wealthsimple-solution-content {
   margin-bottom: 2rem;
+}
+
+.wealthsimple-solution-content p {
+  margin-top: 0;
 }
 
 #wealthsimple-first-solution-images {
@@ -1204,7 +1213,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   pointer-events: none;
 }
 
