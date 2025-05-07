@@ -1247,7 +1247,7 @@ img {
 }
 
 #github-logo {
-  background-image: url('resources/github.png');
+  background-image: url('resources/Github.png');
 }
 #github-logo::after {
   background-image: url('resources/github-hovered.png');
