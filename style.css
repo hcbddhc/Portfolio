@@ -446,7 +446,7 @@ em {
 
 /* ----------------------- HOME PAGE - INTRODUCTION SECTION SPECIFIC ---------------------------*/
 #introduction {
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 5rem;
 }
 
@@ -635,6 +635,10 @@ em {
   height: 1em; /* Set the image height to match the font height */
   width: auto; /* Maintain the image's aspect ratio */
   margin-right: 0.5rem;
+}
+
+#about-meeting-you h3{
+  color: white;
 }
 
 @media only screen and (max-width: 768px) {
