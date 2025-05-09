@@ -102,6 +102,10 @@ section.visible {
     margin-left: 5%;
     margin-right: 5%;
   }
+  #footer-content {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   .flex-area {
     display: block; 
   }
@@ -377,6 +381,9 @@ em {
 
 @media only screen and (max-width: 768px) {
   #navigation {
+    margin-top: 0.8rem;
+  }
+  #navigation {
     margin-bottom: 1rem;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -387,6 +394,7 @@ em {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0.3rem;
+    font-size: 20px;
   }
 
   .navigation-items{
@@ -507,6 +515,7 @@ em {
 @media only screen and (max-width: 768px) {
   .project {
     grid-template-columns: 1fr;
+    padding: 0.5rem;
   }
 
 
@@ -573,7 +582,7 @@ em {
   #footer-divider-left {
     display: flex;             
     justify-content: space-between;
-    width: 50%;    
+    width: 40%;    
     order: 2;
   }
 }
