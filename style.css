@@ -176,7 +176,7 @@ h3 {
 ul {
   margin-top: 0;
   margin-bottom: 0;
-  list-style-type: none;
+  list-style-position: inside;
   padding: 0;
   width: 120%;
 }
@@ -258,6 +258,7 @@ em {
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: 22px;
+    margin-bottom: 1rem;
   }
   h2 {
     font-size: 16px;
@@ -1055,10 +1056,14 @@ em {
   #wealthsimple-third-solution-images {
     display: grid;
     grid-template-columns: 1fr !important;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   #macaron-second-role-top {
+    margin-bottom: 1rem;
+  }
+
+  .closetshare-breakdown-element {
     margin-bottom: 1rem;
   }
 
