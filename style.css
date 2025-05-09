@@ -97,10 +97,10 @@ section.visible {
   .sub-section {
     margin-bottom: 2rem;
   }
-  .section {
+  section {
     margin-bottom: 3rem;
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .flex-area {
     display: block; 
