@@ -726,8 +726,12 @@ em {
 }
 
 @media only screen and (max-width: 768px) {
+  #project-landing {
+    margin-bottom: 2rem;
+  }
   #project-page-brief {
     grid-template-columns: 1fr;
+    gap: 2rem;
   }
 }
 
