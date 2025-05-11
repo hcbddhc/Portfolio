@@ -501,15 +501,8 @@ em {
     gap: 1.5rem;
   }
 
-  #introduction-left h1{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   #title-heading::after {
-    margin-left: auto;
-    margin-right: auto;
+   
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
