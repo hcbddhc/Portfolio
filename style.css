@@ -493,7 +493,7 @@ em {
 }
 
 #heading-digital-product-designer h1{
-  font-size: clamp(24px, 6vw, 72px);
+  font-size: clamp(64px, 6vw, 80px);
   letter-spacing: 0.8px;
   text-indent: -0.08em;
   display: block;
