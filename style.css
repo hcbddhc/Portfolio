@@ -151,6 +151,14 @@ h1:after {
   bottom: -0.1rem; /* move the line lower */
 	right: 0;
 	background-color: #C22022;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.6s ease-out;
+}
+
+/* Trigger animation when parent section gets the 'visible' class */
+section.visible h1::after {
+  transform: scaleX(1);
 }
 
 h2 {
@@ -509,6 +517,15 @@ em {
   bottom: 0;
   width: 3px;
   background-color: #C22022;
+  transform: scaleY(0);
+  transform-origin: top;
+  animation: growLine 1s ease-out forwards;
+}
+
+@keyframes growLine {
+  to {
+    transform: scaleY(1);
+  }
 }
 
 #heading-digital-product-designer::before {
@@ -517,6 +534,12 @@ em {
 
 #heading-digital-product-designer::after {
   right: -3rem; /* extend 1rem outside the right edge */
+}
+
+/* Trigger the animation */
+#heading-digital-product-designer.animate-lines::before,
+#heading-digital-product-designer.animate-lines::after {
+  transform: scaleY(1);
 }
 
 #introduction-left p{
