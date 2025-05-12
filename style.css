@@ -486,9 +486,37 @@ em {
   color: #B6B6B6;
 }
 
-#heading-digital-product-designer{
+#heading-digital-product-designer {
+  position: relative;
+  width: fit-content;
+  height:fit-content;
+}
+
+#heading-digital-product-designer h1{
   font-size: clamp(24px, 6vw, 72px);
   letter-spacing: 0.8px;
+  text-indent: -0.08em;
+  display: block;
+  text-align: left;
+  
+}
+
+#heading-digital-product-designer::before,
+#heading-digital-product-designer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #C22022;
+}
+
+#heading-digital-product-designer::before {
+  left: -3rem; /* extend 1rem outside the left edge */
+}
+
+#heading-digital-product-designer::after {
+  right: -3rem; /* extend 1rem outside the right edge */
 }
 
 #introduction-left p{
@@ -520,6 +548,11 @@ em {
   #heading-digital-product-designer{
     font-size: 42px;
   }
+
+  #heading-digital-product-designer::before,
+#heading-digital-product-designer::after {
+  display: none;
+}
 }
 /* ----------------------- HOME PAGE - PROJECT SECTION SPECIFIC ---------------------------*/
 .project {
