@@ -106,7 +106,7 @@
     <section id = "app-overview">
       <h1>App Overview And Video Showcase </h1>
       <div id = "closetshare-overview" class = "grid-area sub-section">
-        <div id = "closetshare-overview-text">
+        <div id = "closetshare-overview-text" class = "paragraph-with-break">
           <p>
             <strong>ClosetShare</strong> is an app that aims to inspire individuals to <strong>enhance their fashion sense and discover their unique 
             style.</strong> It provides a platform for fashion enthusiasts to <strong>connect, share, and engage with local and global fashion communities.</strong>
@@ -146,32 +146,34 @@
     <!--------------------------APP CONCEPT IDEATION //-------------------------------------------------->
     <section id = "app-concept-ideation">
       <h1>App Concept Ideation </h1>
-      <div id = "closetshare-target-audience" class = "sub-section highlight-area">
-        <h2 class = "center-heading-with-line">App Target Audience</h2>
-        <p>
-          People who are unfamiliar with fashion or how to look good, and need inspirations from other people. 
-          People who wants to share their own outfits. Finally, people who dont know where to buy certain outfit pieces.
-        </p>
-      </div>
-
-      <div id = "closetshare-concept-ideation" class = "grid-area sub-section">
-        <div id = "closetshare-concept-ideation-image" class = "image-with-caption">
-          <img src="resources/closetshare/closetshare app architecture.png" alt="ClosetShare's app architecture"></img>
-          <figcaption> App architecture template, created by me during initial app concept ideation</figcaption>
+      <div class = "vertical-stack">
+        <div id = "closetshare-target-audience" class = "highlight-area">
+          <h2 class = "center-heading-with-line">App Target Audience</h2>
+          <p>
+            People who are unfamiliar with fashion or how to look good, and need inspirations from other people. 
+            People who wants to share their own outfits. Finally, people who dont know where to buy certain outfit pieces.
+          </p>
         </div>
-        <div id = "closetshare-concept-ideation-text">
-          <p>
-            As I was seeking appropriate app ideas, I looked to one common question many ask every morning:  <strong>“What do I wear today?”</strong>
-          </p>
-          <p>
-            Using platforms such as Pinterest as inspirations, I came to the app idea of a platform that not only specializes in providing 
-            outfit ideas for its users, but provide tools to help users replicate these outfit ideas.
-
-          </p>
-          <p>
-            To theatrically ensure a consistent flow of outfit ideas, I also proposed outfit sharing to be another primary feature, backed 
-            up by a ranking system as further incentive for engagement.
-          </p>
+  
+        <div id = "closetshare-concept-ideation" class = "grid-area">
+          <div id = "closetshare-concept-ideation-image" class = "image-with-caption">
+            <img src="resources/closetshare/closetshare app architecture.png" alt="ClosetShare's app architecture"></img>
+            <figcaption> App architecture template, created by me during initial app concept ideation</figcaption>
+          </div>
+          <div id = "closetshare-concept-ideation-text" class = "paragraph-with-break">
+            <p>
+              As I was seeking appropriate app ideas, I looked to one common question many ask every morning:  <strong>“What do I wear today?”</strong>
+            </p>
+            <p>
+              Using platforms such as Pinterest as inspirations, I came to the app idea of a platform that not only specializes in providing 
+              outfit ideas for its users, but provide tools to help users replicate these outfit ideas.
+  
+            </p>
+            <p>
+              To theatrically ensure a consistent flow of outfit ideas, I also proposed outfit sharing to be another primary feature, backed 
+              up by a ranking system as further incentive for engagement.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -215,19 +217,21 @@
           <span class="number-title">02</span>
           <div>
             <h2>App Stylings</h2>
-            <p>
-              For the app’s font and color choices, my partner and I aimed to create an <strong>elegant and luxurious atmosphere</strong>, but still 
-              <strong>welcoming</strong> enough for the general audience.
-            </p>
-            <p>
-              For these purposes, I proposed using a <strong>vibrant purple</strong>, a color that often represents luxury and royalty, as the app’s 
-              highlight color. The rest of the app visuals were kept <strong>neutral and subtle</strong> to help push the outfit pictures 
-              as primary focuses. 
-            </p>
-            <p>
-              For typography, I selected <strong>Poppins for titles and Nunito for body text and captions</strong>. They conveys a sense of 
-              <strong>elegance and clarity, while still feeling friendly and minimalistic</strong>.
-            </p>
+            <div class = "paragraph-with-break">
+              <p>
+                For the app’s font and color choices, my partner and I aimed to create an <strong>elegant and luxurious atmosphere</strong>, but still 
+                <strong>welcoming</strong> enough for the general audience.
+              </p>
+              <p>
+                For these purposes, I proposed using a <strong>vibrant purple</strong>, a color that often represents luxury and royalty, as the app’s 
+                highlight color. The rest of the app visuals were kept <strong>neutral and subtle</strong> to help push the outfit pictures 
+                as primary focuses. 
+              </p>
+              <p>
+                For typography, I selected <strong>Poppins for titles and Nunito for body text and captions</strong>. They conveys a sense of 
+                <strong>elegance and clarity, while still feeling friendly and minimalistic</strong>.
+              </p>
+            </div>
           </div>
         </div>
        </div>
@@ -291,151 +295,176 @@
     <section id = "final-prototype-breakdown">
       <h1>Final Prototype Breakdown</h1>
 
-      <div id = "closetshare-my-contribution" class = "sub-section highlight-area">
-        <h2 class = "center-heading-with-line">My Contribution</h2>
-        <p>
-          For ClosetShare's design and development, I was primarily responsible for <strong>outfit browsing and outfit creation, as well as their related interations.</strong>
-          I was also responsible for <strong>Firebase integration and external storage management.</strong>
-        </p>
+      <div class = "vertical-stack">
+
+        <div id = "closetshare-my-contribution" class = "highlight-area">
+          <h2 class = "center-heading-with-line">My Contribution</h2>
+          <p>
+            For ClosetShare's design and development, I was primarily responsible for <strong>outfit browsing and outfit creation, as well as their related interations.</strong>
+            I was also responsible for <strong>Firebase integration and external storage management.</strong>
+          </p>
+        </div>
+  
+        <!-- breakdown list-->
+        <div id = "closetshare-breakdown-list" class = "grid-area">
+          <!--First element-->
+          <div class = "closetshare-breakdown-element numbered-title-section">
+            <span class="number-title">01</span>
+            <div>
+              <h2>Outfit Browsing</h2>
+              <div class = "paragraph-with-break">
+                <p>
+                  Outfit browsing follows standard practices seen in other apps.
+                </p>
+                <div class = "image-with-frame">
+                  <video loop autoplay playsinline muted><source src="resources/closetshare/closetshare-browsing.mp4"></video>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!--Second element-->
+          <div class = "closetshare-breakdown-element numbered-title-section">
+            <span class="number-title">02</span>
+            <div>
+              <h2>Outfit Filters</h2>
+              <div class = "paragraph-with-break">
+                <p>
+                  Allow users to browse specific outfits based on 4 selected filter options.  
+                </p>
+                <div class = "image-with-frame">
+                  <video loop autoplay playsinline muted><source src="resources/closetshare/outfit filters.mp4"></video>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!--Third-->
+          <div class = "closetshare-breakdown-element numbered-title-section">
+            <span class="number-title">03</span>
+            <div>
+              <h2>Search Interactions</h2>
+              <div class = "paragraph-with-break">
+                <p>
+                  Allow users to search outfits by name, changed from a button toggle to a permanently visible field for improved efficiency.
+                </p>
+                <div class = "image-with-frame">
+                  <video loop autoplay playsinline muted><source src="resources/closetshare/searching outfits.mp4"></video>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+  
+          <!--Fourth element-->
+          <div class = "closetshare-breakdown-element numbered-title-section">
+            <span class="number-title">04</span>
+            <div>
+              <h2>Favorites Tab and Liking Outfits</h2>
+              <div class = "paragraph-with-break">
+                <p>
+                  Users can like outfits by pressing the heart icon in each outfit box. As well as browse through all the outfits the user 
+                  liked in the “Favorites” Tab.
+                </p>
+                <p>
+                  The Explore and Favorites toggle was moved to the header to further emphasize the separation between browsing options and outfits.
+                </p>
+                <div class = "image-with-frame">
+                  <video loop autoplay playsinline muted><source src="resources/closetshare/liking outfits.mp4"></video>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+  
+          <!--Fifth element-->
+          <div class = "closetshare-breakdown-element numbered-title-section">
+            <span class="number-title">05</span>
+            <div>
+              <h2>Detailed Outfit Screen</h2>
+              <div class = "paragraph-with-break">
+                <p>
+                  Clicking on outfit boxes will take the user to that outfit’s detailed outfit screen, where they can check out additional 
+                  images, pieces and how to get them, etc.
+                </p>
+                <div class = "image-with-frame">
+                  <video loop autoplay playsinline muted><source src="resources/closetshare/outfit detail.mp4"></video>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+  
+          <!--Sixth element-->
+          <div class = "closetshare-breakdown-element numbered-title-section">
+            <span class="number-title">06</span>
+            <div>
+              <h2>Outfit Creation</h2>
+              <div class = "paragraph-with-break">
+                <p>
+                  Users can easily add their own outfits through a simplified and straightforward process.
+                </p>
+                <div class = "image-with-frame">
+                  <video loop autoplay playsinline muted><source src="resources/closetshare/outfit creation.mp4"></video>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+  
+        </div>
       </div>
-
-      <!-- breakdown list-->
-      <div id = "closetshare-breakdown-list" class = "grid-area">
-        <!--First element-->
-        <div class = "closetshare-breakdown-element numbered-title-section">
-          <span class="number-title">01</span>
-          <div>
-            <h2>Outfit Browsing</h2>
-            <p>
-              Outfit browsing follows standard practices seen in other apps.
-            </p>
-            <div class = "image-with-frame">
-              <video loop autoplay playsinline muted><source src="resources/closetshare/closetshare-browsing.mp4"></video>
-            </div>
-          </div>
-        </div>
-
-        <!--Second element-->
-        <div class = "closetshare-breakdown-element numbered-title-section">
-          <span class="number-title">02</span>
-          <div>
-            <h2>Outfit Filters</h2>
-            <p>
-              Allow users to browse specific outfits based on 4 selected filter options.  
-            </p>
-            <div class = "image-with-frame">
-              <video loop autoplay playsinline muted><source src="resources/closetshare/outfit filters.mp4"></video>
-            </div>
-          </div>
-        </div>
-
-        <!--Third-->
-        <div class = "closetshare-breakdown-element numbered-title-section">
-          <span class="number-title">03</span>
-          <div>
-            <h2>Search Interactions</h2>
-            <p>
-              Allow users to search outfits by name, changed from a button toggle to a permanently visible field for improved efficiency.
-            </p>
-            <div class = "image-with-frame">
-              <video loop autoplay playsinline muted><source src="resources/closetshare/searching outfits.mp4"></video>
-            </div>
-          </div>
-        </div>
-
-        <!--Fourth element-->
-        <div class = "closetshare-breakdown-element numbered-title-section">
-          <span class="number-title">04</span>
-          <div>
-            <h2>Favorites Tab and Liking Outfits</h2>
-            <p>
-              Users can like outfits by pressing the heart icon in each outfit box. As well as browse through all the outfits the user 
-              liked in the “Favorites” Tab.
-            </p>
-            <p>
-              The Explore and Favorites toggle was moved to the header to further emphasize the separation between browsing options and outfits.
-            </p>
-            <div class = "image-with-frame">
-              <video loop autoplay playsinline muted><source src="resources/closetshare/liking outfits.mp4"></video>
-            </div>
-          </div>
-        </div>
-
-        <!--Fifth element-->
-        <div class = "closetshare-breakdown-element numbered-title-section">
-          <span class="number-title">05</span>
-          <div>
-            <h2>Detailed Outfit Screen</h2>
-            <p>
-              Clicking on outfit boxes will take the user to that outfit’s detailed outfit screen, where they can check out additional 
-              images, pieces and how to get them, etc.
-            </p>
-            <div class = "image-with-frame">
-              <video loop autoplay playsinline muted><source src="resources/closetshare/outfit detail.mp4"></video>
-            </div>
-          </div>
-        </div>
-
-        <!--Sixth element-->
-        <div class = "closetshare-breakdown-element numbered-title-section">
-          <span class="number-title">06</span>
-          <div>
-            <h2>Outfit Creation</h2>
-            <p>
-              Users can easily add their own outfits through a simplified and straightforward process.
-            </p>
-            <div class = "image-with-frame">
-              <video loop autoplay playsinline muted><source src="resources/closetshare/outfit creation.mp4"></video>
-            </div>
-          </div>
-        </div>
-
-      </div>
+      
     </section>
 
     <!--------------------------KEY REFLECTIONS //-------------------------------------------------->
     <section id = "key-reflections">
     <h1>Key Reflections</h1>
-    <div class = "sub-section">
-      <h2><strong>Adaption</strong> is Key</h2>
-      <p>
-        While it is important to lay out development plans as well as set deadline and goals early on, these plans will likely need to be 
-        adjusted as issues emerge. Therefore, being <strong>able to adapt the plan and development process to navigate around and resolve these 
-        issues</strong> is an important skill to have.
-      </p>
-      <p>
-        Such as our initial plan to only utilize Firebase for outfit data storage. During development
-        we've found that image data is too big for the limited amount of external storage we have access to via Firebase. Therefore, 
-        I needed to <strong>allocated time during development to research and implement other external storage means</strong>, which I managed to pull through
-        by integrating Imgur API.
-      </p>
-    </div>
-
-    <div class = "sub-section">
-      <h2>Design choice vs implementation </h2>
-      <div id = "closetshare-reflection-B-content" class = "grid-area">
-        <div>
+    <div class = "vertical-stack sub-section">
+      <div>
+        <h2><strong>Adaption</strong> is Key</h2>
+        <div class = "paragraph-with-break">
           <p>
-            Any design that I’ve made will also need to be implemented through code. 
-            Due to the project having a strict time limit, there were occasions where I had to opt for a simpler approach for design 
-            implementations.
+            While it is important to lay out development plans as well as set deadline and goals early on, these plans will likely need to be 
+            adjusted as issues emerge. Therefore, being <strong>able to adapt the plan and development process to navigate around and resolve these 
+            issues</strong> is an important skill to have.
           </p>
           <p>
-            Such as the outfit card displays while browsing outfits. While the finalized mockup design illustrated an asymmetrical, waterfall 
-            like card layout that naturally guides the user’s eyes downwards, implementing it in React Native have proven troublesome.
-             As a result, a simpler parallel layout was used for the final prototype.
-          </p>
-          <p>
-            <strong>Development feasibility is something that should also be taken into account during initial ideation steps</strong>, 
-            especially when constraints are in play. If we had more time however, we would definitely prioritize implementing all envisioned design choices, and resolve
-             current visual consistency issues.
+            Such as our initial plan to only utilize Firebase for outfit data storage. During development
+            we've found that image data is too big for the limited amount of external storage we have access to via Firebase. Therefore, 
+            I needed to <strong>allocated time during development to research and implement other external storage means</strong>, which I managed to pull through
+            by integrating Imgur API.
           </p>
         </div>
-        <div class = "image-with-frame">
-          <img src="resources/closetshare/closetshare-waterfall-layout.png" alt="waterfall layout"></img>
+      </div>
+  
+      <div>
+        <h2>Design choice vs implementation </h2>
+        <div id = "closetshare-reflection-B-content" class = "grid-area">
+          <div class = "paragraph-with-break">
+            <p>
+              Any design that I’ve made will also need to be implemented through code. 
+              Due to the project having a strict time limit, there were occasions where I had to opt for a simpler approach for design 
+              implementations.
+            </p>
+            <p>
+              Such as the outfit card displays while browsing outfits. While the finalized mockup design illustrated an asymmetrical, waterfall 
+              like card layout that naturally guides the user’s eyes downwards, implementing it in React Native have proven troublesome.
+               As a result, a simpler parallel layout was used for the final prototype.
+            </p>
+            <p>
+              <strong>Development feasibility is something that should also be taken into account during initial ideation steps</strong>, 
+              especially when constraints are in play. If we had more time however, we would definitely prioritize implementing all envisioned design choices, and resolve
+               current visual consistency issues.
+            </p>
+          </div>
+          <div class = "image-with-frame">
+            <img src="resources/closetshare/closetshare-waterfall-layout.png" alt="waterfall layout"></img>
+          </div>
         </div>
       </div>
     </div>
+    
 
     <button class="button" onclick="location.href='index.html#projects'">
       &larr; See my other work!
