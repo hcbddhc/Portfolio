@@ -209,10 +209,10 @@ ul {
 }
 
 p, label, li {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
-  letter-spacing: -0.05px;
-  line-height: 1.5;
+  letter-spacing: -0.04em;
+  line-height: 1.55;
   margin-top: 0;
   margin-bottom: 0;
   font-family: 'Open Sans', sans-serif;
@@ -242,9 +242,9 @@ figcaption{
   color: #B6B6B6;
   margin-left: 0.4rem;
   padding: 0;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 300;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.04em;
   line-height: 1.4;
   font-family: 'Open Sans', sans-serif;
 }
@@ -303,10 +303,10 @@ em {
     font-size: 11px;
   }
   p, label, li{
-    font-size: 10px;
+    font-size: 11px;
   }
   figcaption {
-    font-size: 8px;
+    font-size: 10px;
   }
   .button {
     font-size: 12px;
