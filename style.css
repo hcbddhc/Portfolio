@@ -167,7 +167,7 @@ h1:after {
 	width: 100vw;
   bottom: -0.1rem; /* move the line lower */
 	right: 0;
-	background-color: #C22022;
+	background-color: #DD1216;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.6s ease-out;
@@ -235,7 +235,8 @@ p + div, div + p{
   */
 
 strong{
-  color: #C22022;
+  color: #DD1216;
+  font-weight: 600;
 }
 
 figcaption{
@@ -260,7 +261,7 @@ a:hover{
 }
 
 em {
-  color: #C22022;
+  color: #DD1216;
   font-style: normal;
 }
 
@@ -279,8 +280,8 @@ em {
 }
 
 .button:hover, .button:focus{
-  background-color: #C22022;
-  border: 1px solid #C22022;
+  background-color: #DD1216;
+  border: 1px solid #DD1216;
   cursor: pointer;
 }
 
@@ -325,7 +326,7 @@ em {
   font-size: 38px;
   letter-spacing: -0.4px;
   line-height: 0.8;
-  color:#C22022;
+  color:#DD1216;
   margin-right: 0.5rem;
 }
 
@@ -343,7 +344,7 @@ em {
   left: 50%;
   transform: translateX(-50%);
   width: 25%; /* 1/5 of the heading width */
-  border-bottom: 2px solid #c22022;
+  border-bottom: 2px solid #DD1216;
 }
 
 @media only screen and (max-width: 768px) {
@@ -403,7 +404,7 @@ em {
 }
 
 .navigation-items a:hover, .navigation-items a:focus, #logo a:hover, #logo a:focus {
-  color: #C22022;
+  color: #DD1216;
   cursor: pointer;
 }
 
@@ -476,7 +477,7 @@ em {
 }
 
 .side-bar-line{
-  border-left: 2px solid #C22022;
+  border-left: 2px solid #DD1216;
   margin-left: 1.15rem;
   height: 20%;
 }
@@ -506,7 +507,7 @@ em {
   width: 3rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  background-color: #C22022;
+  background-color: #DD1216;
 }
 
 #title-heading h1 {
@@ -543,7 +544,7 @@ em {
   top: 0;
   bottom: 0;
   width: 3px;
-  background-color: #C22022;
+  background-color: #DD1216;
   transform: scaleY(0);
   transform-origin: top;
   animation: growLine 1s ease-out forwards;
@@ -618,7 +619,7 @@ em {
 
 
 .project:hover{
-  border-color: #C22022;
+  border-color: #DD1216;
 }
 
 .project-right {
@@ -657,7 +658,7 @@ em {
 
 .project-title { /*for home screen project section h2 */
   display: flex;
-  border-bottom: 2px solid #C22022;
+  border-bottom: 2px solid #DD1216;
   align-items: end;
   margin-bottom: 0.8rem;
 }
@@ -679,7 +680,7 @@ em {
   }
 
   .project-title {
-    border-bottom: 1px solid #C22022;
+    border-bottom: 1px solid #DD1216;
     margin-bottom: 0;
   }
 
@@ -737,7 +738,7 @@ em {
   left: 0;
   height: 2px;
   width: 100%;
-  background: #C22022;
+  background: #DD1216;
   z-index: -1;
 }
 
@@ -808,7 +809,7 @@ em {
 }
 
 .about-goal-links:hover h3 {
-  box-shadow: inset 0 -1px 0 #C22022;
+  box-shadow: inset 0 -1px 0 #DD1216;
 }
 
 .about-goal h3 {
@@ -882,7 +883,7 @@ em {
   content: "";
   flex-grow: 1;
   height: 1px;
-  background-color: #C22022;
+  background-color: #DD1216;
   margin-left: 0.5rem; 
   margin-bottom: 0.2rem;
 }
@@ -897,7 +898,7 @@ em {
 }
 
 .highlight-area-title {
-  border-bottom: 3px solid #C22022;
+  border-bottom: 3px solid #DD1216;
   width: 100%;
 }
 
