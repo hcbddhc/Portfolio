@@ -33,10 +33,14 @@ function toCraftconnectPrototype() {
 
 //for navigation bar scroll color change
 window.onscroll = function() {
-    if(window.scrollY!=0){
-        document.getElementById("navigation-wrapper").style.backgroundColor = "#1e1e1e";
-    }else if(window.scrollY==0){
-        document.getElementById("navigation-wrapper").style.backgroundColor = "#222222";
+    const nav = document.getElementById("navigation-wrapper");
+
+    if (window.scrollY !== 0) {
+        nav.style.backgroundColor = "rgba(30, 30, 30, 0.6)";
+        nav.style.backdropFilter = "blur(10px)";
+    } else {
+        nav.style.backgroundColor = "#222222";
+        nav.style.backdropFilter = "none";
     }
 };
 

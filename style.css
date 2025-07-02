@@ -110,6 +110,10 @@ section.visible {
   .sub-section {
     margin-bottom: 5rem;
   }
+  .highlight-area{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
   section {
     margin-bottom: 6rem;
     margin-left: 5%;
@@ -164,7 +168,7 @@ h1 {
 h1:after {
 	position: absolute;
 	content: "";
-	height: 2px;
+	height: 1.5px;
 	width: 100vw;
   bottom: -0.1rem; /* move the line lower */
 	right: 0;
@@ -363,6 +367,9 @@ em {
   width: 100%;
   z-index: 1;
   border-bottom: 1px solid #2C2C2C;
+  background-color: #222222; 
+  backdrop-filter: none;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
 }
 #navigation {
   overflow: hidden;
@@ -372,11 +379,12 @@ em {
   "logo . . links";
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
 }
 
 #logo {
-  grid-area: logo;
+  margin-bottom: 1.2rem;
+
 }
 
 #logo a {
@@ -660,9 +668,10 @@ em {
 
 .project-title { /*for home screen project section h2 */
   display: flex;
-  border-bottom: 2px solid #DD1216;
+  border-bottom: 1px solid #DD1216;
   align-items: end;
   margin-bottom: 0.8rem;
+  padding-bottom: 0.1rem;
 }
 
 .project-title p{
@@ -806,6 +815,7 @@ em {
 }
 
 .about-goal-links p {
+  color: #F1F1F1;
   display: inline-block;
   box-shadow: inset 0 -1px 0 transparent;
   transition: box-shadow 0.3s ease;
