@@ -432,7 +432,7 @@ em {
   .navigation-items {
     display: flex;
     justify-content: flex-end;
-    gap: 3rem;
+    gap: 2rem;
   }
   .navigation-items a {
     font-size: 12px;
