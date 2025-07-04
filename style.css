@@ -1,7 +1,7 @@
 /*fonts
 1. h1: Montserrat
 2. h2 + h3: Dosis
-3. body text: Open Sans
+3. body text: Plus Jakarta Sans
 4. buttons + nav: dosis
 */
 
@@ -101,6 +101,11 @@ section.visible {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 1rem;
+
+}
+
+.numbered-title-section h2{
+  margin-top: 0.3rem;
 }
 
 @media only screen and (max-width: 768px) { /* for a smaller screen */
@@ -217,11 +222,11 @@ ul {
 p, label, li {
   font-size: 14px;
   font-weight: 300;
-  letter-spacing: 0.02em;
-  line-height: 1.55;
+  letter-spacing: 0.05em;
+  line-height: 1.75;
   margin-top: 0;
   margin-bottom: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 /* paragraph breaks */
@@ -272,7 +277,7 @@ em {
 
 .button {
   background-color: #2C2C2C;
-  border: 1px solid #635E5D;
+  border: 1px solid #222222;
   border-radius: 0.5rem;
   color: white;
   padding: 0.7rem 2rem;
@@ -429,9 +434,14 @@ em {
   margin-right: 5%;
   }
 
+  #logo {
+    width: 2rem;
+   }
+
   .navigation-items {
     display: flex;
     justify-content: flex-end;
+    margin-top: 0;
     gap: 2rem;
   }
   .navigation-items a {
@@ -488,7 +498,7 @@ em {
 /* ----------------------- HOME PAGE - INTRODUCTION SECTION SPECIFIC ---------------------------*/
 #introduction {
   grid-template-columns: 1.2fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 #title-heading {
@@ -568,7 +578,7 @@ em {
 }
 
 #introduction-left p{
-  width: 80%;
+  width: 90%;
 }
 
 @media only screen and (max-width: 768px) {
