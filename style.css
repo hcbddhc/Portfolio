@@ -893,8 +893,8 @@ em {
 #project-page-brief h3::after {
   content: "";
   flex-grow: 1;
-  height: 1px;
-  background-color: #DD1216;
+  height: 0.5px;
+  background-color: #8F8F8F;
   margin-left: 0.5rem; 
   margin-bottom: 0.2rem;
 }
