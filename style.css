@@ -110,7 +110,7 @@ section.visible {
 
 @media only screen and (max-width: 768px) { /* for a smaller screen */
   #content {
-    margin-top: 7rem;
+    margin-top: 5rem;
   }
   .sub-section {
     margin-bottom: 5rem;
@@ -159,7 +159,7 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   justify-self: left;
 	position: relative;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 500;
   font-kerning: normal;
   text-transform: uppercase;
@@ -391,6 +391,7 @@ em {
 
 #logo {
  width: 3rem;
+ margin-top: 0.2rem;
 }
 
 .navigation-items {
