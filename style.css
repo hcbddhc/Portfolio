@@ -173,7 +173,7 @@ h1 {
 h1:after {
 	position: absolute;
 	content: "";
-	height: 1.5px;
+	height: 2px;
 	width: 100vw;
   bottom: -0.1rem; /* move the line lower */
 	right: 0;
@@ -352,7 +352,7 @@ em {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  width: 25%; /* 1/5 of the heading width */
+  width: 2rem;
   border-bottom: 2px solid #DD1216;
 }
 
@@ -896,8 +896,8 @@ em {
 #project-page-brief h3::after {
   content: "";
   flex-grow: 1;
-  height: 0.5px;
-  background-color: #8F8F8F;
+  height: 1px;
+  background-color: #383838;
   margin-left: 0.5rem; 
   margin-bottom: 0.2rem;
 }
@@ -912,7 +912,7 @@ em {
 }
 
 .highlight-area-title {
-  border-bottom: 3px solid #DD1216;
+  border-bottom: 2px solid #DD1216;
   width: 100%;
 }
 
