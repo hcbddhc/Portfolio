@@ -178,6 +178,7 @@ h1:after {
   bottom: -0.1rem; /* move the line lower */
 	right: 0;
 	background-color: #DD1216;
+  border-radius: 5px;
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.6s ease-out;
@@ -363,6 +364,7 @@ em {
   transform: translateX(-50%);
   width: 2rem;
   border-bottom: 2px solid #DD1216;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -507,13 +509,13 @@ em {
 /* ----------------------- HOME PAGE - INTRODUCTION SECTION SPECIFIC ---------------------------*/
 #introduction {
   grid-template-columns: 1.2fr 1fr;
-  gap: 2.5rem;
+  gap: 1.5rem;
 }
 
 #title-heading {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 #title-heading h1 {
@@ -538,7 +540,7 @@ em {
 }
 
 #heading-digital-product-designer h1{
-  font-size: clamp(56px, 6vw, 80px);
+  font-size: clamp(56px, 6vw, 96px);
   letter-spacing: 0.03em;
   text-indent: -0.08em;
   display: block;
@@ -554,6 +556,7 @@ em {
   bottom: 0;
   width: 3px;
   background-color: #DD1216;
+  border-radius: 5px;
   transform: scaleY(0);
   transform-origin: top;
   animation: growLine 1s ease-out forwards;
@@ -580,11 +583,11 @@ em {
 }
 
 #introduction-left{
-  gap: 3rem;
+  gap: 2rem;
 }
 
 #introduction-left p{
-  width: 85%;
+  width: 80%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -600,11 +603,11 @@ em {
   }
 
   #introduction-left p{
-    width: 100%;
+    width: 80%;
   }
 
   #introduction-right {
-    width: 80%;
+    width: 85%;
 
   }
 
