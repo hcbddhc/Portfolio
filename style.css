@@ -303,7 +303,7 @@ em {
 
 @media only screen and (max-width: 768px) {
   h1 {
-    font-size: 22px;
+    font-size: 20px;
     margin-bottom: 1.5rem;
   }
   h2 {
@@ -498,23 +498,13 @@ em {
 /* ----------------------- HOME PAGE - INTRODUCTION SECTION SPECIFIC ---------------------------*/
 #introduction {
   grid-template-columns: 1.2fr 1fr;
-  gap: 3rem;
+  gap: 2.5rem;
 }
 
 #title-heading {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-}
-
-#title-heading::after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 3rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  background-color: #DD1216;
 }
 
 #title-heading h1 {
@@ -527,6 +517,9 @@ em {
 
 #heading-hello-howard{
   color: #B6B6B6;
+  font-size: 24px;
+  line-height: 2rem;
+  width: 90%;
 }
 
 #heading-digital-product-designer {
@@ -536,7 +529,7 @@ em {
 }
 
 #heading-digital-product-designer h1{
-  font-size: clamp(48px, 6vw, 80px);
+  font-size: clamp(56px, 6vw, 80px);
   letter-spacing: 0.03em;
   text-indent: -0.08em;
   display: block;
@@ -605,6 +598,13 @@ em {
     width: 80%;
 
   }
+
+
+#heading-hello-howard{
+  font-size: 16px;
+  line-height: 1.5rem;
+  width: 100%;
+}
 
   #heading-digital-product-designer{
     font-size: 42px;
