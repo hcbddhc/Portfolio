@@ -94,7 +94,7 @@ section.visible {
 .paragraph-with-break {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1.5rem;
 }
 
 .numbered-title-section{
@@ -222,7 +222,7 @@ p, label, li {
   font-size: 14px;
   font-weight: 300;
   letter-spacing: 0.05em;
-  line-height: 1.75;
+  line-height: 1.8;
   margin-top: 0;
   margin-bottom: 0;
   font-family: 'Plus Jakarta Sans', sans-serif;
@@ -580,11 +580,11 @@ em {
 }
 
 #introduction-left{
-  gap: 1rem;
+  gap: 3rem;
 }
 
 #introduction-left p{
-  width: 90%;
+  width: 85%;
 }
 
 @media only screen and (max-width: 768px) {
