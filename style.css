@@ -127,8 +127,8 @@ section.visible {
   }
   section {
     margin-bottom: 6rem;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
   }
  .vertical-stack{
     gap: 1.5rem;
@@ -600,33 +600,35 @@ em {
   #introduction {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    text-align: center;
   }
 
+  #introduction h1{
+    width: 95vw;
+  }
+
+  #title-heading {
+    gap: 2rem;
+  }
   #title-heading::after {
-   
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
   }
 
   #introduction-left p{
-    width: 80%;
+    width: 100%;
   }
-
-  #introduction-right {
-    width: 85%;
-
-  }
-
 
 #heading-hello-howard{
   font-size: 16px;
   line-height: 1.5rem;
-  width: 100%;
 }
 
 #heading-digital-product-designer h1 {
-  width: 100vw;              /* Make it 90% of viewport width */
   font-size: 18vw;           /* Scale text to fit nicely in that width */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
   #heading-digital-product-designer::before,
