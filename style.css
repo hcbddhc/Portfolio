@@ -605,6 +605,7 @@ em {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     text-align: center;
+    margin-top: 25vw;
   }
 
   #introduction h1{
@@ -630,15 +631,27 @@ em {
   line-height: 1.5rem;
 }
 
+#heading-digital-product-designer{
+  display: grid;
+  gap: 0.8rem;
+}
+
 #heading-digital-product-designer h1 {
-  font-size: 18vw;           /* Scale text to fit nicely in that width */
+  font-size: 15vw;           /* Scale text to fit nicely in that width */
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-  #heading-digital-product-designer::before,
+#heading-digital-product-designer::before {
+  left: 0.5rem; /* extend 1rem outside the left edge */
+}
+
 #heading-digital-product-designer::after {
+  right: 0.5rem; /* extend 1rem outside the right edge */
+}
+
+#introduction-right {
   display: none;
 }
 }
