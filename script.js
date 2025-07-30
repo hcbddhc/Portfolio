@@ -39,7 +39,7 @@ window.onscroll = function() {
         nav.style.backgroundColor = "rgba(30, 30, 30, 0.6)";
         nav.style.backdropFilter = "blur(10px)";
     } else {
-        nav.style.backgroundColor = "#222222";
+        nav.style.backgroundColor = "#1a1a1a";
         nav.style.backdropFilter = "none";
     }
 };
