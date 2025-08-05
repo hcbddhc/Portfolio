@@ -336,7 +336,7 @@ em {
     font-size: 11px;
   }
   figcaption {
-    font-size: 10px;
+    font-size: 11px;
   }
   .button {
     font-size: 12px;
@@ -645,10 +645,12 @@ em {
 
 #heading-digital-product-designer::before {
   left: 0.5rem; /* extend 1rem outside the left edge */
+  width: 2px;
 }
 
 #heading-digital-product-designer::after {
   right: 0.5rem; /* extend 1rem outside the right edge */
+  width: 2px;
 }
 
 #introduction-right {
@@ -738,7 +740,9 @@ em {
   }
 
   .project-right {
-    padding: 0.5rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-top: 0.5rem;
     gap: 0.5rem;
   }
 
