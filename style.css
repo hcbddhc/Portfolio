@@ -657,6 +657,7 @@ em {
   display: none;
 }
 }
+
 /* ----------------------- HOME PAGE - PROJECT SECTION SPECIFIC ---------------------------*/
 .project {
   background-color: #1F1F1F;
@@ -670,7 +671,6 @@ em {
               0px 2px 4px rgba(0, 0, 0, 0.2); 
   transition: box-shadow 0.3s ease;
 }
-
 
 .project:hover{
   box-shadow: 0 0 0 2px #DD1216, 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -757,6 +757,62 @@ em {
   .project-tag{
     font-size: 8px;
     padding: 0.25rem 0.5rem;
+  }
+}
+
+/* ----------------------- HOME PAGE - FUN PROJECT SECTION SPECIFIC ---------------------------*/
+#fun-project-list{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.fun-project{
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  border-radius: 0.25rem; 
+  padding: 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;  
+  background-size: 100% 100%; 
+  width: 100%; 
+  aspect-ratio: 1 / 1;
+  box-shadow: inset 1px 1px 2px #292929,
+              inset -1px -1px 2px #111111,
+              0px 2px 4px rgba(0, 0, 0, 0.2); 
+  transition: box-shadow 0.3s ease-in-out;
+  text-align: center;
+}
+
+.fun-project:hover{
+  box-shadow: 0 0 0 2px #DD1216, 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-color: #DD1216;
+}
+
+.fun-project-title{
+  justify-items: center;
+}
+
+#unfinishedsymphony{
+  background-image: url('resources/unfinished\ symphony\ background.png');
+}
+
+#smallbutmighty{
+  background-image: url('resources/small\ but\ mighty\ background.png');
+}
+
+.fun-project-taglist{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  grid-template-rows: auto auto;  /* Two rows */
+  gap: 0.5rem;                    /* Optional spacing between tags */
+  justify-items: center;         /* Center items horizontally */
+  text-align: center;  
+}
+
+@media only screen and (max-width: 768px) {
+  #fun-project-list{
+    grid-template-columns: 1fr 1fr;
+  }
+  .fun-project{
+    padding: 0.5rem;
   }
 }
 
@@ -1563,6 +1619,19 @@ img {
   background-image: url('resources/project\ selected.png');
 }
 
+.fun-project-external-icon{
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-self: end;
+  background-image: url('resources/external\ link\ icon.png');
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease-in-out;
+}
+.fun-project:hover .fun-project-external-icon {
+  background-image: url('resources/external\ link\ icon\ selected.png');
+}
+
 @media only screen and (max-width: 768px)  { 
   .project-select-icon {
     width: 1.5rem;
@@ -1571,6 +1640,10 @@ img {
   .project-image {
     border-bottom-left-radius: 0rem;
     border-top-right-radius: 0.25rem;
+  }
+  .fun-project-external-icon{
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
 

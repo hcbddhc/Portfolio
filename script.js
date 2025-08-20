@@ -15,6 +15,14 @@ function toMacaron() {
     window.location.href = "macaron.html";
 } 
 
+function toUnfinishedSymphony() { 
+    window.open("https://hcdoggo.itch.io/the-unfinished-symphony", "_blank");
+} 
+
+function toSmallButMighty() { 
+    window.open("https://iat343-small-but-mighty.framer.website/", "_blank");
+} 
+
 function toRabbitatWebPrototype() { 
     window.open("https://www.figma.com/proto/OYqhVFOScMYtIJVII5JH9Z/IAT-235---P4?page-id=23%3A2&node-id=709-466&p=f&viewport=-98%2C258%2C0.06&t=EuHdoU8uq3pbUkS1-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=742%3A256", "_blank");
 } 
