@@ -1245,21 +1245,17 @@ em {
   gap: 5rem;
 }
 
-#closetshare-breakdown-list{
-  grid-template-columns: repeat(2, 1fr);
-  gap: 4rem;
+#closetshare-breakdown-list {
+  grid-template-columns: 1fr;
+  gap: 10rem;
 }
 
-#closetshare-breakdown-list .closetshare-breakdown-element:nth-child(2) {
-  margin-top: 10rem; 
+.closetshare-breakdown-element {
+  grid-template-columns: 1fr 1fr;
+  gap: 8rem;
 }
 
-#closetshare-breakdown-list .closetshare-breakdown-element:nth-child(3){
-  margin-top: -9rem;
-}
-
-#closetshare-breakdown-list .closetshare-breakdown-element:nth-child(5){
-  margin-top: -14rem;
+.closetshare-breakdown-element-right {
 }
 
 /* ----------------------- PROJECT PAGE - WEALTHSIMPLE SPECIFIC ---------------------------*/
@@ -1768,7 +1764,7 @@ img {
   width: 30%;
 }
 #closetshare-breakdown-list .closetshare-breakdown-element .image-with-frame {
-  width: 55%;
+  width: 65%;
 }
 
 #closetshare-breakdown-list .closetshare-breakdown-element .image-with-frame video{
