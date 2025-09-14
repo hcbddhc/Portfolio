@@ -23,7 +23,7 @@ body{
 }
 
 #content{
-  margin-top: 8%;
+  margin-top: 7%;
 }
 
 #project-content{ /*a wrapper with all the page content in it */
@@ -516,9 +516,9 @@ em {
 
 
 /* ----------------------- HOME PAGE - INTRODUCTION SECTION SPECIFIC ---------------------------*/
-#introduction {
+#introduction-grid {
   grid-template-columns: 1.2fr 1fr;
-  gap: 1.5rem;
+  gap: 4rem;
 }
 
 #title-heading {
@@ -549,7 +549,7 @@ em {
 }
 
 #heading-digital-product-designer h1{
-  font-size: clamp(56px, 6vw, 96px);
+  font-size: clamp(56px, 6vw, 84px);
   letter-spacing: 0.03em;
   text-indent: -0.08em;
   display: block;
@@ -656,6 +656,28 @@ em {
 #introduction-right {
   display: none;
 }
+}
+
+#scroll-down-arrow{
+  margin-top: 3.5rem;
+  width: 100%;         /* or adjust if needed */
+  text-align: center;  /* center the image horizontally */
+  margin-left: auto;
+  margin-right: auto;
+
+  animation: bounce-arrow 2s ease-in-out infinite;
+}
+
+@keyframes bounce-arrow {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1rem); /* moves it up */
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* ----------------------- HOME PAGE - PROJECT SECTION SPECIFIC ---------------------------*/
@@ -1592,13 +1614,17 @@ img {
 /* ----------- HOME PAGE -----------*/
 #profile-picture {
   width: 100%;
-  border-radius: 8rem;
+  border-radius: 7rem;
 }
 
 .project-image {
   width: 100%;
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
+}
+
+#scroll-down-arrow-image{
+  width: 3rem;
 }
 
 .project-select-icon {
