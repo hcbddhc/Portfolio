@@ -673,7 +673,7 @@ em {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-1rem); /* moves it up */
+    transform: translateY(-0.8rem); /* moves it up */
   }
   100% {
     transform: translateY(0);
@@ -1277,8 +1277,7 @@ em {
   gap: 8rem;
 }
 
-.closetshare-breakdown-element-right {
-}
+
 
 /* ----------------------- PROJECT PAGE - WEALTHSIMPLE SPECIFIC ---------------------------*/
 #wealthsimple-design-overview {
@@ -1387,13 +1386,13 @@ em {
   }
 
   .closetshare-breakdown-element {
+    grid-template-columns: 1fr;
     margin-bottom: 1.5rem;
+    gap: 1.5rem;
   }
 
-  #closetshare-breakdown-list .closetshare-breakdown-element:nth-child(2),
-  #closetshare-breakdown-list .closetshare-breakdown-element:nth-child(3),
-  #closetshare-breakdown-list .closetshare-breakdown-element:nth-child(5) {
-    margin-top: 0 !important;
+  .closetshare-breakdown-element-right {
+    justify-self: center;
   }
 
   #closetshare-architecture-list div {
@@ -1655,6 +1654,9 @@ img {
 }
 
 @media only screen and (max-width: 768px)  { 
+  #scroll-down-arrow-image{
+    width: 1.5rem;
+  }
   .project-select-icon {
     width: 1.5rem;
     height: 1.5rem;
