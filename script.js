@@ -44,10 +44,10 @@ window.onscroll = function() {
     const nav = document.getElementById("navigation-wrapper");
 
     if (window.scrollY !== 0) {
-        nav.style.backgroundColor = "rgba(30, 30, 30, 0.6)";
+        nav.style.backgroundColor = "rgba(20, 20, 20, 0.85)";
         nav.style.backdropFilter = "blur(10px)";
     } else {
-        nav.style.backgroundColor = "#1a1a1a";
+        nav.style.backgroundColor = "#141414";
         nav.style.backdropFilter = "none";
     }
 };
