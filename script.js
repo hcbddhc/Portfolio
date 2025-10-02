@@ -1,3 +1,7 @@
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+
 //button links
 function toClosetShare() { 
     window.location.href = "closetshare.html";
