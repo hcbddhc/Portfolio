@@ -52,7 +52,10 @@ window.onscroll = function() {
     }
 };
 
+
 //for section slide up animation
+window.addEventListener("scroll", revealSections);
+window.addEventListener("load", revealSections);
 function revealSections() {
     const sections = document.querySelectorAll("section");
 
@@ -62,7 +65,4 @@ function revealSections() {
         section.classList.add("visible");
         }
     });
-    }
-
-    window.addEventListener("scroll", revealSections);
-    window.addEventListener("load", revealSections);
+}

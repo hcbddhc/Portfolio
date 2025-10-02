@@ -1,6 +1,6 @@
 /*fonts
 1. h1: Montserrat
-2. h2 + h3: Dosis
+2. h2 + h3: Montserrat
 3. body text: Plus Jakarta Sans
 4. buttons + nav: dosis
 */
@@ -198,11 +198,11 @@ section.visible h1::after {
 }
 
 h2 {
-  font-family: 'Dosis', serif;
+  font-family: 'Montserrat', sans-serif;
   color: #f5f5f5;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 400;
-  letter-spacing: -0.001em;
+  letter-spacing: 0.02em;
   margin-top: 0;
   margin-bottom: 1.2rem;
 }
@@ -253,8 +253,12 @@ p + div, div + p{
   */
 
 strong{
-  color: #DD1216;
+  color: #FFFFFF;
   font-weight: 600;
+}
+
+.extra-strong {
+  background-color: #DD1216;
 }
 
 figcaption{
