@@ -355,11 +355,11 @@ em {
 
 .number-title {
   font-family: 'Dosis', serif;
-  font-size: 38px;
+  font-size: 32px;
   letter-spacing: -0.4px;
   line-height: 0.8;
   color:#DD1216;
-  margin-right: 0.5rem;
+  margin-right: 0.2rem;
 }
 
 .center-heading-with-line {
