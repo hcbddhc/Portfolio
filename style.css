@@ -23,7 +23,7 @@ body{
 }
 
 #content{
-  margin-top: 7%;
+  margin-top: 2%;
 }
 
 #project-content{ /*a wrapper with all the page content in it */
@@ -330,7 +330,7 @@ em {
     margin-bottom: 1.5rem;
   }
   h2 {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 0.8rem;
   }
   h3 {
@@ -528,7 +528,12 @@ em {
 #title-heading {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  justify-content: center;  /* vertical centering of inner content */
+  align-items: center;      /* horizontal centering */
+  text-align: center;       /* center the text */      /* makes it fill the screen height */
+  margin: 0 auto;
+  gap: 2rem;   
+  min-height: 100vh;
 }
 
 #title-heading h1 {
@@ -539,11 +544,21 @@ em {
   content: none;
 }
 
-#heading-hello-howard{
+.heading-hello-howard{
   color: #B6B6B6;
-  font-size: 24px;
-  line-height: 2rem;
-  width: 90%;
+  font-size: 22px;
+}
+
+#title-heading h2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.5rem;
+}
+
+#title-heading p {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #heading-digital-product-designer {
@@ -553,7 +568,7 @@ em {
 }
 
 #heading-digital-product-designer h1{
-  font-size: clamp(56px, 6vw, 84px);
+  font-size: clamp(56px, 6vw, 72px);
   letter-spacing: 0.03em;
   text-indent: -0.08em;
   display: block;
@@ -596,12 +611,17 @@ em {
 }
 
 #introduction-left{
-  gap: 2rem;
-  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* vertical centering of inner content */
+  align-items: center;      /* horizontal centering */
+  text-align: center;       /* center the text */
+  min-height: 100vh;        /* makes it fill the screen height */
+  margin: 0 auto;   
 }
 
 #introduction-left p{
-  width: 80%;
+  width: 40%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -609,7 +629,6 @@ em {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     text-align: center;
-    margin-top: 25vw;
   }
 
   #introduction h1{
@@ -618,10 +637,14 @@ em {
 
   #title-heading {
     gap: 2rem;
+    min-height: 85vh;
   }
   #title-heading::after {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
+  }
+  #title-heading p{
+    width: 80%;
   }
 
   #introduction-left p{
@@ -630,9 +653,8 @@ em {
     margin-right: auto;
   }
 
-#heading-hello-howard{
-  font-size: 16px;
-  line-height: 1.5rem;
+.heading-hello-howard{
+  font-size: 18px;
 }
 
 #heading-digital-product-designer{
@@ -752,6 +774,9 @@ em {
 }
 
 @media only screen and (max-width: 768px) {
+  #scroll-down-arrow {
+    margin-top:1rem;
+  }
   .project {
     grid-template-columns: 1fr;
     gap: 0.5rem;
@@ -1027,8 +1052,7 @@ em {
 #project-page-brief h3::after {
   content: "";
   flex-grow: 1;
-  height: 1px;
-  background-color: #383838;
+  border-bottom: 1px dotted #383838;
   margin-left: 0.5rem; 
   margin-bottom: 0.2rem;
 }
