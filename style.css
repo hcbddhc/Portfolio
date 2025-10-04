@@ -18,8 +18,8 @@ body{
   background-color: #0a0E0E;
   background: repeating-linear-gradient(
   -30deg,
-  #1A1F25,            /* start color (very dark red) */
-  #1A1F25 1px,        /* light gray ends at 1px */
+  #15191E,            /* start color (very dark red) */
+  #15191E 1px,        /* light gray ends at 1px */
   transparent 1px,    /* then becomes transparent starting at 1px */
   transparent 7px    /* transparent extends until 10px */
 ),
