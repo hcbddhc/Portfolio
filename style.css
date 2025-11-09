@@ -1,6 +1,6 @@
 /*fonts
-1. h1: Montserrat
-2. h2 + h3: Montserrat
+1. h1: Fira Code
+2. h2 + h3: Fira Code
 3. body text: Plus Jakarta Sans
 4. buttons + nav: dosis
 */
@@ -181,7 +181,7 @@ section.visible {
 /* ----------------------- BASIC ELEMENT Related ---------------------------*/
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Fira Code', monospace;
   justify-self: left;
 	position: relative;
   font-size: 32px;
@@ -215,11 +215,11 @@ section.visible h1::after {
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Fira Code', monospace;
   color: #f5f5f5;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
   margin-top: 0;
   margin-bottom: 1.2rem;
 }
@@ -314,7 +314,7 @@ em {
   text-align: center;
   text-decoration: none;
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Fira Code', monospace;
   transition: background-color 0.3s ease, border-color 0.3s ease;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); 
 }
@@ -349,6 +349,7 @@ em {
   h2 {
     font-size: 16px;
     margin-bottom: 0.8rem;
+    letter-spacing: -0.03em;
   }
   h3 {
     font-size: 11px;
@@ -397,10 +398,33 @@ em {
   border-radius: 5px;
 }
 
+.h2-with-dot{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.h2-with-dot h2{
+  margin-bottom: 0;
+}
+
+.h2-with-dot img{
+  width: 0.75rem;
+}
+
 @media only screen and (max-width: 768px) {
   .number-title {
     font-size: 26px;
     margin-right: 0rem;
+  }
+  .h2-with-dot{
+    gap: 0.75rem;
+    margin-bottom: 0.8rem;
+  }
+  .h2-with-dot img{
+    width: 0.55rem;
   }
 }
 
@@ -549,7 +573,7 @@ em {
   align-items: center;      /* horizontal centering */
   text-align: center;       /* center the text */      /* makes it fill the screen height */
   margin: 0 auto;
-  gap: 2rem;   
+  gap: 2.5rem;   
   min-height: 100vh;
 }
 
@@ -573,7 +597,7 @@ em {
 }
 
 #title-heading p {
-  width: 40%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -765,7 +789,7 @@ em {
   display: inline-block; 
   align-self: flex-end; 
   font-size: 12px;
-  padding: 0.3rem 0.8rem;
+  padding: 0.2rem 0.8rem;
   border-radius: 1rem;
   letter-spacing: 0.08em;
   background-color: #383838;
@@ -1261,7 +1285,7 @@ em {
 }
 
 .closetshare-avenue .project-tag{
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
   background-color: #00ba00;
 }
 
