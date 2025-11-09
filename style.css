@@ -347,9 +347,9 @@ em {
     margin-bottom: 1.5rem;
   }
   h2 {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 0.8rem;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.07em;
   }
   h3 {
     font-size: 11px;
@@ -587,7 +587,7 @@ em {
 
 .heading-hello-howard{
   color: #B6B6B6;
-  font-size: 22px;
+  font-size: 20px;
 }
 
 #title-heading h2 {
@@ -695,7 +695,7 @@ em {
   }
 
 .heading-hello-howard{
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #heading-digital-product-designer{
@@ -789,7 +789,7 @@ em {
   display: inline-block; 
   align-self: flex-end; 
   font-size: 12px;
-  padding: 0.2rem 0.8rem;
+  padding: 0.3rem 0.8rem;
   border-radius: 1rem;
   letter-spacing: 0.08em;
   background-color: #383838;
