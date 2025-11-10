@@ -52,6 +52,24 @@ window.onscroll = function() {
     }
 };
 
+//for progress bar scroll
+window.addEventListener('DOMContentLoaded', () => {
+    const nav = document.getElementById('navigation-wrapper');
+    const progressBar = document.getElementById('progress-bar');
+  
+    // set bar position below nav
+    const navHeight = nav.offsetHeight;
+    progressBar.style.top = `${navHeight}px`;
+  
+    // update width based on scroll position
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      const scrollPercent = (scrollTop / docHeight) * 100;
+      progressBar.style.width = `${scrollPercent}%`;
+    });
+  });
+
 
 //for section slide up animation
 window.addEventListener("scroll", revealSections);
