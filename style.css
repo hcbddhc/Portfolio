@@ -510,6 +510,10 @@ em {
   margin-right: 5%;
   }
 
+  #progress-bar {
+    display: none;
+  }
+
   #logo {
     width: 2rem;
    }
