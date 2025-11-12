@@ -576,6 +576,10 @@ em {
 
 
 /* ----------------------- HOME PAGE - INTRODUCTION SECTION SPECIFIC ---------------------------*/
+#introduction {
+  margin-bottom: 0;
+}
+
 #introduction-grid {
   grid-template-columns: 1.2fr 1fr;
   gap: 4rem;
@@ -585,36 +589,88 @@ em {
   display: flex;
   flex-direction: column;
   justify-content: center;  /* vertical centering of inner content */
-  align-items: center;      /* horizontal centering */
-  text-align: center;       /* center the text */      /* makes it fill the screen height */
   margin: 0 auto;
-  gap: 2.5rem;   
   min-height: 100vh;
+  gap: 3rem;
 }
+
 
 #title-heading h1 {
   margin-top: 0;
   margin-bottom: 0;
+  position: relative;
 }
+
 #title-heading h1::after {
-  content: none;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 70%;          /* start at middle of text */
+  width: 100%;
+  height: 1rem;       /* how far it goes down */
+  background-color: #DD1216;
+  z-index: -1;        /* behind text */
+  transform: none;    /* no vertical shifting */
 }
 
 .heading-hello-howard{
   color: #B6B6B6;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
   font-size: 20px;
 }
 
 #title-heading h2 {
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 0.5rem;
+  line-height: 1.5rem;
 }
 
+#title-heading-top{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#title-heading-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+#intro-paragraph{
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+#based-vancouver {
+  display: inline-flex;              /* makes the box only as wide as its content */
+  align-items: center;
+  gap: 0.6rem;                       /* space between dot and text */
+  background-color: #222222;
+  padding: 0.6rem 1.2rem;            /* small inner spacing */
+  border-radius: 0.5rem;             /* soft edges */
+  margin-bottom: 0.2rem;
+}
+
+#based-vancouver h3 {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
+  margin: 0;                         /* prevent extra space */
+}
+
+#based-vancouver img {
+  width: 0.5rem;
+  height: auto;
+  display: block;                    /* prevent baseline alignment gaps */
+}
 #title-heading p {
-  width: 50%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  font-style: italic;
 }
 
 #heading-digital-product-designer {
@@ -624,14 +680,17 @@ em {
 }
 
 #heading-digital-product-designer h1{
-  font-size: clamp(56px, 6vw, 72px);
+  font-size: calc(2.1rem + 3vw);
   letter-spacing: 0.03em;
+  text-align: center;
   text-indent: -0.08em;
+  white-space: nowrap;
   display: block;
   text-align: left;
   
 }
 
+/*
 #heading-digital-product-designer::before,
 #heading-digital-product-designer::after {
   content: "";
@@ -653,13 +712,13 @@ em {
 }
 
 #heading-digital-product-designer::before {
-  left: -3rem; /* extend 1rem outside the left edge */
+  left: -3rem; 
 }
 
 #heading-digital-product-designer::after {
-  right: -3rem; /* extend 1rem outside the right edge */
+  right: -3rem; 
 }
-
+*/
 /* Trigger the animation */
 #heading-digital-product-designer.animate-lines::before,
 #heading-digital-product-designer.animate-lines::after {
@@ -695,12 +754,27 @@ em {
     gap: 2rem;
     min-height: 85vh;
   }
-  #title-heading::after {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  #title-heading h1::after {
+    content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5rem;
+  margin-top: 0.5rem;
+  height: 0.25rem;
+  border-radius: 2px;
+  top: 100%
   }
-  #title-heading p{
-    width: 80%;
+
+  #title-heading-top {
+    gap: 0.5rem;
+  }
+  #title-heading-bottom {
+    flex-direction: column;       /* stack items vertically */
+    align-items: center;          /* center items horizontally */
+    justify-content: flex-start;  /* optional: start from top */
+    gap: 1rem;
   }
 
   #introduction-left p{
@@ -723,6 +797,7 @@ em {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  white-space: normal;
 }
 
 #heading-digital-product-designer::before {
