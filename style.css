@@ -751,7 +751,7 @@ em {
   }
 
   #title-heading {
-    gap: 2rem;
+    gap: 3rem;
     min-height: 85vh;
   }
   #title-heading h1::after {
@@ -761,20 +761,28 @@ em {
   left: 50%;
   transform: translateX(-50%);
   width: 5rem;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   height: 0.25rem;
   border-radius: 2px;
   top: 100%
   }
 
+  #title-heading h2 {
+    margin-bottom: 0.5rem;
+    line-height: 0.8rem;
+  }
+
   #title-heading-top {
-    gap: 0.5rem;
+    gap: 1rem;
   }
   #title-heading-bottom {
     flex-direction: column;       /* stack items vertically */
     align-items: center;          /* center items horizontally */
     justify-content: flex-start;  /* optional: start from top */
     gap: 1rem;
+  }
+  #based-vancouver h3{
+    font-size: 10px;
   }
 
   #introduction-left p{
@@ -784,7 +792,7 @@ em {
   }
 
 .heading-hello-howard{
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #heading-digital-product-designer{
@@ -793,7 +801,7 @@ em {
 }
 
 #heading-digital-product-designer h1 {
-  font-size: 15vw;           /* Scale text to fit nicely in that width */
+  font-size: 16vw;           /* Scale text to fit nicely in that width */
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -906,7 +914,7 @@ em {
 
 @media only screen and (max-width: 768px) {
   #scroll-down-arrow {
-    margin-top:1rem;
+    margin-top:0;
   }
   .project {
     grid-template-columns: 1fr;
