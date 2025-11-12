@@ -482,7 +482,7 @@ em {
   left: 0;
   top: 0; /* temporarily, JS will offset it */
   height: 2px; /* thin bar look */
-  background-color: #DD1216; /* red */
+  background-color: #626262;
   width: 0%; /* start empty */
   z-index: 10;
   transition: width 0.1s linear; /* smooth fill */
