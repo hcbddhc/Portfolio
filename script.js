@@ -19,6 +19,10 @@ function toUnfinishedSymphony() {
     window.open("https://hcdoggo.itch.io/the-unfinished-symphony", "_blank");
 } 
 
+function toSporeFall() { 
+    window.open("https://www.youtube.com/watch?v=yzVULuv14O0", "_blank");
+} 
+
 function toSmallButMighty() { 
     window.open("https://iat343-small-but-mighty.framer.website/", "_blank");
 } 

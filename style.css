@@ -882,7 +882,8 @@ em {
   padding: 0.3rem 0.8rem;
   border-radius: 1rem;
   letter-spacing: 0.08em;
-  background-color: #383838;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(50px);
   color: #FFFFFF;
   margin: 0;
 }
@@ -977,6 +978,10 @@ em {
   background-image: url('resources/unfinished\ symphony\ background.png');
 }
 
+#sporefall{
+  background-image: url('resources/sporefall\ background.png');
+}
+
 #smallbutmighty{
   background-image: url('resources/small\ but\ mighty\ background.png');
 }
@@ -995,7 +1000,7 @@ em {
     grid-template-columns: 1fr 1fr;
   }
   .fun-project{
-    padding: 0.25rem;
+    padding: 1rem;
   }
 }
 
