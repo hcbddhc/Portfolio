@@ -1000,7 +1000,15 @@ em {
     grid-template-columns: 1fr 1fr;
   }
   .fun-project{
-    padding: 1rem;
+    padding: 0.25rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fun-project-taglist{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 0.25rem;
   }
 }
 
