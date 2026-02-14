@@ -633,6 +633,10 @@ em {
   gap: 0.1rem;
 }
 
+#home-poem-last-line{
+  color: #B6B6B6;
+}
+
 #based-vancouver {
   display: inline-flex;              /* makes the box only as wide as its content */
   align-items: center;
